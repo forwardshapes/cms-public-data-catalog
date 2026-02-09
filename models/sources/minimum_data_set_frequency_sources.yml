@@ -1,0 +1,50 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: minimum_data_set_frequency
+        tags:
+          - medicare
+          - medicaid
+        description: |
+          The Minimum Data Set (MDS) Frequency data summarizes health status indicators for active residents currently
+          in nursing homes. The MDS is part of the Federally-mandated process for clinical assessment of all residents
+          in Medicare and Medicaid certified nursing homes. This process provides a comprehensive assessment of each
+          resident's functional capabilities and helps nursing home staff identify health problems. Care Area
+          Assessments (CAAs) are part of this process, and provide the foundation upon which a resident's individual
+          care plan is formulated. MDS assessments are completed for all residents in certified nursing homes,
+          regardless of source of payment for the individual resident. MDS assessments are required for residents on
+          admission to the nursing facility, periodically, and on discharge. All assessments are completed within
+          specific guidelines and time frames. In most cases, participants in the assessment process are licensed health
+          care professionals employed by the nursing home. MDS information is transmitted electronically by nursing
+          homes to the national MDS database at CMS.
+
+          When reviewing the MDS 3.0 Frequency files, some common software programs e.g., ‘Microsoft Excel’ might
+          inaccurately strip leading zeros from designated code values (i.e., "01" becomes "1") or misinterpret code
+          ranges as dates (i.e., O0600 ranges such as 02-04 are misread as 04-Feb). As each piece of software is unique,
+          if you encounter an issue when reading the CSV file of Frequency data, please open the file in a plain text
+          editor such as ‘Notepad’ or ‘TextPad’ to review the underlying data, before reaching out to CMS for
+          assistance.
+        meta:
+          cms_category: Minimum Data Set Frequency - CCSQ
+          data_source_url: https://data.cms.gov/quality-of-care/minimum-data-set-frequency
+          data_dictionary_url: https://data.cms.gov/resources/minimum-data-set-frequency-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/minimum-data-set-frequency-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/4b50bbe6-a496-4eda-b03b-5f835937f81b/data-viewer
+          contact: iqies@cms.hhs.gov
+          dataset_uuid: 4b50bbe6-a496-4eda-b03b-5f835937f81b
+        columns:
+          - name: "geographical location"
+            type: string
+          - name: "report date"
+            type: string
+          - name: "mds item question/description"
+            type: string
+          - name: "mds item response"
+            type: string
+          - name: "percent"
+            type: number
+          - name: "total residents"
+            type: number

@@ -1,0 +1,40 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: innovation_center_milestones_and_updates
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - medicare prescription drug
+          - children's health insurance program
+          - value-based care
+          - payment models
+        description: |
+          The Innovation Center Milestones and Updates dataset contains a variety of contributions from CMS Innovation
+          Center models, demonstrations, initiatives and programs. These resources include relevant milestones, dates,
+          and changes to the status or parameters of a model, demonstration, or initiative.
+        meta:
+          cms_category: CMS Innovation Center - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/cms-innovation-models-overview/innovation-center-milestones-and-updates
+          data_dictionary_url: https://data.cms.gov/resources/milestones-and-updates-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/milestones-and-updates-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/4ce4157f-4e02-4188-b43a-2b21b7769b4e/data-viewer
+          contact: cmmi-dataset-support@cms.hhs.gov
+          dataset_uuid: 4ce4157f-4e02-4188-b43a-2b21b7769b4e
+        columns:
+          - name: "model name (id's which detail page to populate)"
+            type: string
+          - name: "date"
+            type: date
+          - name: "announced/updated"
+            type: string
+          - name: "update"
+            type: string
+          - name: "link (\"learn more\")"
+            type: string
+          - name: "unique id"
+            type: number

@@ -1,0 +1,127 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_post_acute_care_utilization_hospice
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - inpatient
+          - hospice
+          - health care use & payments
+        description: |
+          The Medicare Post-Acute Care (PAC) Utilization - Hospice dataset contains information on demographic and
+          clinical characteristics of beneficiaries served, professional and paraprofessional service utilization, and
+          payment information at the provider, state, and national levels at the hospice setting.
+        meta:
+          cms_category: PDAG Data Products - OEDA
+          data_source_url: https://data.cms.gov/provider-summary-by-type-of-service/medicare-post-acute-care-hospice/medicare-post-acute-care-utilization-hospice
+          data_dictionary_url: https://data.cms.gov/resources/medicare-pac-utilization-hospice-data-dictionary
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-08/2685ddd1-a3a9-406c-a4e7-e56a8b789731/RY%202025%20PAC%20PUF%20Methodologies.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/4e73f1b5-82cb-4682-8ad2-28493f0b6840/data-viewer
+          contact: PDAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 4e73f1b5-82cb-4682-8ad2-28493f0b6840
+        columns:
+          - name: "year"
+            type: string
+          - name: "year_type"
+            type: string
+          - name: "smry_ctgry"
+            type: string
+          - name: "srvc_ctgry"
+            type: string
+          - name: "prvdr_id"
+            type: string
+          - name: "prvdr_name"
+            type: string
+          - name: "prvdr_city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "prvdr_zip"
+            type: string
+          - name: "bene_dstnct_cnt"
+            type: number
+          - name: "tot_epsd_stay_cnt"
+            type: number
+          - name: "tot_srvc_days"
+            type: number
+          - name: "tot_chrg_amt"
+            type: number
+          - name: "tot_alowd_amt"
+            type: number
+          - name: "tot_mdcr_pymt_amt"
+            type: number
+          - name: "tot_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "bene_dual_pct"
+            type: number
+          - name: "bene_rrl_pct"
+            type: number
+          - name: "bene_avg_age"
+            type: number
+          - name: "bene_male_pct"
+            type: number
+          - name: "bene_feml_pct"
+            type: number
+          - name: "bene_race_wht_pct"
+            type: number
+          - name: "bene_race_black_pct"
+            type: number
+          - name: "bene_race_api_pct"
+            type: number
+          - name: "bene_race_hspnc_pct"
+            type: number
+          - name: "bene_race_natind_pct"
+            type: number
+          - name: "bene_race_unk_pct"
+            type: number
+          - name: "bene_race_othr_pct"
+            type: number
+          - name: "bene_avg_risk_scre"
+            type: number
+          - name: "prmry_dx_infctn_pct"
+            type: number
+          - name: "prmry_dx_neobld_pct"
+            type: number
+          - name: "prmry_dx_endonutrmet_pct"
+            type: number
+          - name: "prmry_dx_mntbehneudis_pct"
+            type: number
+          - name: "prmry_dx_nervsystm_pct"
+            type: number
+          - name: "prmry_dx_entsys_pct"
+            type: number
+          - name: "prmry_dx_circsystm_pct"
+            type: number
+          - name: "prmry_dx_rspsystm_pct"
+            type: number
+          - name: "prmry_dx_digsystm_pct"
+            type: number
+          - name: "prmry_dx_sknmussystm_pct"
+            type: number
+          - name: "prmry_dx_gusystm_pct"
+            type: number
+          - name: "prmry_dx_prgpericong_pct"
+            type: number
+          - name: "prmry_dx_sxilldef_pct"
+            type: number
+          - name: "prmry_dx_injpois_pct"
+            type: number
+          - name: "prmry_dx_hlthsrv_pct"
+            type: number
+          - name: "nrsng_visits_cnt"
+            type: number
+          - name: "msw_visits_cnt"
+            type: number
+          - name: "aide_visits_cnt"
+            type: number
+          - name: "tot_nrsng_mnts"
+            type: number
+          - name: "hospc_rhc_days_pct"
+            type: number

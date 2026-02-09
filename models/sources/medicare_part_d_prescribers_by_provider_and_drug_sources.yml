@@ -1,0 +1,72 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_part_d_prescribers_by_provider_and_drug
+        tags:
+          - medicare
+          - medicare prescription drug
+          - physicians & practitioners
+          - drugs
+          - health equity
+        description: |
+          The Medicare Part D Prescribers by Provider and Drug dataset provides information on prescription drugs
+          prescribed to Medicare beneficiaries enrolled in Part D by physicians and other health care providers. This
+          dataset contains the total number of prescription fills that were dispensed and the total drug cost paid
+          organized by prescribing National Provider Identifier (NPI), drug brand name (if applicable) and drug generic
+          name.
+        meta:
+          cms_category: Medicare Provider Data - OEDA
+          data_source_url: https://data.cms.gov/provider-summary-by-type-of-service/medicare-part-d-prescribers/medicare-part-d-prescribers-by-provider-and-drug
+          data_dictionary_url: https://data.cms.gov/resources/medicare-part-d-prescribers-by-provider-and-drug-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-part-d-prescribers-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/9552739e-3d05-4c1b-8eff-ecabf391e2e5/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 9552739e-3d05-4c1b-8eff-ecabf391e2e5
+        columns:
+          - name: "prscrbr_npi"
+            type: string
+          - name: "prscrbr_last_org_name"
+            type: string
+          - name: "prscrbr_first_name"
+            type: string
+          - name: "prscrbr_city"
+            type: string
+          - name: "prscrbr_state_abrvtn"
+            type: string
+          - name: "prscrbr_state_fips"
+            type: string
+          - name: "prscrbr_type"
+            type: string
+          - name: "prscrbr_type_src"
+            type: string
+          - name: "brnd_name"
+            type: string
+          - name: "gnrc_name"
+            type: string
+          - name: "tot_clms"
+            type: number
+          - name: "tot_30day_fills"
+            type: number
+          - name: "tot_day_suply"
+            type: number
+          - name: "tot_drug_cst"
+            type: number
+          - name: "tot_benes"
+            type: number
+          - name: "ge65_sprsn_flag"
+            type: string
+          - name: "ge65_tot_clms"
+            type: number
+          - name: "ge65_tot_30day_fills"
+            type: number
+          - name: "ge65_tot_drug_cst"
+            type: number
+          - name: "ge65_tot_day_suply"
+            type: number
+          - name: "ge65_bene_sprsn_flag"
+            type: string
+          - name: "ge65_tot_benes"
+            type: number

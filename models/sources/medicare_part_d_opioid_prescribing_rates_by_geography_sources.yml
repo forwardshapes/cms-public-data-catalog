@@ -1,0 +1,67 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_part_d_opioid_prescribing_rates_by_geography
+        tags:
+          - national
+          - states & territories
+          - counties
+          - zip code
+          - rural-urban
+          - medicare
+          - medicare prescription drug
+          - physicians & practitioners
+          - drugs
+          - health equity
+        description: |
+          The Medicare Part D Opioid Prescribing Rates by Geography dataset provides information on geographic
+          comparisons of the number and percentage of Medicare Part D opioid prescriptions at the state, county, and ZIP
+          code levels.
+        meta:
+          cms_category: Medicare Provider Data - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-opioid-prescribing-rates/medicare-part-d-opioid-prescribing-rates-by-geography
+          data_dictionary_url: https://data.cms.gov/resources/medicare-part-d-opioid-prescribing-rates-by-geography-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-part-d-opioid-prescribing-rates-by-geography-methodology-0
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/94d00f36-73ce-4520-9b3f-83cd3cded25c/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 94d00f36-73ce-4520-9b3f-83cd3cded25c
+        columns:
+          - name: "year"
+            type: string
+          - name: "prscrbr_geo_lvl"
+            type: string
+          - name: "prscrbr_geo_cd"
+            type: string
+          - name: "prscrbr_geo_desc"
+            type: string
+          - name: "ruca_cd"
+            type: string
+          - name: "breakout_type"
+            type: string
+          - name: "breakout"
+            type: string
+          - name: "tot_prscrbrs"
+            type: number
+          - name: "tot_opioid_prscrbrs"
+            type: number
+          - name: "tot_opioid_clms"
+            type: number
+          - name: "tot_clms"
+            type: number
+          - name: "opioid_prscrbng_rate"
+            type: number
+          - name: "opioid_prscrbng_rate_5y_chg"
+            type: number
+          - name: "opioid_prscrbng_rate_1y_chg"
+            type: number
+          - name: "la_tot_opioid_clms"
+            type: number
+          - name: "la_opioid_prscrbng_rate"
+            type: number
+          - name: "la_opioid_prscrbng_rate_5y_chg"
+            type: number
+          - name: "la_opioid_prscrbng_rate_1y_chg"
+            type: number

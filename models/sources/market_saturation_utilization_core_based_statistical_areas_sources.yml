@@ -1,0 +1,122 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: market_saturation_utilization_core_based_statistical_areas
+        tags:
+          - states & territories
+          - rural-urban
+          - medicare
+          - original medicare
+          - health care use & payments
+          - fraud, waste, & abuse prevention
+        description: |
+          The Market Saturation and Utilization Core-Based Statistical Areas (CBSA) dataset provides monitoring of
+          market saturation. CBSAs are geographical delineations that are Census Bureau-defined urban clusters of at
+          least 10,000 people. Market saturation, in the present context, refers to the density of providers of a
+          particular service within a defined geographic area relative to the number of beneficiaries receiving that
+          service in the area. The data can be used to reveal the degree to which use of a service is related to the
+          number of providers servicing a geographic region. There are also a number of secondary research uses for
+          these data, but one objective of making these data public is to assist health care providers in making
+          informed decisions about their service locations and the beneficiary population they serve.
+        meta:
+          cms_category: Market Saturation - CPI
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/program-integrity-market-saturation-by-type-of-service/market-saturation-utilization-core-based-statistical-areas
+          data_dictionary_url: https://data.cms.gov/resources/market-saturation-utilization-core-based-statistical-areas-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/market-saturation-utilization-core-based-statistical-areas-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/9b0e7798-d945-48fc-9861-d38bb5083a74/data-viewer
+          contact: MarketSaturation@cms.hhs.gov
+          dataset_uuid: 9b0e7798-d945-48fc-9861-d38bb5083a74
+        columns:
+          - name: "reference_period"
+            type: string
+          - name: "type_of_service"
+            type: string
+          - name: "aggregation_level"
+            type: string
+          - name: "cbsa"
+            type: number
+          - name: "cbsatitle"
+            type: string
+          - name: "number_of_fee_for_service_beneficiaries"
+            type: string
+          - name: "number_of_providers"
+            type: number
+          - name: "average_number_of_users_per_provider"
+            type: number
+          - name: "percentage_of_users_out_of_ffs_beneficiaries"
+            type: string
+          - name: "number_of_users"
+            type: string
+          - name: "average_number_of_providers_per_cbsa"
+            type: number
+          - name: "number_of_dual_eligible_users"
+            type: number
+          - name: "percentage_of_dual_eligible_users_out_of_total_users"
+            type: string
+          - name: "percentage_of_dual_eligible_users_out_of_dual_eligible_ffs_beneficiaries"
+            type: string
+          - name: "total_payment"
+            type: string
+          - name: "number_of_fee_for_service_beneficiaries_dual_color"
+            type: string
+          - name: "number_of_fee_for_service_beneficiaries_description"
+            type: string
+          - name: "number_of_providers_dual_color"
+            type: string
+          - name: "number_of_providers_description"
+            type: string
+          - name: "average_number_of_users_per_provider_dual_color"
+            type: string
+          - name: "average_number_of_users_per_provider_description"
+            type: string
+          - name: "percentage_of_users_out_of_ffs_beneficiaries_dual_color"
+            type: string
+          - name: "percentage_of_users_out_of_ffs_beneficiaries_description"
+            type: string
+          - name: "number_of_users_dual_color"
+            type: string
+          - name: "number_of_users_description"
+            type: string
+          - name: "average_number_of_providers_per_cbsa_dual_color"
+            type: string
+          - name: "average_number_of_providers_per_cbsa_description"
+            type: string
+          - name: "number_of_dual_eligible_users_dual_color"
+            type: string
+          - name: "number_of_dual_eligible_users_description"
+            type: string
+          - name: "percentage_of_dual_eligible_users_out_of_total_users_dual_color"
+            type: string
+          - name: "percentage_of_dual_eligible_users_out_of_total_users_description"
+            type: string
+          - name: "percentage_of_dual_eligible_users_out_of_dual_eligible_ffs_beneficiaries_dual_color"
+            type: string
+          - name: "percentage_of_dual_eligible_users_out_of_dual_eligible_ffs_beneficiaries_dual_color_description"
+            type: string
+          - name: "total_payment_dual_color"
+            type: string
+          - name: "total_payment_description"
+            type: string
+          - name: "number_of_fee_for_service_beneficiaries_change"
+            type: string
+          - name: "number_of_providers_change"
+            type: string
+          - name: "average_number_of_users_per_provider_change"
+            type: string
+          - name: "percentage_of_users_out_of_ffs_beneficiaries_change"
+            type: string
+          - name: "number_of_users_change"
+            type: string
+          - name: "average_number_of_providers_per_cbsa_change"
+            type: string
+          - name: "number_of_dual_eligible_users_change"
+            type: string
+          - name: "percentage_of_dual_eligible_users_out_of_total_users_change"
+            type: string
+          - name: "percentage_of_dual_eligible_users_out_of_dual_eligible_ffs_beneficiaries_change"
+            type: string
+          - name: "total_payment_change"
+            type: string

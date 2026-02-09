@@ -1,0 +1,129 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: nursing_home_chain_performance_measures
+        tags:
+          - medicare
+          - hospitals & facilities
+          - skilled nursing
+        description: |
+          The Nursing Home Chain Performance Measures dataset provides select quality and performance measures from
+          Care Compare for groups of nursing homes that share common individual or organizational owners, officers, or
+          entities with operational/managerial control. The data include measures such as average health and staffing
+          star ratings, staffing measures, average quality star ratings, select enforcement remedies, claims-based and
+          Minimum Data Set (MDS) measures, and average Skilled Nursing Facility Quality Reporting Program (SNF QRP)
+          metrics.
+        meta:
+          cms_category: NH_Chain_Inquiries - CCSQ
+          data_source_url: https://data.cms.gov/quality-of-care/nursing-home-chain-performance-measures
+          data_dictionary_url: https://data.cms.gov/resources/nursing-home-chain-performance-measures-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/nursing-home-chain-performance-measures-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/97ecfad1-d3f1-4d42-b774-d74661d830bc/data-viewer
+          contact: NH_Chain_Inquiries@cms.hhs.gov
+          dataset_uuid: 97ecfad1-d3f1-4d42-b774-d74661d830bc
+        columns:
+          - name: "chain"
+            type: string
+          - name: "chain id"
+            type: string
+          - name: "number of facilities"
+            type: number
+          - name: "number of states and territories with operations"
+            type: number
+          - name: "number of special focus facilities (sff)"
+            type: number
+          - name: "number of sff candidates"
+            type: number
+          - name: "number of facilities with an abuse icon"
+            type: number
+          - name: "percentage of facilities with an abuse icon"
+            type: number
+          - name: "percent of facilities classified as for-profit"
+            type: number
+          - name: "percent of facilities classified as non-profit"
+            type: number
+          - name: "percent of facilities classified as government-owned"
+            type: number
+          - name: "average overall 5-star rating"
+            type: number
+          - name: "average health inspection rating"
+            type: number
+          - name: "average staffing rating"
+            type: number
+          - name: "average quality rating"
+            type: number
+          - name: "average total nurse hours per resident day"
+            type: number
+          - name: "average total weekend nurse hours per resident day"
+            type: number
+          - name: "average total registered nurse hours per resident day"
+            type: number
+          - name: "average total nursing staff turnover percentage"
+            type: number
+          - name: "average registered nurse turnover percentage"
+            type: number
+          - name: "average number of administrators who have left the nursing home"
+            type: number
+          - name: "total number of fines"
+            type: number
+          - name: "average number of fines"
+            type: number
+          - name: "total amount of fines in dollars"
+            type: number
+          - name: "average amount of fines in dollars"
+            type: number
+          - name: "total number of payment denials"
+            type: number
+          - name: "average number of payment denials"
+            type: number
+          - name: "average percentage of short-stay residents who were re-hospitalized after a nursing home admission"
+            type: number
+          - name: "average percentage of short-stay residents who have had an outpatient emergency department visit"
+            type: number
+          - name: "average percentage of short-stay residents who newly received an antipsychotic medication"
+            type: number
+          - name: "average percentage of short-stay residents with pressure ulcers or pressure injuries that are new or worsened"
+            type: number
+          - name: "average percentage of short-stay residents who are at or above an expected ability to care for themselves and move around at discharge"
+            type: number
+          - name: "average percentage of short-stay residents who were assessed and appropriately given the seasonal influenza vaccine"
+            type: number
+          - name: "average percentage of short-stay residents who were assessed and appropriately given the  pneumococcal vaccine"
+            type: number
+          - name: "average number of hospitalizations per 1,000 long-stay resident days"
+            type: number
+          - name: "average number of outpatient emergency department visits per 1,000 long-stay resident days"
+            type: number
+          - name: "average percentage of long-stay residents who received an antipsychotic medication"
+            type: number
+          - name: "average percentage of long-stay residents experiencing one or more falls with major injury"
+            type: number
+          - name: "average percentage of long-stay residents with pressure ulcers"
+            type: number
+          - name: "average percentage of long-stay residents with a urinary tract infection"
+            type: number
+          - name: "average percentage of long-stay residents who have or had a catheter inserted and left in their bladder"
+            type: number
+          - name: "average percentage of long-stay residents whose ability to move independently worsened"
+            type: number
+          - name: "average percentage of long-stay residents whose need for help with activities of daily living has increased"
+            type: number
+          - name: "average percentage of long-stay residents who were assessed and appropriately given the seasonal influenza vaccine"
+            type: number
+          - name: "average percentage of long-stay residents who were assessed and appropriately given the  pneumococcal vaccine"
+            type: number
+          - name: "average percentage of long-stay residents who were physically restrained"
+            type: number
+          - name: "average percentage of long-stay residents with new or worsened bowel or bladder incontinence"
+            type: number
+          - name: "average percentage of long-stay residents who lose too much weight"
+            type: number
+          - name: "average percentage of long-stay residents who have symptoms of depression"
+            type: number
+          - name: "average percentage of long-stay residents who used antianxiety or hypnotic medication"
+            type: number
+          - name: "average rate of potentially preventable hospital readmissions 30 days after discharge from a snf"
+            type: number

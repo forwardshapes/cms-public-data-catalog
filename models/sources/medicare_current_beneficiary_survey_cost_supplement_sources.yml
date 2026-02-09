@@ -1,0 +1,27 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_current_beneficiary_survey_cost_supplement
+        tags:
+          - national
+          - medicare
+          - original medicare
+          - medicare advantage
+          - medicare prescription drug
+          - health equity
+          - patient experience
+        description: |
+          The Medicare Current Beneficiary Survey (MCBS) - Cost Supplement File Microdata Public Use File (PUF) dataset
+          provides information on expenditures and payment sources for all services used by Medicare beneficiaries,
+          including co-payments, deductibles, and non-covered services.
+        meta:
+          cms_category: Medicare Current Beneficiary Survey - OEDA
+          data_source_url: https://data.cms.gov/medicare-current-beneficiary-survey-mcbs/medicare-current-beneficiary-survey-cost-supplement
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2025-01/CSPUF2022_Codebook.txt
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-01/CSPUF2022_DUG.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/91ded8c4-7e64-42ff-a595-4a4eb55df910/data-viewer
+          contact: MCBS@cms.hhs.gov
+          dataset_uuid: 91ded8c4-7e64-42ff-a595-4a4eb55df910

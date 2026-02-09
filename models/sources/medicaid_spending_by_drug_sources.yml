@@ -1,0 +1,104 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicaid_spending_by_drug
+        tags:
+          - medicaid
+          - physicians & practitioners
+          - drugs
+        description: |
+          The Medicaid by Drug dataset presents information on spending for covered outpatient drugs prescribed to
+          beneficiaries enrolled in Medicaid by physicians and other healthcare professionals.
+
+          The dataset focuses on average spending per dosage unit and change in average spending per dosage unit over
+          time. Units refer to the drug unit in the lowest dispensable amount. It also includes spending information for
+          manufacturer(s) of the drugs as well as consumer-friendly information of drug uses and clinical indications.
+
+          Drug spending metrics for Medicaid represent the total amount reimbursed by both Medicaid and non-Medicaid
+          entities to pharmacies for the drug. Medicaid drug spending contains both the Federal and State reimbursement
+          and is inclusive of any applicable dispensing fees. In addition, this total is not reduced or affected by
+          Medicaid rebates paid to the states.
+        meta:
+          cms_category: CMS Drug Spending - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-spending-by-drug/medicaid-spending-by-drug
+          data_dictionary_url: https://data.cms.gov/resources/medicaid-spending-by-drug-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicaid-spending-by-drug-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/be64fce3-e835-4589-b46b-024198e524a6/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: be64fce3-e835-4589-b46b-024198e524a6
+        columns:
+          - name: "brnd_name"
+            type: string
+          - name: "gnrc_name"
+            type: string
+          - name: "tot_mftr"
+            type: number
+          - name: "mftr_name"
+            type: string
+          - name: "tot_spndng_2019"
+            type: number
+          - name: "tot_dsg_unts_2019"
+            type: number
+          - name: "tot_clms_2019"
+            type: number
+          - name: "avg_spnd_per_dsg_unt_wghtd_2019"
+            type: number
+          - name: "avg_spnd_per_clm_2019"
+            type: number
+          - name: "outlier_flag_2019"
+            type: number
+          - name: "tot_spndng_2020"
+            type: number
+          - name: "tot_dsg_unts_2020"
+            type: number
+          - name: "tot_clms_2020"
+            type: number
+          - name: "avg_spnd_per_dsg_unt_wghtd_2020"
+            type: number
+          - name: "avg_spnd_per_clm_2020"
+            type: number
+          - name: "outlier_flag_2020"
+            type: number
+          - name: "tot_spndng_2021"
+            type: number
+          - name: "tot_dsg_unts_2021"
+            type: number
+          - name: "tot_clms_2021"
+            type: number
+          - name: "avg_spnd_per_dsg_unt_wghtd_2021"
+            type: number
+          - name: "avg_spnd_per_clm_2021"
+            type: number
+          - name: "outlier_flag_2021"
+            type: number
+          - name: "tot_spndng_2022"
+            type: number
+          - name: "tot_dsg_unts_2022"
+            type: number
+          - name: "tot_clms_2022"
+            type: number
+          - name: "avg_spnd_per_dsg_unt_wghtd_2022"
+            type: number
+          - name: "avg_spnd_per_clm_2022"
+            type: number
+          - name: "outlier_flag_2022"
+            type: number
+          - name: "tot_spndng_2023"
+            type: number
+          - name: "tot_dsg_unts_2023"
+            type: number
+          - name: "tot_clms_2023"
+            type: number
+          - name: "avg_spnd_per_dsg_unt_wghtd_2023"
+            type: number
+          - name: "avg_spnd_per_clm_2023"
+            type: number
+          - name: "outlier_flag_2023"
+            type: number
+          - name: "chg_avg_spnd_per_dsg_unt_22_23"
+            type: number
+          - name: "cagr_avg_spnd_per_dsg_unt_19_23"
+            type: number

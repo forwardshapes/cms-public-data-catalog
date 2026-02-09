@@ -1,0 +1,30 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: kidney_care_choices_model
+        tags:
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - outpatient facilities
+          - end stage renal disease facilities
+          - value-based care
+          - coordinated care
+          - financials
+        description: |
+          The Kidney Care Choice (KCC) Model dataset provides select measures related to beneficiary alignment,
+          participant tracking, and finance and quality measures for the reconciled performance year. This data
+          includes, but is not limited to, beneficiary model eligibility statuses, beneficiary sociodemographic
+          variables, entity benefit enhancement and beneficiary engagement incentives, entity address information,
+          quality measures, financial payment amounts, financial benchmark amounts, and financial risk scores.
+        meta:
+          cms_category: Kidney Care Choices Model-CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/disease-episode-based-payment-models/kidney-care-choices-model
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2025-03/48996d63-e2fd-40f7-b619-d23b2de922bd/PY2022_KCC_PUF_Data_Dictionary_508.pdf
+          data_methodology_url: https://data.cms.gov/resources/kidney-care-choices-model-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/2cab9566-3495-4937-9925-3d9962ccf0f8/data-viewer
+          contact: KCF-CKCC-CMMI@cms.hhs.gov
+          dataset_uuid: 2cab9566-3495-4937-9925-3d9962ccf0f8

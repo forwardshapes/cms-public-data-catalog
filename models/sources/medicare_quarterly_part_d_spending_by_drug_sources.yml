@@ -1,0 +1,61 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_quarterly_part_d_spending_by_drug
+        tags:
+          - medicare
+          - medicare prescription drug
+          - medical suppliers & equipment
+          - drugs
+        description: |
+          The Medicare Quarterly Part D Spending by Drug dataset presents information on spending for drugs prescribed
+          to Medicare beneficiaries enrolled in Part D by physicians and other healthcare providers. Drugs prescribed in
+          the Medicare Part D program are drugs patients generally administer themselves. It also includes spending
+          information for manufacturer(s) of the drugs as well as consumer-friendly information of drug uses and
+          clinical indications.
+
+          Drug spending metrics for Part D drugs are based on the gross drug cost, which represents total spending for
+          the prescription claim, including Medicare, plan, and beneficiary payments. The Part D spending metrics do not
+          reflect any manufacturers’ rebates or other price concessions as CMS is prohibited from publicly disclosing
+          such information.
+
+          This dataset reports preliminary data that goes beyond the latest date available in the annual Medicare Part
+          D Spending by Drug dataset. The data are updated each quarter and may change with each new release due to
+          claims lag. Once an entire year of data is available with a sufficient run-out period, that data will move out
+          of the preliminary quarterly dataset and into the annual Medicare Part D Spending by Drug dataset. Due to the
+          preliminary nature of the quarterly dataset, we advise using caution when comparing between the annual and
+          quarterly datasets.
+        meta:
+          cms_category: CMS Program Statistics - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-spending-by-drug/medicare-quarterly-part-d-spending-by-drug
+          data_dictionary_url: https://data.cms.gov/resources/medicare-quarterly-part-d-spending-by-drug-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-quarterly-part-d-spending-by-drug-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/4ff7c618-4e40-483a-b390-c8a58c94fa15/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 4ff7c618-4e40-483a-b390-c8a58c94fa15
+        columns:
+          - name: "brnd_name"
+            type: string
+          - name: "gnrc_name"
+            type: string
+          - name: "tot_mftr"
+            type: number
+          - name: "mftr_name"
+            type: string
+          - name: "year"
+            type: string
+          - name: "tot_benes"
+            type: number
+          - name: "tot_clms"
+            type: number
+          - name: "tot_spndng"
+            type: number
+          - name: "avg_spnd_per_bene"
+            type: number
+          - name: "avg_spnd_per_clm"
+            type: number
+          - name: "drug_uses"
+            type: string

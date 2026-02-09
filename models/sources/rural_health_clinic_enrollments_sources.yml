@@ -1,0 +1,69 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: rural_health_clinic_enrollments
+        tags:
+          - rural-urban
+          - medicare
+          - hospitals & facilities
+          - outpatient facilities
+          - rural health clinics
+          - provider enrollment
+        description: |
+          The Rural Health Clinic (RHC) Enrollments dataset provides enrollment information on all RHCs currently
+          enrolled in Medicare. This data includes information on the RHC's legal business name, doing business as name,
+          organization type and address.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/rural-health-clinic-enrollments
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2025-10/63ff2818-b274-40c0-84fd-14b85c9a545e/RHC_Enrollments_Data_Dictionary.pdf
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-10/9a36de3f-ab0a-47b5-9f97-53a2c85af0c3/RHC_Data_Guidance.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/3b7e7659-067e-41ea-8e36-f9ee2036e1f6/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: 3b7e7659-067e-41ea-8e36-f9ee2036e1f6
+        columns:
+          - name: "enrollment id"
+            type: string
+          - name: "enrollment state"
+            type: string
+          - name: "provider type code"
+            type: string
+          - name: "provider type text"
+            type: string
+          - name: "npi"
+            type: string
+          - name: "multiple npi flag"
+            type: string
+          - name: "ccn"
+            type: string
+          - name: "associate id"
+            type: string
+          - name: "organization name"
+            type: string
+          - name: "doing business as name"
+            type: string
+          - name: "incorporation date"
+            type: date
+          - name: "incorporation state"
+            type: string
+          - name: "organization type structure"
+            type: string
+          - name: "organization other type text"
+            type: string
+          - name: "proprietary_nonprofit"
+            type: string
+          - name: "address line 1"
+            type: string
+          - name: "address line 2"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "zip code"
+            type: string
+          - name: "telephone number"
+            type: string

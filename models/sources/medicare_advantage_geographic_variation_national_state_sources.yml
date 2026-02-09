@@ -1,0 +1,151 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_advantage_geographic_variation_national_state
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - medicare advantage
+          - hospitals & facilities
+          - inpatient
+          - skilled nursing
+        description: |
+          The Medicare Advantage Geographic Variation National & State dataset provides information on demographic
+          characteristics and service utilization for hospital inpatient, skilled nursing facility services, outpatient,
+          DME, and professional services between 2016-2022 for Medicare Advantage beneficiaries at the national and
+          state levels.
+        meta:
+          cms_category: PDAG Data Products - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-geographic-comparisons/medicare-advantage-geographic-variation-national-state
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2024-06/7ae600cf-5662-4462-8d86-7aab3f58e7b8/Medicare%20Advantage%20Geographic%20Variation%20National%20%20State%20Data%20Dictionary_RY24.pdf
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-06/MA_GV_PUF_Methods_Updated_06042025.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/8e989bc0-2260-49a7-9c6d-8e9e10af7cea/data-viewer
+          contact: PDAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 8e989bc0-2260-49a7-9c6d-8e9e10af7cea
+        columns:
+          - name: "year"
+            type: number
+          - name: "state"
+            type: string
+          - name: "bene_geo_cd"
+            type: string
+          - name: "benes_ma_cnt"
+            type: number
+          - name: "bene_avg_age"
+            type: number
+          - name: "bene_feml_pct"
+            type: number
+          - name: "bene_male_pct"
+            type: number
+          - name: "bene_race_wht_pct"
+            type: number
+          - name: "bene_race_black_pct"
+            type: number
+          - name: "bene_race_hspnc_pct"
+            type: number
+          - name: "bene_race_othr_pct"
+            type: number
+          - name: "bene_dual_pct"
+            type: number
+          - name: "benes_ip_stay_cnt"
+            type: number
+          - name: "benes_ip_pct"
+            type: number
+          - name: "ip_stays_per_1000_benes"
+            type: number
+          - name: "ip_days_per_1000_benes"
+            type: number
+          - name: "benes_irf_cnt"
+            type: number
+          - name: "benes_irf_pct"
+            type: number
+          - name: "irf_stays_per_1000_benes"
+            type: number
+          - name: "irf_days_per_1000_benes"
+            type: number
+          - name: "benes_ltc_cnt"
+            type: number
+          - name: "benes_ltc_pct"
+            type: number
+          - name: "ltc_stays_per_1000_benes"
+            type: number
+          - name: "ltc_days_per_1000_benes"
+            type: number
+          - name: "benes_snf_cnt"
+            type: number
+          - name: "benes_snf_pct"
+            type: number
+          - name: "snf_stays_per_1000_benes"
+            type: number
+          - name: "snf_days_per_1000_benes"
+            type: number
+          - name: "benes_em_cnt"
+            type: number
+          - name: "benes_em_pct"
+            type: number
+          - name: "em_events_per_1000_benes"
+            type: number
+          - name: "benes_prcdrs_cnt"
+            type: number
+          - name: "benes_prcdrs_pct"
+            type: number
+          - name: "prcdrs_events_per_1000_benes"
+            type: number
+          - name: "benes_tests_cnt"
+            type: number
+          - name: "benes_tests_pct"
+            type: number
+          - name: "tests_events_per_1000_benes"
+            type: number
+          - name: "benes_imgng_cnt"
+            type: number
+          - name: "benes_imgng_pct"
+            type: number
+          - name: "imgng_events_per_1000_benes"
+            type: number
+          - name: "benes_dme_cnt"
+            type: number
+          - name: "benes_dme_pct"
+            type: number
+          - name: "dme_events_per_1000_benes"
+            type: number
+          - name: "benes_amblnc_cnt"
+            type: number
+          - name: "benes_amblnc_pct"
+            type: number
+          - name: "amblnc_events_per_1000_benes"
+            type: number
+          - name: "benes_trtmnt_cnt"
+            type: number
+          - name: "benes_trtmnt_pct"
+            type: number
+          - name: "trtmnt_events_per_1000_benes"
+            type: number
+          - name: "benes_op_dlys_cnt"
+            type: number
+          - name: "benes_op_dlys_pct"
+            type: number
+          - name: "op_dlys_visits_per_1000_benes"
+            type: number
+          - name: "benes_fqhc_rhc_cnt"
+            type: number
+          - name: "benes_fqhc_rhc_pct"
+            type: number
+          - name: "fqhc_rhc_visits_per_1000_benes"
+            type: number
+          - name: "benes_op_cnt"
+            type: number
+          - name: "benes_op_pct"
+            type: number
+          - name: "op_visits_per_1000_benes"
+            type: number
+          - name: "benes_er_visits_cnt"
+            type: number
+          - name: "benes_er_visits_pct"
+            type: number
+          - name: "er_visits_per_1000_benes"
+            type: number

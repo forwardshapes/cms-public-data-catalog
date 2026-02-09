@@ -1,0 +1,52 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: innovation_center_model_awardees
+        tags:
+          - medicare
+          - original medicare
+          - value-based care
+          - payment models
+        description: |
+          The Innovation Center Model Awardees dataset provides information about institutions that have participated
+          in the model process, and have been awarded funding based on their efforts to design, implement, or test
+          innovative healthcare delivery initiatives. The data includes the name of the institution, related keywords,
+          project name, geographic reach, funding amount, real or projected 3-year savings, a summary of the
+          institutions activities in the model, categories related to the type of healthcare initiative, stage of
+          participation, and the URL for the model or initiative page on the CMMI website.
+        meta:
+          cms_category: CMS Innovation Center - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/cms-innovation-models-overview/innovation-center-model-awardees
+          data_dictionary_url: https://data.cms.gov/resources/model-awardees-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/model-awardees-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/424de599-7a34-4243-af70-95d24dd675dd/data-viewer
+          contact: cmmi-dataset-support@cms.hhs.gov
+          dataset_uuid: 424de599-7a34-4243-af70-95d24dd675dd
+        columns:
+          - name: "institute"
+            type: string
+          - name: "keywords"
+            type: string
+          - name: "project"
+            type: string
+          - name: "geographic reach"
+            type: string
+          - name: "funding amount"
+            type: string
+          - name: "3 year savings"
+            type: string
+          - name: "summary"
+            type: string
+          - name: "category"
+            type: string
+          - name: "stage"
+            type: string
+          - name: "model"
+            type: string
+          - name: "url"
+            type: string
+          - name: "unique id"
+            type: number

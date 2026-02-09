@@ -1,0 +1,104 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: hospital_enrollments
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - hospitals & facilities
+          - provider enrollment
+        description: |
+          The Hospital Enrollments dataset provides enrollment information of all Hospitals currently enrolled in
+          Medicare. This data includes information on the Hospital's sub-group type, legal business name, doing business
+          as name, organization type and address.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/hospital-enrollments
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2023-07/Hospital_Enrollments_Data_Dictionary.pdf
+          data_methodology_url: https://data.cms.gov/sites/default/files/2024-10/Hospital_Data_Guidance.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/f6f6505c-e8b0-4d57-b258-e2b94133aaf2/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: f6f6505c-e8b0-4d57-b258-e2b94133aaf2
+        columns:
+          - name: "enrollment id"
+            type: string
+          - name: "enrollment state"
+            type: string
+          - name: "provider type code"
+            type: string
+          - name: "provider type text"
+            type: string
+          - name: "npi"
+            type: string
+          - name: "multiple npi flag"
+            type: string
+          - name: "ccn"
+            type: string
+          - name: "associate id"
+            type: string
+          - name: "organization name"
+            type: string
+          - name: "doing business as name"
+            type: string
+          - name: "incorporation date"
+            type: date
+          - name: "incorporation state"
+            type: string
+          - name: "organization type structure"
+            type: string
+          - name: "organization other type text"
+            type: string
+          - name: "proprietary nonprofit"
+            type: string
+          - name: "address line 1"
+            type: string
+          - name: "address line 2"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "zip code"
+            type: number
+          - name: "practice location type"
+            type: string
+          - name: "location other type text"
+            type: string
+          - name: "subgroup - general"
+            type: string
+          - name: "subgroup - acute care"
+            type: string
+          - name: "subgroup - alcohol drug"
+            type: string
+          - name: "subgroup - childrens"
+            type: string
+          - name: "subgroup - long-term"
+            type: string
+          - name: "subgroup - psychiatric"
+            type: string
+          - name: "subgroup - rehabilitation"
+            type: string
+          - name: "subgroup - short-term"
+            type: string
+          - name: "subgroup - swing-bed approved"
+            type: string
+          - name: "subgroup - psychiatric unit"
+            type: string
+          - name: "subgroup - rehabilitation unit"
+            type: string
+          - name: "subgroup - specialty hospital"
+            type: string
+          - name: "subgroup - other"
+            type: string
+          - name: "subgroup - other text"
+            type: string
+          - name: "reh conversion flag"
+            type: string
+          - name: "reh conversion date"
+            type: date
+          - name: "cah or hospital ccn"
+            type: string

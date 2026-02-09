@@ -1,0 +1,32 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: cms_program_statistics_medicare_inpatient_hospital
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - inpatient
+          - health care use & payments
+          - health equity
+        description: |
+          The CMS Program Statistics - Medicare Inpatient Hospital tables provide use and payment data for all
+          inpatient hospitals, including short-stay hospitals, critical access hospitals, long term care hospitals,
+          inpatient psychiatric facilities, inpatient rehabilitation facilities, religious nonmedical health care
+          institutions, children’s hospitals, and other hospitals.
+
+          For additional information on enrollment, providers, and Medicare use and payment, visit the CMS Program
+          Statistics page.
+        meta:
+          cms_category: CMS Program Statistics - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-service-type-reports/cms-program-statistics-medicare-inpatient-hospital
+          data_dictionary_url: https://data.cms.gov/resources/cms-program-statistics-glossary
+          data_methodology_url: https://data.cms.gov/resources/cms-program-statistics-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/1e1beaba-9b41-47ca-960a-bd47b6ea65bd/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 1e1beaba-9b41-47ca-960a-bd47b6ea65bd

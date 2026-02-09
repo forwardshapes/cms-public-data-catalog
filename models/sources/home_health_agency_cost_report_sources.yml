@@ -1,0 +1,430 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: home_health_agency_cost_report
+        tags:
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - home health
+          - value-based care
+          - financials
+        description: |
+          The Home Health Agency Provider Cost Report dataset provides select measures from the home health agency
+          annual cost report. This data includes provider information such as facility characteristics, utilization
+          data, cost and charges by cost center (in total and for Medicare), Medicare settlement data, and financial
+          statement data organized by CMS Certification Number.
+        meta:
+          cms_category: PDAG Data Products - OEDA
+          data_source_url: https://data.cms.gov/provider-compliance/cost-reports/home-health-agency-cost-report
+          data_dictionary_url: https://data.cms.gov/resources/home-health-agency-cost-report-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/home-health-agency-cost-report-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/4999da74-1d8d-4a6f-934e-2d7ea470cc63/data-viewer
+          contact: PDAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 4999da74-1d8d-4a6f-934e-2d7ea470cc63
+        columns:
+          - name: "rpt_rec_num"
+            type: string
+          - name: "provider ccn"
+            type: string
+          - name: "hha name"
+            type: string
+          - name: "street address"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state code"
+            type: string
+          - name: "zip code"
+            type: string
+          - name: "type of control"
+            type: string
+          - name: "fiscal year begin date"
+            type: date
+          - name: "fiscal year end date"
+            type: date
+          - name: "hha-based hospice provider ccn"
+            type: string
+          - name: "skilled nursing care-rn, medicare title xviii visits"
+            type: number
+          - name: "total, medicare title xviii visits"
+            type: number
+          - name: "skilled nursing care-lpn, medicare title xviii visits"
+            type: number
+          - name: "physical therapy, medicare title xviii visits"
+            type: number
+          - name: "physical therapy asst, medicare title xviii visits"
+            type: number
+          - name: "occupational therapy, medicare title xviii visits"
+            type: number
+          - name: "occupational therapy asst, medicare title xviii visits"
+            type: number
+          - name: "speech-language-path, medicare title xviii visits"
+            type: number
+          - name: "medical social service, medicare title xviii visits"
+            type: number
+          - name: "home health aide, medicare title xviii visits"
+            type: number
+          - name: "skilled nursing care-rn, medicare title xviii patient census"
+            type: number
+          - name: "skilled nursing care-lpn, medicare title xviii patient census"
+            type: number
+          - name: "physical therapy, medicare title xviii patient census"
+            type: number
+          - name: "physical therapy asst, medicare title xviii patient census"
+            type: number
+          - name: "occupational therapy, medicare title xviii patient census"
+            type: number
+          - name: "occupational therapy asst, medicare title xviii patient census"
+            type: number
+          - name: "speech-language-path, medicare title xviii patient census"
+            type: number
+          - name: "medical social service, medicare title xviii patient census"
+            type: number
+          - name: "home health aide, medicare title xviii patient census"
+            type: number
+          - name: "skilled nursing care-rn, medicaid title xix visits"
+            type: number
+          - name: "total, medicaid title xix visits"
+            type: number
+          - name: "skilled nursing care-lpn, medicaid title xix visits"
+            type: number
+          - name: "physical therapy, medicaid title xix visits"
+            type: number
+          - name: "physical therapy asst, medicaid title xix visits"
+            type: number
+          - name: "occupational therapy, medicaid title xix visits"
+            type: number
+          - name: "occupational therapy asst, medicaid title xix visits"
+            type: number
+          - name: "speech-language-path, medicaid title xix visits"
+            type: number
+          - name: "medical social service, medicaid title xix visits"
+            type: number
+          - name: "home health aide, medicaid title xix visits"
+            type: number
+          - name: "skilled nursing care-rn, medicaid title xix patient census"
+            type: number
+          - name: "skilled nursing care-lpn, medicaid title xix patient census"
+            type: number
+          - name: "physical therapy, medicaid title xix patient census"
+            type: number
+          - name: "physical therapy asst, medicaid title xix patient census"
+            type: number
+          - name: "occupational therapy, medicaid title xix patient census"
+            type: number
+          - name: "occupational therapy asst, medicaid title xix patient census"
+            type: number
+          - name: "speech-language-path, medicaid title xix patient census"
+            type: number
+          - name: "medical social service, medicaid title xix patient census"
+            type: number
+          - name: "home health aide, medicaid title xix patient census"
+            type: number
+          - name: "skilled nursing care-rn, other visits"
+            type: number
+          - name: "total, other visits"
+            type: number
+          - name: "skilled nursing care-lpn, other visits"
+            type: number
+          - name: "physical therapy, other visits"
+            type: number
+          - name: "physical therapy asst, other visits"
+            type: number
+          - name: "occupational therapy, other visits"
+            type: number
+          - name: "occupational therapy asst, other visits"
+            type: number
+          - name: "speech-language-path, other visits"
+            type: number
+          - name: "medical social service, other visits"
+            type: number
+          - name: "home health aide, other visits"
+            type: number
+          - name: "skilled nursing care-rn, other patient census"
+            type: number
+          - name: "skilled nursing care-lpn, other patient census"
+            type: number
+          - name: "physical therapy, other patient census"
+            type: number
+          - name: "physical therapy asst, other patient census"
+            type: number
+          - name: "occupational therapy, other patient census"
+            type: number
+          - name: "occupational therapy asst, other patient census"
+            type: number
+          - name: "speech-language-path, other patient census"
+            type: number
+          - name: "medical social service, other patient census"
+            type: number
+          - name: "home health aide, other patient census"
+            type: number
+          - name: "skilled nursing care-rn, total visits"
+            type: number
+          - name: "total, total visits"
+            type: number
+          - name: "skilled nursing care-lpn, total visits"
+            type: number
+          - name: "physical therapy, total visits"
+            type: number
+          - name: "physical therapy asst, total visits"
+            type: number
+          - name: "occupational therapy, total visits"
+            type: number
+          - name: "occupational therapy asst, total visits"
+            type: number
+          - name: "speech-language-path, total visits"
+            type: number
+          - name: "medical social service, total visits"
+            type: number
+          - name: "home health aide, total visits"
+            type: number
+          - name: "skilled nursing care-rn, total patient census"
+            type: number
+          - name: "skilled nursing care-lpn, total patient census"
+            type: number
+          - name: "physical therapy, total patient census"
+            type: number
+          - name: "physical therapy asst, total patient census"
+            type: number
+          - name: "occupational therapy, total patient census"
+            type: number
+          - name: "occupational therapy asst, total patient census"
+            type: number
+          - name: "speech-language-path, total patient census"
+            type: number
+          - name: "medical social service, total patient census"
+            type: number
+          - name: "home health aide, total patient census"
+            type: number
+          - name: "full episodes without outliers-total visits"
+            type: number
+          - name: "full episodes with outliers-total visits"
+            type: number
+          - name: "lupa episodes-total visits"
+            type: number
+          - name: "pep episodes-total visits"
+            type: number
+          - name: "total episodes-total visits"
+            type: number
+          - name: "full episodes without outliers-total charges"
+            type: number
+          - name: "full episodes with outliers-total charges"
+            type: number
+          - name: "lupa episodes-total charges"
+            type: number
+          - name: "pep episodes-total charges"
+            type: number
+          - name: "total episodes-total charges"
+            type: number
+          - name: "skilled nursing care-rn, cost"
+            type: number
+          - name: "skilled nursing care-lpn, cost"
+            type: number
+          - name: "physical therapy, cost"
+            type: number
+          - name: "physical therapy asst, cost"
+            type: number
+          - name: "occupational therapy, cost"
+            type: number
+          - name: "occupational therapy asst, cost"
+            type: number
+          - name: "speech-language-path, cost"
+            type: number
+          - name: "medical social service, cost"
+            type: number
+          - name: "home health aide, cost"
+            type: number
+          - name: "total cost"
+            type: number
+          - name: "skilled nursing care-rn, avg cost per visit"
+            type: number
+          - name: "skilled nursing care-lpn, avg cost per visit"
+            type: number
+          - name: "physical therapy, avg cost per visit"
+            type: number
+          - name: "physical therapy asst, avg cost per visit"
+            type: number
+          - name: "occupational therapy, avg cost per visit"
+            type: number
+          - name: "occupational therapy asst, avg cost per visit"
+            type: number
+          - name: "speech-language-path, avg cost per visit"
+            type: number
+          - name: "medical social service, avg cost per visit"
+            type: number
+          - name: "home health aide, avg cost per visit"
+            type: number
+          - name: "skilled nursing care-rn, hha medicare program visits"
+            type: number
+          - name: "skilled nursing care-lpn, hha medicare program visits"
+            type: number
+          - name: "physical therapy, hha medicare program visits"
+            type: number
+          - name: "physical therapy asst, hha medicare program visits"
+            type: number
+          - name: "occupational therapy, hha medicare program visits"
+            type: number
+          - name: "occupational therapy asst, hha medicare program visits"
+            type: number
+          - name: "speech-language-path, hha medicare program visits"
+            type: number
+          - name: "medical social service, hha medicare program visits"
+            type: number
+          - name: "home health aide, hha medicare program visits"
+            type: number
+          - name: "total hha medicare program visits"
+            type: number
+          - name: "skilled nursing care-rn, hha medicare program cost"
+            type: number
+          - name: "skilled nursing care-lpn, hha medicare program cost"
+            type: number
+          - name: "physical therapy, hha medicare program cost"
+            type: number
+          - name: "physical therapy asst, hha medicare program cost"
+            type: number
+          - name: "occupational therapy, hha medicare program cost"
+            type: number
+          - name: "occupational therapy asst, hha medicare program cost"
+            type: number
+          - name: "speech-language-path, hha medicare program cost"
+            type: number
+          - name: "medical social service, hha medicare program cost"
+            type: number
+          - name: "home health aide, hha medicare program cost"
+            type: number
+          - name: "total hha medicare program cost"
+            type: number
+          - name: "total hospice days title other"
+            type: number
+          - name: "total hospice days title xix medicaid"
+            type: number
+          - name: "total hospice days title xviii medicare"
+            type: number
+          - name: "total hospice days total"
+            type: number
+          - name: "cash on hand and in banks"
+            type: number
+          - name: "temporary investments"
+            type: number
+          - name: "notes receivable"
+            type: number
+          - name: "accounts receivable"
+            type: number
+          - name: "less: allowances for uncollectible notes and accounts receivable"
+            type: number
+          - name: "inventory"
+            type: number
+          - name: "prepaid expenses"
+            type: number
+          - name: "other current assets"
+            type: number
+          - name: "total current assets"
+            type: number
+          - name: "land"
+            type: number
+          - name: "land improvements"
+            type: number
+          - name: "buildings"
+            type: number
+          - name: "leasehold improvements"
+            type: number
+          - name: "fixed equipment"
+            type: number
+          - name: "major movable equipment"
+            type: number
+          - name: "minor equipment depreciable"
+            type: number
+          - name: "total fixed assets"
+            type: number
+          - name: "investments"
+            type: number
+          - name: "other assets"
+            type: number
+          - name: "total other assets"
+            type: number
+          - name: "total assets"
+            type: number
+          - name: "accounts payable"
+            type: number
+          - name: "salaries, wages, and fees payable"
+            type: number
+          - name: "payroll taxes payable"
+            type: number
+          - name: "notes and loans payable (short term)"
+            type: number
+          - name: "deferred income"
+            type: number
+          - name: "other current liabilities"
+            type: number
+          - name: "total current liabilities"
+            type: number
+          - name: "mortgage payable"
+            type: number
+          - name: "notes payable"
+            type: number
+          - name: "unsecured loans"
+            type: number
+          - name: "other long term liabilities"
+            type: number
+          - name: "total long term liabilities"
+            type: number
+          - name: "total liabilities"
+            type: number
+          - name: "fund balance"
+            type: number
+          - name: "total liabilities and fund balances"
+            type: number
+          - name: "gross patient revenues title xviii medicare"
+            type: number
+          - name: "gross patient revenues title xix medicaid"
+            type: number
+          - name: "gross patient revenues other"
+            type: number
+          - name: "gross patient revenues total"
+            type: number
+          - name: "less: allowances and discounts on patients' accounts title xviii medicare"
+            type: number
+          - name: "less: allowances and discounts on patients' accounts title xix medicaid"
+            type: number
+          - name: "less: allowances and discounts on patients' accounts other"
+            type: number
+          - name: "less: allowances and discounts on patients' accounts total"
+            type: number
+          - name: "net patient revenues (line 1 minus line 2) xviii medicare"
+            type: number
+          - name: "net patient revenues (line 1 minus line 2) xix medicaid"
+            type: number
+          - name: "net patient revenues (line 1 minus line 2) other"
+            type: number
+          - name: "net patient revenues (line 1 minus line 2) total"
+            type: number
+          - name: "less total operating expenses (sum of lines 4 through 16)"
+            type: number
+          - name: "net income from service to patients (line 3 minus line 17)"
+            type: number
+          - name: "total other income (sum of lines 19 through 31)"
+            type: number
+          - name: "net income or loss for the period (line 18 plus line 32)"
+            type: number
+          - name: "total pps payment - full episodes/periods without outliers"
+            type: number
+          - name: "total pps payment - full episodes/periods with outliers"
+            type: number
+          - name: "total pps payment - lupa episodes/periods"
+            type: number
+          - name: "total pps payment - pep episodes/periods"
+            type: number
+          - name: "total pps outlier payment - full episodes/periods with outliers"
+            type: number
+          - name: "total pps outlier payment - pep episodes/periods"
+            type: number
+          - name: "allowable bad debts"
+            type: number
+          - name: "adjusted reimbursable bad debts"
+            type: number
+          - name: "total hospice expenses"
+            type: number

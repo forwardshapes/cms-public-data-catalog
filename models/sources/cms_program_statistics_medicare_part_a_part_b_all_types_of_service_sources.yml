@@ -1,0 +1,28 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: cms_program_statistics_medicare_part_a_part_b_all_types_of_service
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - original medicare
+          - health care use & payments
+          - health equity
+        description: |
+          The CMS Program Statistics - Medicare Part A & Part B - All Types of Service tables provide use and payment
+          data by type of coverage and type of service.
+
+          For additional information on enrollment, providers, and Medicare use and payment, visit the CMS Program
+          Statistics page.
+        meta:
+          cms_category: CMS Program Statistics - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-service-type-reports/cms-program-statistics-medicare-part-a-part-b-all-types-of-service
+          data_dictionary_url: https://data.cms.gov/resources/cms-program-statistics-glossary
+          data_methodology_url: https://data.cms.gov/resources/cms-program-statistics-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/9400ca2c-b36a-4380-873d-380ea67a249d/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 9400ca2c-b36a-4380-873d-380ea67a249d

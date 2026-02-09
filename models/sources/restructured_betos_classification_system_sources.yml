@@ -1,0 +1,64 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: restructured_betos_classification_system
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - hospitals & facilities
+          - outpatient facilities
+          - physicians & practitioners
+          - medical suppliers & equipment
+        description: |
+          The Restructured BETOS Classification System (RBCS) dataset is a taxonomy that allows researchers to group
+          healthcare service codes for Medicare Part B services (i.e., HCPCS codes) into clinically meaningful
+          categories and subcategories. It is based on the original Berenson-Eggers Type of Service (BETOS)
+          classification created in the 1980s, and includes notable updates such as Part B non-physician services. The
+          RBCS will undergo annual updates by a technical expert panel of researchers and clinicians.
+        meta:
+          cms_category: PDAG Data Products - OEDA
+          data_source_url: https://data.cms.gov/provider-summary-by-type-of-service/provider-service-classifications/restructured-betos-classification-system
+          data_dictionary_url: https://data.cms.gov/resources/rbcs-data-dictionary-ry-2025
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-12/a167eaff-5167-4c2c-a133-9ec94f0ee112/RBCS%20Final%20Report_RY2025.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/e3db6e56-149f-49ce-b374-40aecda2357b/data-viewer
+          contact: PDAG_Data_Products@cms.hhs.gov
+          dataset_uuid: e3db6e56-149f-49ce-b374-40aecda2357b
+        columns:
+          - name: "hcpcs_cd"
+            type: string
+          - name: "rbcs_id"
+            type: string
+          - name: "rbcs_cat"
+            type: string
+          - name: "rbcs_cat_desc"
+            type: string
+          - name: "rbcs_cat_subcat"
+            type: string
+          - name: "rbcs_subcat_desc"
+            type: string
+          - name: "rbcs_famnumb"
+            type: string
+          - name: "rbcs_family_desc"
+            type: string
+          - name: "rbcs_major_ind"
+            type: string
+          - name: "hcpcs_cd_add_dt"
+            type: string
+          - name: "hcpcs_cd_end_dt"
+            type: string
+          - name: "rbcs_latest_assignment"
+            type: string
+          - name: "first_rbcs_release_year"
+            type: string
+          - name: "rbcs_analysis_start_dt"
+            type: string
+          - name: "rbcs_analysis_end_dt"
+            type: string
+          - name: "alt_assignment_method"
+            type: string
+          - name: "rbcs_id_ever_reassigned"
+            type: string

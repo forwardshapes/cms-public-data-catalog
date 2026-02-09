@@ -1,0 +1,58 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_physician_other_practitioners_by_geography_and_service
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - original medicare
+          - physicians & practitioners
+          - health care use & payments
+          - health equity
+        description: |
+          The Medicare Physician & Other Practitioners by Geography and Service dataset contains information on use,
+          payments, submitted charges, and beneficiary demographic and health characteristics organized by geography,
+          Healthcare Common Procedure Coding System (HCPCS) code, and place of service.
+        meta:
+          cms_category: Medicare Provider Data - OEDA
+          data_source_url: https://data.cms.gov/provider-summary-by-type-of-service/medicare-physician-other-practitioners/medicare-physician-other-practitioners-by-geography-and-service
+          data_dictionary_url: https://data.cms.gov/resources/medicare-physician-other-practitioners-by-geography-and-service-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-physician-other-practitioners-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/6fea9d79-0129-4e4c-b1b8-23cd86a4f435/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 6fea9d79-0129-4e4c-b1b8-23cd86a4f435
+        columns:
+          - name: "rndrng_prvdr_geo_lvl"
+            type: string
+          - name: "rndrng_prvdr_geo_cd"
+            type: string
+          - name: "rndrng_prvdr_geo_desc"
+            type: string
+          - name: "hcpcs_cd"
+            type: string
+          - name: "hcpcs_desc"
+            type: string
+          - name: "hcpcs_drug_ind"
+            type: string
+          - name: "place_of_srvc"
+            type: string
+          - name: "tot_rndrng_prvdrs"
+            type: number
+          - name: "tot_benes"
+            type: number
+          - name: "tot_srvcs"
+            type: number
+          - name: "tot_bene_day_srvcs"
+            type: number
+          - name: "avg_sbmtd_chrg"
+            type: number
+          - name: "avg_mdcr_alowd_amt"
+            type: number
+          - name: "avg_mdcr_pymt_amt"
+            type: number
+          - name: "avg_mdcr_stdzd_amt"
+            type: number

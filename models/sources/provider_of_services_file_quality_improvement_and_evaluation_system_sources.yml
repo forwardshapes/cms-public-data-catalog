@@ -1,0 +1,975 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: provider_of_services_file_quality_improvement_and_evaluation_system
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - hospitals & facilities
+          - inpatient
+          - outpatient facilities
+          - provider enrollment
+        description: |
+          The Provider of Services File (POS) - Quality Improvement and Evaluation System (QIES) data provides provider
+          demographic and associated certification information for hospital & non-hospital facilities along with the
+          provider number (CMS Certification Number), name, address, and other characteristics of the participating
+          providers.
+        meta:
+          cms_category: QIESData - CCSQ
+          data_source_url: https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/provider-of-services-file-quality-improvement-and-evaluation-system
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2023-07/0ca58d5d-7914-4532-b22d-41741d3e6151/P.QWB.POSQ.OTHER.LAYOUT.MAR23.pdf
+          data_methodology_url: https://data.cms.gov/resources/provider-of-services-file-quality-improvement-and-evaluation-system-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/8ba0f9b4-9493-4aa0-9f82-44ea9468d1b5/data-viewer
+          contact: QIESData@cms.hhs.gov
+          dataset_uuid: 8ba0f9b4-9493-4aa0-9f82-44ea9468d1b5
+        columns:
+          - name: "prvdr_ctgry_sbtyp_cd"
+            type: string
+          - name: "prvdr_ctgry_cd"
+            type: string
+          - name: "chow_cnt"
+            type: string
+          - name: "chow_dt"
+            type: string
+          - name: "city_name"
+            type: string
+          - name: "acptbl_poc_sw"
+            type: string
+          - name: "cmplnc_stus_cd"
+            type: string
+          - name: "ssa_cnty_cd"
+            type: string
+          - name: "cross_ref_provider_number"
+            type: string
+          - name: "crtfctn_dt"
+            type: string
+          - name: "elgblty_sw"
+            type: string
+          - name: "fac_name"
+            type: string
+          - name: "intrmdry_carr_cd"
+            type: string
+          - name: "mdcd_vndr_num"
+            type: string
+          - name: "orgnl_prtcptn_dt"
+            type: string
+          - name: "chow_prior_dt"
+            type: string
+          - name: "intrmdry_carr_prior_cd"
+            type: string
+          - name: "prvdr_num"
+            type: string
+          - name: "rgn_cd"
+            type: string
+          - name: "skltn_rec_sw"
+            type: string
+          - name: "state_cd"
+            type: string
+          - name: "ssa_state_cd"
+            type: string
+          - name: "state_rgn_cd"
+            type: string
+          - name: "st_adr"
+            type: string
+          - name: "phne_num"
+            type: string
+          - name: "pgm_trmntn_cd"
+            type: string
+          - name: "trmntn_exprtn_dt"
+            type: string
+          - name: "crtfctn_actn_type_cd"
+            type: string
+          - name: "gnrl_cntl_type_cd"
+            type: string
+          - name: "zip_cd"
+            type: string
+          - name: "fips_state_cd"
+            type: string
+          - name: "fips_cnty_cd"
+            type: string
+          - name: "cbsa_urbn_rrl_ind"
+            type: string
+          - name: "cbsa_cd"
+            type: string
+          - name: "acrdtn_efctv_dt"
+            type: string
+          - name: "acrdtn_exprtn_dt"
+            type: string
+          - name: "acrdtn_type_cd"
+            type: string
+          - name: "tot_afltd_amblnc_srvc_cnt"
+            type: number
+          - name: "tot_afltd_asc_cnt"
+            type: number
+          - name: "tot_colctd_hosp_cnt"
+            type: number
+          - name: "tot_afltd_esrd_cnt"
+            type: number
+          - name: "tot_afltd_fqhc_cnt"
+            type: number
+          - name: "tot_afltd_hha_cnt"
+            type: number
+          - name: "tot_afltd_hospc_cnt"
+            type: number
+          - name: "tot_afltd_opo_cnt"
+            type: number
+          - name: "tot_afltd_prtf_cnt"
+            type: number
+          - name: "tot_afltd_rhc_cnt"
+            type: number
+          - name: "tot_afltd_snf_cnt"
+            type: number
+          - name: "afltd_prvdr_cnt"
+            type: number
+          - name: "rsdnt_pgm_alpthc_sw"
+            type: string
+          - name: "rsdnt_pgm_dntl_sw"
+            type: string
+          - name: "rsdnt_pgm_ostpthc_sw"
+            type: string
+          - name: "rsdnt_pgm_othr_sw"
+            type: string
+          - name: "rsdnt_pgm_pdtrc_sw"
+            type: string
+          - name: "lab_srvc_cd"
+            type: string
+          - name: "phrmcy_srvc_cd"
+            type: string
+          - name: "rdlgy_srvc_cd"
+            type: string
+          - name: "asc_bgn_srvc_dt"
+            type: string
+          - name: "freestndng_asc_sw"
+            type: string
+          - name: "ovrrd_bed_cnt_sw"
+            type: string
+          - name: "crtfd_bed_cnt"
+            type: number
+          - name: "icfiid_bed_cnt"
+            type: number
+          - name: "mdcd_nf_bed_cnt"
+            type: number
+          - name: "mdcr_snf_bed_cnt"
+            type: number
+          - name: "mdcr_mdcd_snf_bed_cnt"
+            type: number
+          - name: "aids_bed_cnt"
+            type: number
+          - name: "alzhmr_bed_cnt"
+            type: number
+          - name: "dlys_bed_cnt"
+            type: number
+          - name: "dsbl_chldrn_bed_cnt"
+            type: number
+          - name: "head_trma_bed_cnt"
+            type: number
+          - name: "hospc_bed_cnt"
+            type: number
+          - name: "hntgtn_dease_bed_cnt"
+            type: number
+          - name: "rehab_bed_cnt"
+            type: number
+          - name: "vntltr_bed_cnt"
+            type: number
+          - name: "bed_cnt"
+            type: number
+          - name: "brnch_cnt"
+            type: number
+          - name: "brnch_oprtn_sw"
+            type: string
+          - name: "cah_psych_dpu_sw"
+            type: string
+          - name: "cah_rehab_dpu_sw"
+            type: string
+          - name: "cah_sb_sw"
+            type: string
+          - name: "crdc_cthrtztn_prcdr_rooms_cnt"
+            type: number
+          - name: "gnrl_fac_type_cd"
+            type: string
+          - name: "chow_sw"
+            type: string
+          - name: "clia_id_number_1"
+            type: string
+          - name: "clia_id_number_2"
+            type: string
+          - name: "clia_id_number_3"
+            type: string
+          - name: "clia_id_number_4"
+            type: string
+          - name: "clia_id_number_5"
+            type: string
+          - name: "colctn_stus_sw"
+            type: string
+          - name: "rn_24_hr_wvr_sw"
+            type: string
+          - name: "rn_7_day_wvr_sw"
+            type: string
+          - name: "bed_per_room_wvr_sw"
+            type: string
+          - name: "lsc_wvr_sw"
+            type: string
+          - name: "room_size_wvr_sw"
+            type: string
+          - name: "endscpy_prcdr_rooms_cnt"
+            type: number
+          - name: "esrd_ntwrk_num"
+            type: string
+          - name: "exprmt_rsrch_cndctd_sw"
+            type: string
+          - name: "fax_phne_num"
+            type: string
+          - name: "fy_end_mo_day_cd"
+            type: string
+          - name: "fqhc_approved_rhc_provider_num"
+            type: string
+          - name: "fed_fundd_fqhc_sw"
+            type: string
+          - name: "hha_qlfyd_opt_spch_sw"
+            type: string
+          - name: "hh_aide_trng_pgm_cd"
+            type: string
+          - name: "home_trng_sprt_only_srvc_sw"
+            type: string
+          - name: "mdcr_hospc_sw"
+            type: string
+          - name: "hosp_bsd_sw"
+            type: string
+          - name: "incntr_nctrnl_srvc_sw"
+            type: string
+          - name: "ltc_cross_ref_provider_number"
+            type: string
+          - name: "mdcl_schl_afltn_cd"
+            type: string
+          - name: "medicare_hospice_provider_num"
+            type: string
+          - name: "mdcd_mdcr_prtcptg_prvdr_sw"
+            type: string
+          - name: "medicare_medicaid_prvdr_number"
+            type: string
+          - name: "mlt_fac_org_name"
+            type: string
+          - name: "mlt_ownd_fac_org_sw"
+            type: string
+          - name: "ncry_prvdr_dsgntd_dt"
+            type: string
+          - name: "ncry_prvdr_dsgntd_as_sw"
+            type: string
+          - name: "ncry_prvdr_lost_dt"
+            type: string
+          - name: "meet_1861_sw"
+            type: string
+          - name: "npp_type_cd"
+            type: string
+          - name: "tot_ofsite_cncr_hosp_cnt"
+            type: number
+          - name: "tot_ofsite_chldrn_hosp_cnt"
+            type: number
+          - name: "tot_ofsite_emer_dept_cnt"
+            type: number
+          - name: "tot_ofsite_inptnt_lctn_cnt"
+            type: number
+          - name: "tot_ofsite_ltc_hosp_cnt"
+            type: number
+          - name: "tot_ofsite_opthlmc_srgry_cnt"
+            type: number
+          - name: "tot_ofsite_othr_lctn_cnt"
+            type: number
+          - name: "tot_ofsite_psych_hosp_cnt"
+            type: number
+          - name: "tot_ofsite_psych_unit_cnt"
+            type: number
+          - name: "tot_ofsite_rehab_hosp_cnt"
+            type: number
+          - name: "tot_ofsite_rehab_unit_cnt"
+            type: number
+          - name: "tot_ofsite_urgnt_care_cntr_cnt"
+            type: number
+          - name: "ofsite_lctn_cnt"
+            type: number
+          - name: "oprtg_room_cnt"
+            type: number
+          - name: "orgnz_fmly_mbr_grp_sw"
+            type: string
+          - name: "orgnz_rsdnt_grp_sw"
+            type: string
+          - name: "parent_provider_number"
+            type: string
+          - name: "fqhc_aprvd_rhc_sw"
+            type: string
+          - name: "mdcr_prtcptn_op_pt_spch_sw"
+            type: string
+          - name: "pgm_prtcptn_cd"
+            type: string
+          - name: "prvdr_bsd_fac_sw"
+            type: string
+          - name: "prvnc_cd"
+            type: string
+          - name: "psych_unit_bed_cnt"
+            type: number
+          - name: "psych_unit_efctv_dt"
+            type: string
+          - name: "psych_unit_sw"
+            type: string
+          - name: "psych_unit_trmntn_cd"
+            type: string
+          - name: "psych_unit_trmntn_dt"
+            type: string
+          - name: "rehab_unit_bed_cnt"
+            type: number
+          - name: "rehab_unit_efctv_dt"
+            type: string
+          - name: "rehab_unit_sw"
+            type: string
+          - name: "rehab_unit_trmntn_cd"
+            type: string
+          - name: "rehab_unit_trmntn_dt"
+            type: string
+          - name: "related_provider_number"
+            type: string
+          - name: "acute_rnl_dlys_srvc_cd"
+            type: string
+          - name: "psych_srvc_cd"
+            type: string
+          - name: "hh_aide_srvc_cd"
+            type: string
+          - name: "alchl_drug_srvc_cd"
+            type: string
+          - name: "ansthsa_srvc_cd"
+            type: string
+          - name: "aplnc_equip_srvc_cd"
+            type: string
+          - name: "audlgy_srvc_cd"
+            type: string
+          - name: "blood_srvc_ofsite_rsdnt_sw"
+            type: string
+          - name: "blood_srvc_onst_nrsdnt_sw"
+            type: string
+          - name: "blood_srvc_onst_rsdnt_sw"
+            type: string
+          - name: "burn_care_unit_srvc_cd"
+            type: string
+          - name: "crdc_cthrtztn_lab_srvc_cd"
+            type: string
+          - name: "open_hrt_srgry_srvc_cd"
+            type: string
+          - name: "carf_ip_rehab_srvc_cd"
+            type: string
+          - name: "chmthrpy_srvc_cd"
+            type: string
+          - name: "chrprctic_srvc_cd"
+            type: string
+          - name: "cl_srvc_ofsite_rsdnt_sw"
+            type: string
+          - name: "cl_srvc_onst_nrsdnt_sw"
+            type: string
+          - name: "cl_srvc_onst_rsdnt_sw"
+            type: string
+          - name: "cl_srvc_cd"
+            type: string
+          - name: "crnry_care_unit_srvc_cd"
+            type: string
+          - name: "cnslng_srvc_cd"
+            type: string
+          - name: "ct_scan_srvc_cd"
+            type: string
+          - name: "dntl_srvc_cd"
+            type: string
+          - name: "dntl_srvc_ofsite_rsdnt_sw"
+            type: string
+          - name: "dntl_srvc_onst_nrsdnt_sw"
+            type: string
+          - name: "dntl_srvc_onst_rsdnt_sw"
+            type: string
+          - name: "shck_trma_srvc_cd"
+            type: string
+          - name: "dgnstc_rdlgy_srvc_cd"
+            type: string
+          - name: "dtry_srvc_cd"
+            type: string
+          - name: "dtry_ofsite_rsdnt_sw"
+            type: string
+          - name: "dtry_onst_nrsdnt_sw"
+            type: string
+          - name: "dtry_onst_rsdnt_sw"
+            type: string
+          - name: "dctd_er_srvc_cd"
+            type: string
+          - name: "emer_psych_srvc_cd"
+            type: string
+          - name: "xtrcrprl_shck_lthtrptr_srvc_cd"
+            type: string
+          - name: "frnsc_psych_srvc_cd"
+            type: string
+          - name: "grtrc_psych_srvc_cd"
+            type: string
+          - name: "grntlgcl_spclty_srvc_cd"
+            type: string
+          - name: "sp_home_trng_sprt_hd_sw"
+            type: string
+          - name: "hmdlys_srvc_sw"
+            type: string
+          - name: "hmmkr_srvc_cd"
+            type: string
+          - name: "hsekpng_srvc_ofsite_rsdnt_sw"
+            type: string
+          - name: "hsekpng_srvc_onst_nrsdnt_sw"
+            type: string
+          - name: "hsekpng_srvc_onst_rsdnt_sw"
+            type: string
+          - name: "ip_srgcl_srvc_cd"
+            type: string
+          - name: "intrn_rsdnt_srvc_cd"
+            type: string
+          - name: "mdcl_scl_srvc_cd"
+            type: string
+          - name: "mdcl_suply_srvc_cd"
+            type: string
+          - name: "icu_srvc_cd"
+            type: string
+          - name: "mdcr_trnsplnt_cntr_srvc_cd"
+            type: string
+          - name: "mentl_hlth_ofsite_rsdnt_sw"
+            type: string
+          - name: "mentl_hlth_onst_nrsdnt_sw"
+            type: string
+          - name: "mentl_hlth_onst_rsdnt_sw"
+            type: string
+          - name: "mgntc_rsnc_img_srvc_cd"
+            type: string
+          - name: "neontl_icu_srvc_cd"
+            type: string
+          - name: "neontl_nrsry_srvc_cd"
+            type: string
+          - name: "nrsrgcl_srvc_cd"
+            type: string
+          - name: "orgn_trnsplnt_srvc_cd"
+            type: string
+          - name: "nuclr_mdcn_srvc_cd"
+            type: string
+          - name: "nrsng_srvc_emplee_sw"
+            type: string
+          - name: "nrsng_srvc_cntrctr_sw"
+            type: string
+          - name: "nrsng_srvc_arngmt_sw"
+            type: string
+          - name: "nrsng_srvc_cd"
+            type: string
+          - name: "nrsng_srvc_ofsite_rsdnt_sw"
+            type: string
+          - name: "nrsng_srvc_onst_nrsdnt_sw"
+            type: string
+          - name: "nrsng_srvc_onst_rsdnt_sw"
+            type: string
+          - name: "ntrtnl_gdnc_srvc_cd"
+            type: string
+          - name: "ob_srvc_cd"
+            type: string
+          - name: "opthlmc_srgy_srvc_cd"
+            type: string
+          - name: "optmtrc_srvc_cd"
+            type: string
+          - name: "oprtg_room_srvc_cd"
+            type: string
+          - name: "orthpdc_srgy_srvc_cd"
+            type: string
+          - name: "orthtc_prsthtc_emplee_sw"
+            type: string
+          - name: "orthtc_prsthtc_cntrctr_sw"
+            type: string
+          - name: "orthtc_prsthtc_arngmt_sw"
+            type: string
+          - name: "ot_emplee_sw"
+            type: string
+          - name: "ot_cntrctr_sw"
+            type: string
+          - name: "ot_arngmt_sw"
+            type: string
+          - name: "ot_srvc_cd"
+            type: string
+          - name: "ot_srvc_ofsite_rsdnt_sw"
+            type: string
+          - name: "ot_srvc_onst_nrsdnt_sw"
+            type: string
+          - name: "ot_srvc_onst_rsdnt_sw"
+            type: string
+          - name: "othr_srvc_cd"
+            type: string
+          - name: "op_srvc_cd"
+            type: string
+          - name: "op_psych_srvc_cd"
+            type: string
+          - name: "op_rehab_srvc_cd"
+            type: string
+          - name: "op_srgry_unit_srvc_cd"
+            type: string
+          - name: "ped_srvc_cd"
+            type: string
+          - name: "ped_icu_srvc_cd"
+            type: string
+          - name: "sp_home_trng_sprt_pd_sw"
+            type: string
+          - name: "prtnl_dlys_srvc_sw"
+            type: string
+          - name: "pet_scan_srvc_cd"
+            type: string
+          - name: "phrmcy_srvc_ofsite_rsdnt_sw"
+            type: string
+          - name: "phrmcy_srvc_onst_nrsdnt_sw"
+            type: string
+          - name: "phrmcy_srvc_onst_rsdnt_sw"
+            type: string
+          - name: "physn_emplee_sw"
+            type: string
+          - name: "physn_cntrctr_sw"
+            type: string
+          - name: "physn_arngmt_sw"
+            type: string
+          - name: "physn_srvc_cd"
+            type: string
+          - name: "physn_ext_srvc_ofsite_rsdnt_sw"
+            type: string
+          - name: "physn_ext_srvc_onst_nrsdnt_sw"
+            type: string
+          - name: "physn_ext_srvc_onst_rsdnt_sw"
+            type: string
+          - name: "physn_srvc_ofsite_rsdnt_sw"
+            type: string
+          - name: "physn_srvc_onst_nrsdnt_sw"
+            type: string
+          - name: "physn_srvc_onst_rsdnt_sw"
+            type: string
+          - name: "pdtry_srvc_ofsite_rsdnt_sw"
+            type: string
+          - name: "pdtry_srvc_onst_nrsdnt_sw"
+            type: string
+          - name: "pdtry_srvc_onst_rsdnt_sw"
+            type: string
+          - name: "pstoprtv_rcvry_srvc_cd"
+            type: string
+          - name: "chld_adlscnt_psych_srvc_cd"
+            type: string
+          - name: "psychlgcl_emplee_sw"
+            type: string
+          - name: "psychlgcl_cntrctr_sw"
+            type: string
+          - name: "psychlgcl_arngmt_sw"
+            type: string
+          - name: "pt_emplee_sw"
+            type: string
+          - name: "pt_cntrctr_sw"
+            type: string
+          - name: "pt_arngmt_sw"
+            type: string
+          - name: "pt_srvc_cd"
+            type: string
+          - name: "pt_ofsite_rsdnt_sw"
+            type: string
+          - name: "pt_onst_nrsdnt_sw"
+            type: string
+          - name: "pt_onst_rsdnt_sw"
+            type: string
+          - name: "rcnstrctn_srgy_srvc_cd"
+            type: string
+          - name: "rsprtry_care_emplee_sw"
+            type: string
+          - name: "rsprtry_care_cntrctr_sw"
+            type: string
+          - name: "rsprtry_care_arngmt_sw"
+            type: string
+          - name: "rsprtry_care_srvc_cd"
+            type: string
+          - name: "shrt_term_ip_srvc_cd"
+            type: string
+          - name: "scl_emplee_sw"
+            type: string
+          - name: "scl_cntrctr_sw"
+            type: string
+          - name: "scl_arngmt_sw"
+            type: string
+          - name: "scl_srvc_cd"
+            type: string
+          - name: "scl_work_srvc_ofsite_rsdnt_sw"
+            type: string
+          - name: "scl_work_srvc_onst_nrsdnt_sw"
+            type: string
+          - name: "scl_work_srvc_onst_rsdnt_sw"
+            type: string
+          - name: "spch_pthlgy_emplee_sw"
+            type: string
+          - name: "spch_pthlgy_cntrctr_sw"
+            type: string
+          - name: "spch_pthlgy_arngmt_sw"
+            type: string
+          - name: "spch_pthlgy_srvc_cd"
+            type: string
+          - name: "spch_pthlgy_ofsite_rsdnt_sw"
+            type: string
+          - name: "spch_pthlgy_onst_nrsdnt_sw"
+            type: string
+          - name: "spch_pthlgy_onst_rsdnt_sw"
+            type: string
+          - name: "spch_thrpy_srvc_cd"
+            type: string
+          - name: "srgcl_icu_srvc_cd"
+            type: string
+          - name: "actvty_othr_ofsite_rsdnt_sw"
+            type: string
+          - name: "actvty_othr_onst_nrsdnt_sw"
+            type: string
+          - name: "actvty_othr_onst_rsdnt_sw"
+            type: string
+          - name: "scl_srvc_othr_ofsite_rsdnt_sw"
+            type: string
+          - name: "scl_srvc_othr_onst_nrsdnt_sw"
+            type: string
+          - name: "scl_srvc_othr_onst_rsdnt_sw"
+            type: string
+          - name: "actvty_ofsite_rsdnt_sw"
+            type: string
+          - name: "actvty_onst_nrsdnt_sw"
+            type: string
+          - name: "actvty_onst_rsdnt_sw"
+            type: string
+          - name: "thrptc_rdlgy_srvc_cd"
+            type: string
+          - name: "thrptc_rcrtnl_ofsite_rsdnt_sw"
+            type: string
+          - name: "thrptc_rcrtnl_onst_nrsdnt_sw"
+            type: string
+          - name: "thrptc_rcrtnl_onst_rsdnt_sw"
+            type: string
+          - name: "urgnt_care_srvc_cd"
+            type: string
+          - name: "vctnl_gdnc_srvc_cd"
+            type: string
+          - name: "vctnl_srvc_ofsite_rsdnt_sw"
+            type: string
+          - name: "vctnl_srvc_onst_nrsdnt_sw"
+            type: string
+          - name: "vctnl_srvc_onst_rsdnt_sw"
+            type: string
+          - name: "dgnstc_xray_ofsite_rsdnt_sw"
+            type: string
+          - name: "dgnstc_xray_onst_nrsdnt_sw"
+            type: string
+          - name: "dgnstc_xray_onst_rsdnt_sw"
+            type: string
+          - name: "acute_resp_care_cd"
+            type: string
+          - name: "ovrrd_stfg_sw"
+            type: string
+          - name: "profnl_admin_cntrct_cnt"
+            type: number
+          - name: "profnl_admin_fltm_cnt"
+            type: number
+          - name: "profnl_admin_prtm_cnt"
+            type: number
+          - name: "hh_aide_emplee_cnt"
+            type: number
+          - name: "hh_aide_vlntr_cnt"
+            type: number
+          - name: "prsnel_othr_cnt"
+            type: number
+          - name: "nrs_aide_cntrct_cnt"
+            type: number
+          - name: "nrs_aide_fltm_cnt"
+            type: number
+          - name: "nrs_aide_prtm_cnt"
+            type: number
+          - name: "cnslr_emplee_cnt"
+            type: number
+          - name: "cnslr_vlntr_cnt"
+            type: number
+          - name: "crna_cnt"
+            type: number
+          - name: "dntst_cntrct_cnt"
+            type: number
+          - name: "dntst_fltm_cnt"
+            type: number
+          - name: "dntst_prtm_cnt"
+            type: number
+          - name: "dietn_cnt"
+            type: number
+          - name: "dietn_cntrct_cnt"
+            type: number
+          - name: "dietn_fltm_cnt"
+            type: number
+          - name: "dietn_prtm_cnt"
+            type: number
+          - name: "drct_care_prsnel_cnt"
+            type: number
+          - name: "food_srvc_cntrct_cnt"
+            type: number
+          - name: "food_srvc_fltm_cnt"
+            type: number
+          - name: "food_srvc_prtm_cnt"
+            type: number
+          - name: "hh_aide_cnt"
+            type: number
+          - name: "hmmkr_emplee_cnt"
+            type: number
+          - name: "hmmkr_vlntr_cnt"
+            type: number
+          - name: "hsekpng_cntrct_cnt"
+            type: number
+          - name: "hsekpng_fltm_cnt"
+            type: number
+          - name: "hsekpng_prtm_cnt"
+            type: number
+          - name: "lab_tchncn_cnt"
+            type: number
+          - name: "lpn_cnt"
+            type: number
+          - name: "lpn_lvn_cnt"
+            type: number
+          - name: "lpn_lvn_cntrct_cnt"
+            type: number
+          - name: "lpn_lvn_fltm_cnt"
+            type: number
+          - name: "lpn_lvn_prtm_cnt"
+            type: number
+          - name: "lpn_lvn_vlntr_cnt"
+            type: number
+          - name: "mdcl_drctr_cntrct_cnt"
+            type: number
+          - name: "mdcl_drctr_fltm_cnt"
+            type: number
+          - name: "mdcl_drctr_prtm_cnt"
+            type: number
+          - name: "mdcl_scl_workr_cnt"
+            type: number
+          - name: "mdcl_scl_workr_vlntr_cnt"
+            type: number
+          - name: "mdcl_tchnlgst_cnt"
+            type: number
+          - name: "mdctn_aide_cntrct_cnt"
+            type: number
+          - name: "mdctn_aide_fltm_cnt"
+            type: number
+          - name: "mdctn_aide_prtm_cnt"
+            type: number
+          - name: "mentl_hlth_srvc_cntrct_cnt"
+            type: number
+          - name: "mentl_hlth_srvc_fltm_cnt"
+            type: number
+          - name: "mentl_hlth_srvc_prtm_cnt"
+            type: number
+          - name: "nuclr_mdcn_tchncn_cnt"
+            type: number
+          - name: "nat_cntrct_cnt"
+            type: number
+          - name: "nat_fltm_cnt"
+            type: number
+          - name: "nat_prtm_cnt"
+            type: number
+          - name: "nrs_prctnr_cnt"
+            type: number
+          - name: "nrs_adminv_cntrct_cnt"
+            type: number
+          - name: "nrs_adminv_fltm_cnt"
+            type: number
+          - name: "nrs_adminv_prtm_cnt"
+            type: number
+          - name: "ocptnl_thrpst_cnt"
+            type: number
+          - name: "ocptnl_thrpst_cntrct_cnt"
+            type: number
+          - name: "ocptnl_thrpst_fltm_cnt"
+            type: number
+          - name: "ocptnl_thrpst_prtm_cnt"
+            type: number
+          - name: "ot_aide_cntrct_cnt"
+            type: number
+          - name: "ot_aide_fltm_cnt"
+            type: number
+          - name: "ot_aide_prtm_cnt"
+            type: number
+          - name: "ot_astnt_cntrct_cnt"
+            type: number
+          - name: "ot_astnt_fltm_cnt"
+            type: number
+          - name: "ot_astnt_prtm_cnt"
+            type: number
+          - name: "vlntr_othr_cnt"
+            type: number
+          - name: "actvty_stf_othr_cntrct_cnt"
+            type: number
+          - name: "actvty_stf_othr_fltm_cnt"
+            type: number
+          - name: "actvty_stf_othr_prtm_cnt"
+            type: number
+          - name: "physn_othr_cntrct_cnt"
+            type: number
+          - name: "physn_othr_fltm_cnt"
+            type: number
+          - name: "physn_othr_prtm_cnt"
+            type: number
+          - name: "scl_srvc_othr_stf_cntrct_cnt"
+            type: number
+          - name: "scl_srvc_othr_stf_fltm_cnt"
+            type: number
+          - name: "scl_srvc_othr_stf_prtm_cnt"
+            type: number
+          - name: "stf_othr_cntrct_cnt"
+            type: number
+          - name: "stf_othr_fltm_cnt"
+            type: number
+          - name: "stf_othr_prtm_cnt"
+            type: number
+          - name: "phrmcst_cntrct_cnt"
+            type: number
+          - name: "phrmcst_fltm_cnt"
+            type: number
+          - name: "phrmcst_prtm_cnt"
+            type: number
+          - name: "phys_thrpst_cntrct_cnt"
+            type: number
+          - name: "phys_thrpst_fltm_cnt"
+            type: number
+          - name: "phys_thrpst_prtm_cnt"
+            type: number
+          - name: "physn_cnt"
+            type: number
+          - name: "physn_vlntr_cnt"
+            type: number
+          - name: "physn_astnt_cnt"
+            type: number
+          - name: "physn_ext_cntrct_cnt"
+            type: number
+          - name: "physn_ext_fltm_cnt"
+            type: number
+          - name: "physn_ext_prtm_cnt"
+            type: number
+          - name: "rsdnt_physn_cnt"
+            type: number
+          - name: "pdtrst_cntrct_cnt"
+            type: number
+          - name: "pdtrst_fltm_cnt"
+            type: number
+          - name: "pdtrst_prtm_cnt"
+            type: number
+          - name: "psychlgst_cnt"
+            type: number
+          - name: "phys_thrpst_stf_cnt"
+            type: number
+          - name: "phys_thrpst_cnt"
+            type: number
+          - name: "phys_thrpst_arngmt_cnt"
+            type: number
+          - name: "pt_aide_cntrct_cnt"
+            type: number
+          - name: "pt_aide_fltm_cnt"
+            type: number
+          - name: "pt_aide_prtm_cnt"
+            type: number
+          - name: "pt_astnt_cntrct_cnt"
+            type: number
+          - name: "pt_astnt_fltm_cnt"
+            type: number
+          - name: "pt_astnt_prtm_cnt"
+            type: number
+          - name: "actvty_profnl_cntrct_cnt"
+            type: number
+          - name: "actvty_profnl_fltm_cnt"
+            type: number
+          - name: "actvty_profnl_prtm_cnt"
+            type: number
+          - name: "rdlgy_tchncn_cnt"
+            type: number
+          - name: "reg_phrmcst_cnt"
+            type: number
+          - name: "inhltn_thrpst_cnt"
+            type: number
+          - name: "rn_cnt"
+            type: number
+          - name: "rn_cntrct_cnt"
+            type: number
+          - name: "rn_fltm_cnt"
+            type: number
+          - name: "rn_prtm_cnt"
+            type: number
+          - name: "rn_vlntr_cnt"
+            type: number
+          - name: "rn_drctr_cntrct_cnt"
+            type: number
+          - name: "rn_drctr_fltm_cnt"
+            type: number
+          - name: "rn_drctr_prtm_cnt"
+            type: number
+          - name: "scl_workr_cnt"
+            type: number
+          - name: "scl_workr_cntrct_cnt"
+            type: number
+          - name: "scl_workr_fltm_cnt"
+            type: number
+          - name: "scl_workr_prtm_cnt"
+            type: number
+          - name: "spch_pthlgst_arngmt_cnt"
+            type: number
+          - name: "spch_pthlgst_cntrct_cnt"
+            type: number
+          - name: "spch_pthlgst_fltm_cnt"
+            type: number
+          - name: "spch_pthlgst_prtm_cnt"
+            type: number
+          - name: "spch_pthlgst_cnt"
+            type: number
+          - name: "spch_pthlgst_audlgst_cnt"
+            type: number
+          - name: "tchncl_stf_num"
+            type: string
+          - name: "tchncn_cnt"
+            type: number
+          - name: "thrptc_rcrtnl_cntrct_cnt"
+            type: number
+          - name: "thrptc_rcrtnl_fltm_cnt"
+            type: number
+          - name: "thrptc_rcrtnl_prtm_cnt"
+            type: number
+          - name: "emplee_cnt"
+            type: number
+          - name: "vlntr_cnt"
+            type: number
+          - name: "sbunit_cnt"
+            type: number
+          - name: "sbunit_sw"
+            type: string
+          - name: "sbunit_oprtn_sw"
+            type: string
+          - name: "dntl_srgry_sw"
+            type: string
+          - name: "otlrynglgy_srgry_sw"
+            type: string
+          - name: "endscpy_srgry_sw"
+            type: string
+          - name: "ob_gyn_srgry_sw"
+            type: string
+          - name: "opthmlgy_srgry_sw"
+            type: string
+          - name: "orthpdc_srgry_sw"
+            type: string
+          - name: "othr_srgry_sw"
+            type: string
+          - name: "pain_srgry_sw"
+            type: string
+          - name: "plstc_srgry_sw"
+            type: string
+          - name: "ft_srgry_sw"
+            type: string
+          - name: "sb_sw"
+            type: string
+          - name: "sb_size_cd"
+            type: number
+          - name: "tchnlgst_2_yr_rdlgc_cnt"
+            type: number
+          - name: "tchnlgst_asct_dgr_cnt"
+            type: number
+          - name: "tchnlgst_bs_ba_dgr_cnt"
+            type: number
+          - name: "dlys_stn_cnt"
+            type: number

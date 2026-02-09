@@ -1,0 +1,109 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_post_acute_care_utilization_skilled_nursing_facility_by_geographyprovider_and_case_mix_grouping
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - skilled nursing
+          - health care use & payments
+        description: |
+          The Medicare Post-Acute Care (PAC) Utilization - Skilled Nursing Facility (SNF) by Geography/Provider and
+          Case-Mix Grouping (CMG) supplemental dataset provides detailed information on payments and utilization for
+          SNFs. For Fiscal Years (FY)s 2014–2019, data is organized by provider and Resource Utilization Group (RUG)
+          type. Starting in FY 2020, following the shift to the Patient-Driven Payment Model (PDPM), the dataset no
+          longer includes RUG-level data. Instead, it features therapy minutes by discipline, stays by clinical
+          category, and the percentage of stays involving depression or swallowing disorders.
+        meta:
+          cms_category: PDAG Data Products - OEDA
+          data_source_url: https://data.cms.gov/provider-summary-by-type-of-service/medicare-post-acute-care-hospice/medicare-post-acute-care-utilization-skilled-nursing-facility-by-geographyprovider-and-case-mix-grouping
+          data_dictionary_url: https://data.cms.gov/resources/medicare-pac-utilization-snf-by-geographyprovider-and-cmg-data-dictionary
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-08/2685ddd1-a3a9-406c-a4e7-e56a8b789731/RY%202025%20PAC%20PUF%20Methodologies.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/4c2a8bf6-8560-4b00-bc56-1a0322677b7f/data-viewer
+          contact: PDAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 4c2a8bf6-8560-4b00-bc56-1a0322677b7f
+        columns:
+          - name: "year"
+            type: string
+          - name: "year_type"
+            type: string
+          - name: "smry_ctgry"
+            type: string
+          - name: "srvc_ctgry"
+            type: string
+          - name: "prvdr_id"
+            type: string
+          - name: "prvdr_name"
+            type: string
+          - name: "prvdr_city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "prvdr_zip"
+            type: string
+          - name: "tot_pt_mnts_stay"
+            type: number
+          - name: "indvdl_pt_mnts_stay"
+            type: number
+          - name: "cncrnt_grp_pt_mnts_stay"
+            type: number
+          - name: "tot_ot_mnts_stay"
+            type: number
+          - name: "indvdl_ot_mnts_stay"
+            type: number
+          - name: "cncrnt_grp_ot_mnts_stay"
+            type: number
+          - name: "tot_slp_mnts_stay"
+            type: number
+          - name: "indvdl_slp_mnts_stay"
+            type: number
+          - name: "cncrnt_grp_slp_mnts_stay"
+            type: number
+          - name: "stay_clncl_ctgry_acu_inf_pct"
+            type: number
+          - name: "stay_clncl_ctgry_acu_neu_pct"
+            type: number
+          - name: "stay_clncl_ctgry_cncr_pct"
+            type: number
+          - name: "stay_clncl_ctgry_crd_coag_pct"
+            type: number
+          - name: "stay_clncl_ctgry_mjr_spn_pct"
+            type: number
+          - name: "stay_clncl_ctgry_med_mng_pct"
+            type: number
+          - name: "stay_clncl_ctgry_noorth_srgy_pct"
+            type: number
+          - name: "stay_clncl_ctgry_orth_nosrgy_pct"
+            type: number
+          - name: "stay_clncl_ctgry_orth_srgy_pct"
+            type: number
+          - name: "stay_clncl_ctgry_plmnry_pct"
+            type: number
+          - name: "stay_dprsn_mood_scre_pct"
+            type: number
+          - name: "stay_swlwg_dsrdr_pct"
+            type: number
+          - name: "stay_mlntrn_pct"
+            type: number
+          - name: "pdpm_pt_ot_tc_days_pct"
+            type: number
+          - name: "pdpm_pt_ot_td_days_pct"
+            type: number
+          - name: "pdpm_slp_sk_days_pct"
+            type: number
+          - name: "pdpm_slp_sl_days_pct"
+            type: number
+          - name: "pdpm_nrsng_es3_days_pct"
+            type: number
+          - name: "pdpm_nrsng_es2_days_pct"
+            type: number
+          - name: "pdpm_nta_na_days_pct"
+            type: number
+          - name: "pdpm_nta_nb_days_pct"
+            type: number

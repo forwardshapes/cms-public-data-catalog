@@ -1,0 +1,55 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: revalidation_clinic_group_practice_reassignment
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - provider enrollment
+        description: |
+          The Revalidation Clinic Group Practice Reassignment dataset provides information between the physician and
+          the group practice they reassign their billing to. It also includes individual employer association counts and
+          the revalidation dates for the individual physician as well as the clinic group practice.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/medicare-provider-supplier-enrollment/revalidation-clinic-group-practice-reassignment
+          data_dictionary_url: https://data.cms.gov/resources/revalidation-clinic-group-practice-reassignment-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/additional-information-on-revalidation
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/e1f1fa9a-d6b4-417e-948a-c72dead8a41c/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: e1f1fa9a-d6b4-417e-948a-c72dead8a41c
+        columns:
+          - name: "group pac id"
+            type: number
+          - name: "group enrollment id"
+            type: string
+          - name: "group legal business name"
+            type: string
+          - name: "group state code"
+            type: string
+          - name: "group due date"
+            type: string
+          - name: "group reassignments and physician assistants"
+            type: number
+          - name: "record type"
+            type: string
+          - name: "individual enrollment id"
+            type: string
+          - name: "individual npi"
+            type: number
+          - name: "individual first name"
+            type: string
+          - name: "individual last name"
+            type: string
+          - name: "individual state code"
+            type: string
+          - name: "individual specialty description"
+            type: string
+          - name: "individual due date"
+            type: string
+          - name: "individual total employer associations"
+            type: number

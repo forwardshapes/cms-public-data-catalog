@@ -1,0 +1,102 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: federally_qualified_health_center_all_owners
+        tags:
+          - medicare
+          - hospitals & facilities
+          - outpatient facilities
+          - federally qualified health centers
+          - provider enrollment
+        description: |
+          The Federally Qualified Health Center (FQHC) All Owners dataset provides ownership information on all FQHCs
+          currently enrolled in Medicare. This data includes ownership information such as ownership name, ownership
+          type, ownership address and ownership effective date.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/federally-qualified-health-center-all-owners
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2025-05/FQHC_All_Owners_Data_Dictionary.pdf
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-10/87ec4688-3e5d-4c39-aa6c-c387801534ed/FQHC_Data_Guidance.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/ed289c89-0bb8-4221-a20a-85776066381b/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: ed289c89-0bb8-4221-a20a-85776066381b
+        columns:
+          - name: "enrollment id"
+            type: string
+          - name: "associate id"
+            type: string
+          - name: "organization name"
+            type: string
+          - name: "associate id - owner"
+            type: string
+          - name: "type - owner"
+            type: string
+          - name: "role code - owner"
+            type: string
+          - name: "role text - owner"
+            type: string
+          - name: "association date - owner"
+            type: date
+          - name: "first name - owner"
+            type: string
+          - name: "middle name - owner"
+            type: string
+          - name: "last name - owner"
+            type: string
+          - name: "title - owner"
+            type: string
+          - name: "organization name - owner"
+            type: string
+          - name: "doing business as name - owner"
+            type: string
+          - name: "address line 1 - owner"
+            type: string
+          - name: "address line 2 - owner"
+            type: string
+          - name: "city - owner"
+            type: string
+          - name: "state - owner"
+            type: string
+          - name: "zip code - owner"
+            type: string
+          - name: "percentage ownership"
+            type: number
+          - name: "created for acquisition - owner"
+            type: string
+          - name: "corporation - owner"
+            type: string
+          - name: "llc - owner"
+            type: string
+          - name: "medical provider supplier - owner"
+            type: string
+          - name: "management services company - owner"
+            type: string
+          - name: "medical staffing company - owner"
+            type: string
+          - name: "holding company - owner"
+            type: string
+          - name: "investment firm - owner"
+            type: string
+          - name: "financial institution - owner"
+            type: string
+          - name: "consulting firm - owner"
+            type: string
+          - name: "for profit - owner"
+            type: string
+          - name: "non profit - owner"
+            type: string
+          - name: "private equity company - owner"
+            type: string
+          - name: "reit - owner"
+            type: string
+          - name: "chain home office - owner"
+            type: string
+          - name: "other type - owner"
+            type: string
+          - name: "other type text - owner"
+            type: string
+          - name: "owned by another org or ind - owner"
+            type: string

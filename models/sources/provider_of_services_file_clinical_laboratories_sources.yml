@@ -1,0 +1,234 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: provider_of_services_file_clinical_laboratories
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - hospitals & facilities
+          - outpatient facilities
+          - clinics
+          - health care use & payments
+        description: |
+          The Provider of Services (POS) File - Clinical Laboratories (CLIA) data provides demographic and types of
+          testing services the lab provides along with the provider number (CMS Certification Number), name, address,
+          and other characteristics of the participating laboratories.
+        meta:
+          cms_category: QIESData - CCSQ
+          data_source_url: https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/provider-of-services-file-clinical-laboratories
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2023-07/50eacc07-7930-4e62-97e3-e04a2dc1e2a3/P.QWB.POSQ.CLIA.LAYOUT.MAR23.pdf
+          data_methodology_url: https://data.cms.gov/resources/provider-of-services-file-clinical-laboratories-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/d3eb38ac-d8e9-40d3-b7b7-6205d3d1dc16/data-viewer
+          contact: QIESData@cms.hhs.gov
+          dataset_uuid: d3eb38ac-d8e9-40d3-b7b7-6205d3d1dc16
+        columns:
+          - name: "prvdr_ctgry_sbtyp_cd"
+            type: string
+          - name: "prvdr_ctgry_cd"
+            type: string
+          - name: "chow_cnt"
+            type: string
+          - name: "chow_dt"
+            type: string
+          - name: "city_name"
+            type: string
+          - name: "acptbl_poc_sw"
+            type: string
+          - name: "cmplnc_stus_cd"
+            type: string
+          - name: "ssa_cnty_cd"
+            type: string
+          - name: "cross_ref_provider_number"
+            type: string
+          - name: "crtfctn_dt"
+            type: string
+          - name: "elgblty_sw"
+            type: string
+          - name: "fac_name"
+            type: string
+          - name: "intrmdry_carr_cd"
+            type: string
+          - name: "mdcd_vndr_num"
+            type: string
+          - name: "orgnl_prtcptn_dt"
+            type: string
+          - name: "chow_prior_dt"
+            type: string
+          - name: "intrmdry_carr_prior_cd"
+            type: string
+          - name: "prvdr_num"
+            type: string
+          - name: "rgn_cd"
+            type: string
+          - name: "skltn_rec_sw"
+            type: string
+          - name: "state_cd"
+            type: string
+          - name: "ssa_state_cd"
+            type: string
+          - name: "state_rgn_cd"
+            type: string
+          - name: "st_adr"
+            type: string
+          - name: "phne_num"
+            type: string
+          - name: "pgm_trmntn_cd"
+            type: string
+          - name: "trmntn_exprtn_dt"
+            type: string
+          - name: "crtfctn_actn_type_cd"
+            type: string
+          - name: "gnrl_cntl_type_cd"
+            type: string
+          - name: "zip_cd"
+            type: string
+          - name: "fips_state_cd"
+            type: string
+          - name: "fips_cnty_cd"
+            type: string
+          - name: "cbsa_urbn_rrl_ind"
+            type: string
+          - name: "cbsa_cd"
+            type: string
+          - name: "addtnl_st_adr"
+            type: string
+          - name: "affiliated_provider_number_1"
+            type: string
+          - name: "affiliated_provider_number_2"
+            type: string
+          - name: "affiliated_provider_number_3"
+            type: string
+          - name: "affiliated_provider_number_4"
+            type: string
+          - name: "affiliated_provider_number_5"
+            type: string
+          - name: "affiliated_provider_number_6"
+            type: string
+          - name: "affiliated_provider_number_7"
+            type: string
+          - name: "affiliated_provider_number_8"
+            type: string
+          - name: "a2la_acrdtd_cd"
+            type: string
+          - name: "a2la_acrdtd_y_match_dt"
+            type: string
+          - name: "a2la_acrdtd_y_match_sw"
+            type: string
+          - name: "aabb_acrdtd_cd"
+            type: string
+          - name: "aabb_acrdtd_y_match_dt"
+            type: string
+          - name: "aabb_acrdtd_y_match_sw"
+            type: string
+          - name: "aoa_acrdtd_cd"
+            type: string
+          - name: "aoa_acrdtd_y_match_dt"
+            type: string
+          - name: "aoa_acrdtd_y_match_sw"
+            type: string
+          - name: "ashi_acrdtd_cd"
+            type: string
+          - name: "ashi_acrdtd_y_match_dt"
+            type: string
+          - name: "ashi_acrdtd_y_match_sw"
+            type: string
+          - name: "cap_acrdtd_cd"
+            type: string
+          - name: "cap_acrdtd_y_match_dt"
+            type: string
+          - name: "cap_acrdtd_y_match_sw"
+            type: string
+          - name: "cola_acrdtd_cd"
+            type: string
+          - name: "cola_acrdtd_y_match_dt"
+            type: string
+          - name: "cola_acrdtd_y_match_sw"
+            type: string
+          - name: "jcaho_acrdtd_cd"
+            type: string
+          - name: "jcaho_acrdtd_y_match_dt"
+            type: string
+          - name: "jcaho_acrdtd_y_match_sw"
+            type: string
+          - name: "aplctn_rcvd_dt"
+            type: string
+          - name: "aplctn_type_cd"
+            type: string
+          - name: "gnrl_fac_type_cd"
+            type: string
+          - name: "crtfct_efctv_dt"
+            type: string
+          - name: "crtfct_mail_dt"
+            type: string
+          - name: "crtfct_type_cd"
+            type: string
+          - name: "current_clia_lab_clsfctn_cd"
+            type: string
+          - name: "clia_lab_classification_cd_1"
+            type: string
+          - name: "clia_lab_classification_cd_10"
+            type: string
+          - name: "clia_lab_classification_cd_2"
+            type: string
+          - name: "clia_lab_classification_cd_3"
+            type: string
+          - name: "clia_lab_classification_cd_4"
+            type: string
+          - name: "clia_lab_classification_cd_5"
+            type: string
+          - name: "clia_lab_classification_cd_6"
+            type: string
+          - name: "clia_lab_classification_cd_7"
+            type: string
+          - name: "clia_lab_classification_cd_8"
+            type: string
+          - name: "clia_lab_classification_cd_9"
+            type: string
+          - name: "clia_mdcr_num"
+            type: string
+          - name: "clia_trmntn_cd"
+            type: string
+          - name: "acrdtn_schdl_cd"
+            type: string
+          - name: "form_116_acrdtd_test_vol_cnt"
+            type: number
+          - name: "form_116_test_vol_cnt"
+            type: number
+          - name: "drctly_afltd_lab_cnt"
+            type: number
+          - name: "fax_phne_num"
+            type: string
+          - name: "fy_end_mo_day_cd"
+            type: string
+          - name: "mlt_site_excptn_sw"
+            type: string
+          - name: "hosp_lab_excptn_sw"
+            type: string
+          - name: "non_prft_excptn_sw"
+            type: string
+          - name: "lab_temp_tstg_site_sw"
+            type: string
+          - name: "lab_site_cnt"
+            type: number
+          - name: "ppmp_test_vol_cnt"
+            type: number
+          - name: "addtnl_fac_name"
+            type: string
+          - name: "related_provider_number"
+            type: string
+          - name: "shr_lab_sw"
+            type: string
+          - name: "shared_lab_xref_number"
+            type: string
+          - name: "form_1557_crtfct_schdl_cd"
+            type: string
+          - name: "form_1557_cmplnc_schdl_cd"
+            type: string
+          - name: "form_1557_test_vol_cnt"
+            type: number
+          - name: "wvd_test_vol_cnt"
+            type: number

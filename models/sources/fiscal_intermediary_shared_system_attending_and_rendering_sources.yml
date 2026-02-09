@@ -1,0 +1,35 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: fiscal_intermediary_shared_system_attending_and_rendering
+        tags:
+          - medicare
+          - original medicare
+          - provider enrollment
+        description: |
+          The Fiscal Intermediary Shared System (FISS) Attending and Rendering dataset provides a list of those
+          attending and rendering physicians for the FISS. FISS edits require that the Line Item Rendering Physician
+          information be transmitted when providers submit a combined claim. Claims that include both facility and
+          professional components, need to report the rendering physician or other practitioner at the line level if it
+          differs from the rendering physician/practitioner reported at the claim level.
+
+          Note: This full dataset contains more records than most spreadsheet programs can handle, which will result in
+          an incomplete load of data. Use of a database or statistical software is required.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/medicare-provider-supplier-enrollment/fiscal-intermediary-shared-system-attending-and-rendering
+          data_dictionary_url: https://data.cms.gov/resources/fiscal-intermediary-shared-system-attending-and-rendering-data-dictionary
+          data_methodology_url: https://data.cms.gov/sites/default/files/2020-08/Fiscal%20Intermediary%20Standard%20System%20%28FISS%29.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/75e8dcb2-78eb-4a7d-a377-9108441966db/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: 75e8dcb2-78eb-4a7d-a377-9108441966db
+        columns:
+          - name: "npi"
+            type: string
+          - name: "last_name"
+            type: string
+          - name: "first_name"
+            type: string

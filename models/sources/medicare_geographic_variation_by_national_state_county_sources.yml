@@ -1,0 +1,529 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_geographic_variation_by_national_state_county
+        tags:
+          - national
+          - states & territories
+          - counties
+          - medicare
+          - original medicare
+          - health care use & payments
+          - health equity
+        description: |
+          The Medicare Geographic Variation by National, State & County dataset provides information on the geographic
+          differences in the use and quality of health care services for the Original Medicare population. This dataset
+          contains demographic, spending, use, and quality indicators at the state level (including the District of
+          Columbia, Puerto Rico, and the Virgin Islands) and the county level.
+
+          Spending is standardized to remove geographic differences in payment rates for individual services as a
+          source of variation. In general, total standardized per capita costs are less than actual per capita costs
+          because the extra payments Medicare made to hospitals were removed, such as payments for medical education
+          (both direct and indirect) and payments to hospitals that serve a disproportionate share of low-income
+          patients. Standardization does not adjust for differences in beneficiaries’ health status.
+        meta:
+          cms_category: PDAG Data Products - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-geographic-comparisons/medicare-geographic-variation-by-national-state-county
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2025-03/2014-2023%20Medicare%20FFS%20Geographic%20Variation%20by%20National_State_County%20Data%20Dictionary_0.pdf
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-03/Geographic%20Variation%20Public%20Use%20File%20Methods%20Paper.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/6219697b-8f6c-4164-bed4-cd9317c58ebc/data-viewer
+          contact: PDAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 6219697b-8f6c-4164-bed4-cd9317c58ebc
+        columns:
+          - name: "year"
+            type: number
+          - name: "bene_geo_lvl"
+            type: string
+          - name: "bene_geo_desc"
+            type: string
+          - name: "bene_geo_cd"
+            type: string
+          - name: "bene_age_lvl"
+            type: string
+          - name: "benes_total_cnt"
+            type: number
+          - name: "benes_wth_ptaptb_cnt"
+            type: number
+          - name: "benes_ffs_cnt"
+            type: number
+          - name: "benes_ma_cnt"
+            type: number
+          - name: "ma_prtcptn_rate"
+            type: number
+          - name: "bene_avg_age"
+            type: number
+          - name: "bene_feml_pct"
+            type: number
+          - name: "bene_male_pct"
+            type: number
+          - name: "bene_race_wht_pct"
+            type: number
+          - name: "bene_race_black_pct"
+            type: number
+          - name: "bene_race_hspnc_pct"
+            type: number
+          - name: "bene_race_othr_pct"
+            type: number
+          - name: "bene_dual_pct"
+            type: number
+          - name: "bene_avg_risk_scre"
+            type: number
+          - name: "tot_mdcr_pymt_amt"
+            type: number
+          - name: "tot_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "tot_mdcr_pymt_pc"
+            type: number
+          - name: "tot_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "ip_mdcr_pymt_amt"
+            type: number
+          - name: "ip_mdcr_pymt_pct"
+            type: number
+          - name: "ip_mdcr_pymt_pc"
+            type: number
+          - name: "ip_mdcr_pymt_per_user"
+            type: number
+          - name: "ip_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "ip_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "ip_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "ip_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_ip_cvrd_stay_cnt"
+            type: number
+          - name: "benes_ip_pct"
+            type: number
+          - name: "ip_cvrd_stays_per_1000_benes"
+            type: number
+          - name: "ip_cvrd_days_per_1000_benes"
+            type: number
+          - name: "acute_hosp_readmsn_cnt"
+            type: number
+          - name: "acute_hosp_readmsn_pct"
+            type: number
+          - name: "benes_er_visits_cnt"
+            type: number
+          - name: "er_visits_per_1000_benes"
+            type: number
+          - name: "benes_er_visits_pct"
+            type: number
+          - name: "op_mdcr_pymt_amt"
+            type: number
+          - name: "op_mdcr_pymt_pct"
+            type: number
+          - name: "op_mdcr_pymt_pc"
+            type: number
+          - name: "op_mdcr_pymt_per_user"
+            type: number
+          - name: "op_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "op_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "op_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "op_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_op_cnt"
+            type: number
+          - name: "benes_op_pct"
+            type: number
+          - name: "op_visits_per_1000_benes"
+            type: number
+          - name: "asc_mdcr_pymt_amt"
+            type: number
+          - name: "asc_mdcr_pymt_pct"
+            type: number
+          - name: "asc_mdcr_pymt_pc"
+            type: number
+          - name: "asc_mdcr_pymt_per_user"
+            type: number
+          - name: "asc_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "asc_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "asc_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "asc_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_asc_cnt"
+            type: number
+          - name: "benes_asc_pct"
+            type: number
+          - name: "asc_evnts_per_1000_benes"
+            type: number
+          - name: "snf_mdcr_pymt_amt"
+            type: number
+          - name: "snf_mdcr_pymt_pct"
+            type: number
+          - name: "snf_mdcr_pymt_pc"
+            type: number
+          - name: "snf_mdcr_pymt_per_user"
+            type: number
+          - name: "snf_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "snf_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "snf_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "snf_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_snf_cnt"
+            type: number
+          - name: "benes_snf_pct"
+            type: number
+          - name: "snf_cvrd_stays_per_1000_benes"
+            type: number
+          - name: "snf_cvrd_days_per_1000_benes"
+            type: number
+          - name: "irf_mdcr_pymt_amt"
+            type: number
+          - name: "irf_mdcr_pymt_pct"
+            type: number
+          - name: "irf_mdcr_pymt_pc"
+            type: number
+          - name: "irf_mdcr_pymt_per_user"
+            type: number
+          - name: "irf_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "irf_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "irf_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "irf_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_irf_cnt"
+            type: number
+          - name: "benes_irf_pct"
+            type: number
+          - name: "irf_cvrd_stays_per_1000_benes"
+            type: number
+          - name: "irf_cvrd_days_per_1000_benes"
+            type: number
+          - name: "ltch_mdcr_pymt_amt"
+            type: number
+          - name: "ltch_mdcr_pymt_pct"
+            type: number
+          - name: "ltch_mdcr_pymt_pc"
+            type: number
+          - name: "ltch_mdcr_pymt_per_user"
+            type: number
+          - name: "ltch_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "ltch_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "ltch_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "ltch_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_ltch_cnt"
+            type: number
+          - name: "benes_ltch_pct"
+            type: number
+          - name: "ltch_cvrd_stays_per_1000_benes"
+            type: number
+          - name: "ltch_cvrd_days_per_1000_benes"
+            type: number
+          - name: "hh_mdcr_pymt_amt"
+            type: number
+          - name: "hh_mdcr_pymt_pct"
+            type: number
+          - name: "hh_mdcr_pymt_pc"
+            type: number
+          - name: "hh_mdcr_pymt_per_user"
+            type: number
+          - name: "hh_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "hh_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "hh_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "hh_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_hh_cnt"
+            type: number
+          - name: "benes_hh_pct"
+            type: number
+          - name: "hh_episodes_per_1000_benes"
+            type: number
+          - name: "hh_visits_per_1000_benes"
+            type: number
+          - name: "hospc_mdcr_pymt_amt"
+            type: number
+          - name: "hospc_mdcr_pymt_pct"
+            type: number
+          - name: "hospc_mdcr_pymt_pc"
+            type: number
+          - name: "hospc_mdcr_pymt_per_user"
+            type: number
+          - name: "hospc_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "hospc_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "hospc_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "hospc_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_hospc_cnt"
+            type: number
+          - name: "benes_hospc_pct"
+            type: number
+          - name: "hospc_cvrd_stays_per_1000_benes"
+            type: number
+          - name: "hospc_cvrd_days_per_1000_benes"
+            type: number
+          - name: "em_mdcr_pymt_amt"
+            type: number
+          - name: "em_mdcr_pymt_pct"
+            type: number
+          - name: "em_mdcr_pymt_pc"
+            type: number
+          - name: "em_mdcr_pymt_per_user"
+            type: number
+          - name: "em_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "em_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "em_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "em_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_em_cnt"
+            type: number
+          - name: "benes_em_pct"
+            type: number
+          - name: "em_evnts_per_1000_benes"
+            type: number
+          - name: "prcdrs_mdcr_pymt_amt"
+            type: number
+          - name: "prcdrs_mdcr_pymt_pct"
+            type: number
+          - name: "prcdrs_mdcr_pymt_pc"
+            type: number
+          - name: "prcdrs_mdcr_pymt_per_user"
+            type: number
+          - name: "prcdrs_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "prcdrs_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "prcdrs_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "prcdrs_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_prcdrs_cnt"
+            type: number
+          - name: "benes_prcdrs_pct"
+            type: number
+          - name: "prcdr_evnts_per_1000_benes"
+            type: number
+          - name: "tests_mdcr_pymt_amt"
+            type: number
+          - name: "tests_mdcr_pymt_pct"
+            type: number
+          - name: "tests_mdcr_pymt_pc"
+            type: number
+          - name: "tests_mdcr_pymt_per_user"
+            type: number
+          - name: "tests_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "tests_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "tests_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "tests_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_tests_cnt"
+            type: number
+          - name: "benes_tests_pct"
+            type: number
+          - name: "tests_evnts_per_1000_benes"
+            type: number
+          - name: "imgng_mdcr_pymt_amt"
+            type: number
+          - name: "imgng_mdcr_pymt_pct"
+            type: number
+          - name: "imgng_mdcr_pymt_pc"
+            type: number
+          - name: "imgng_mdcr_pymt_per_user"
+            type: number
+          - name: "imgng_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "imgng_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "imgng_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "imgng_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_imgng_cnt"
+            type: number
+          - name: "benes_imgng_pct"
+            type: number
+          - name: "imgng_evnts_per_1000_benes"
+            type: number
+          - name: "dme_mdcr_pymt_amt"
+            type: number
+          - name: "dme_mdcr_pymt_pct"
+            type: number
+          - name: "dme_mdcr_pymt_pc"
+            type: number
+          - name: "dme_mdcr_pymt_per_user"
+            type: number
+          - name: "dme_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "dme_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "dme_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "dme_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_dme_cnt"
+            type: number
+          - name: "benes_dme_pct"
+            type: number
+          - name: "dme_evnts_per_1000_benes"
+            type: number
+          - name: "op_dlys_mdcr_pymt_amt"
+            type: number
+          - name: "op_dlys_mdcr_pymt_pct"
+            type: number
+          - name: "op_dlys_mdcr_pymt_pc"
+            type: number
+          - name: "op_dlys_mdcr_pymt_per_user"
+            type: number
+          - name: "op_dlys_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "op_dlys_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "op_dlys_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "op_dlys_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_op_dlys_cnt"
+            type: number
+          - name: "benes_op_dlys_pct"
+            type: number
+          - name: "op_dlys_visits_per_1000_benes"
+            type: number
+          - name: "fqhc_rhc_mdcr_pymt_amt"
+            type: number
+          - name: "fqhc_rhc_mdcr_pymt_pct"
+            type: number
+          - name: "fqhc_rhc_mdcr_pymt_pc"
+            type: number
+          - name: "fqhc_rhc_mdcr_pymt_per_user"
+            type: number
+          - name: "fqhc_rhc_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "fqhc_rhc_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "fqhc_rhc_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "fqhc_rhc_mdcr_stdzd_pymt_pu"
+            type: number
+          - name: "benes_fqhc_rhc_cnt"
+            type: number
+          - name: "benes_fqhc_rhc_pct"
+            type: number
+          - name: "fqhc_rhc_visits_per_1000_benes"
+            type: number
+          - name: "amblnc_mdcr_pymt_amt"
+            type: number
+          - name: "amblnc_mdcr_pymt_pct"
+            type: number
+          - name: "amblnc_mdcr_pymt_pc"
+            type: number
+          - name: "amblnc_mdcr_pymt_per_user"
+            type: number
+          - name: "amblnc_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "amblnc_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "amblnc_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "amblnc_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_amblnc_cnt"
+            type: number
+          - name: "benes_amblnc_pct"
+            type: number
+          - name: "amblnc_evnts_per_1000_benes"
+            type: number
+          - name: "trtmnts_mdcr_pymt_amt"
+            type: number
+          - name: "trtmnts_mdcr_pymt_pct"
+            type: number
+          - name: "trtmnts_mdcr_pymt_pc"
+            type: number
+          - name: "trtmnts_mdcr_pymt_per_user"
+            type: number
+          - name: "trtmnts_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "trtmnts_mdcr_stdzd_pymt_pct"
+            type: number
+          - name: "trtmnts_mdcr_stdzd_pymt_pc"
+            type: number
+          - name: "trtmnts_mdcr_stdzd_pymt_per_user"
+            type: number
+          - name: "benes_trtmnts_cnt"
+            type: number
+          - name: "benes_trtmnts_pct"
+            type: number
+          - name: "trtmnts_evnts_per_1000_benes"
+            type: number
+          - name: "ptb_othr_srvcs_mdcr_pymt_amt"
+            type: number
+          - name: "ptb_othr_srvcs_mdcr_stdzd_pymt"
+            type: number
+          - name: "tot_pbpmt_rdctn_amt"
+            type: number
+          - name: "tot_pbpmt_rdctn_pcc"
+            type: number
+          - name: "pqi03_dbts_age_lt_65"
+            type: number
+          - name: "pqi03_dbts_age_65_74"
+            type: number
+          - name: "pqi03_dbts_age_ge_75"
+            type: number
+          - name: "pqi05_copd_asthma_age_40_64"
+            type: number
+          - name: "pqi05_copd_asthma_age_65_74"
+            type: number
+          - name: "pqi05_copd_asthma_age_ge_75"
+            type: number
+          - name: "pqi07_hyprtnsn_age_lt_65"
+            type: number
+          - name: "pqi07_hyprtnsn_age_65_74"
+            type: number
+          - name: "pqi07_hyprtnsn_age_ge_75"
+            type: number
+          - name: "pqi08_chf_age_lt_65"
+            type: number
+          - name: "pqi08_chf_age_65_74"
+            type: number
+          - name: "pqi08_chf_age_ge_75"
+            type: number
+          - name: "pqi11_bctrl_pna_age_lt_65"
+            type: number
+          - name: "pqi11_bctrl_pna_age_65_74"
+            type: number
+          - name: "pqi11_bctrl_pna_age_ge_75"
+            type: number
+          - name: "pqi12_uti_age_lt_65"
+            type: number
+          - name: "pqi12_uti_age_65_74"
+            type: number
+          - name: "pqi12_uti_age_ge_75"
+            type: number
+          - name: "pqi15_asthma_age_lt_40"
+            type: number
+          - name: "pqi16_lwrxtrmty_amputn_age_lt_65"
+            type: number
+          - name: "pqi16_lwrxtrmty_amputn_age_65_74"
+            type: number
+          - name: "pqi16_lwrxtrmty_amputn_age_ge_75"
+            type: number

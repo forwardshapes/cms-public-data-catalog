@@ -1,0 +1,59 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: ambulatory_specialty_model_participants
+        tags:
+          - medicare
+          - hospitals & facilities
+          - outpatient facilities
+          - chronic conditions
+          - value-based care
+          - service delivery models
+        description: |
+          The Ambulatory Specialty Model (ASM) Participants dataset contains information on clinicians that are
+          required to participate in the ASM, including their names, National Provider Identifiers (NPI), their cohort,
+          and the performance years for which they must meet ASM's requirements.
+        meta:
+          cms_category: Ambulatory Specialty Model - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/disease-episode-based-payment-models/ambulatory-specialty-model-participants
+          data_dictionary_url: https://data.cms.gov/resources/ambulatory-specialty-model-participants-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/ambulatory-specialty-model-participants-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/175d576d-0568-4ac2-aec5-d77f3ee02205/data-viewer
+          contact: AmbulatorySpecialtyModel@cms.hhs.gov
+          dataset_uuid: 175d576d-0568-4ac2-aec5-d77f3ee02205
+        columns:
+          - name: "npi"
+            type: string
+          - name: "first_name"
+            type: string
+          - name: "last_name"
+            type: string
+          - name: "state"
+            type: string
+          - name: "asm_cohort"
+            type: string
+          - name: "organization_legal_name"
+            type: string
+          - name: "asm_cy27_participant"
+            type: string
+          - name: "asm_cy27_smallpractice"
+            type: string
+          - name: "asm_cy28_participant"
+            type: string
+          - name: "asm_cy28_smallpractice"
+            type: string
+          - name: "asm_cy29_participant"
+            type: string
+          - name: "asm_cy29_smallpractice"
+            type: string
+          - name: "asm_cy30_participant"
+            type: string
+          - name: "asm_cy30_smallpractice"
+            type: string
+          - name: "asm_cy31_participant"
+            type: string
+          - name: "asm_cy31_smallpractice"
+            type: string

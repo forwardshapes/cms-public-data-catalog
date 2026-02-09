@@ -1,0 +1,273 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: skilled_nursing_facility_cost_report
+        tags:
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - skilled nursing
+          - health care use & payments
+          - value-based care
+          - financials
+        description: |
+          The Skilled Nursing Facility (SNF) Cost Report dataset is a public use file that provides select measures
+          from the skilled nursing facility annual cost report. This data includes provider information such as facility
+          characteristics, utilization data, cost and charges by cost center (in total and for Medicare), Medicare
+          settlement data, and financial statement data organized by CMS Certification Number.
+        meta:
+          cms_category: PDAG Data Products - OEDA
+          data_source_url: https://data.cms.gov/provider-compliance/cost-reports/skilled-nursing-facility-cost-report
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2023-12/Skilled%20Nursing%20Facility%20Cost%20Report%20Data%20Dictionary_508.pdf
+          data_methodology_url: https://data.cms.gov/resources/skilled-nursing-facility-cost-report-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/a69d3df7-3f66-4a0d-b5b8-0d66049bd565/data-viewer
+          contact: PDAG_Data_Products@cms.hhs.gov
+          dataset_uuid: a69d3df7-3f66-4a0d-b5b8-0d66049bd565
+        columns:
+          - name: "rpt_rec_num"
+            type: string
+          - name: "provider ccn"
+            type: string
+          - name: "facility name"
+            type: string
+          - name: "street address"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state code"
+            type: string
+          - name: "zip code"
+            type: string
+          - name: "county"
+            type: string
+          - name: "medicare cbsa number"
+            type: string
+          - name: "rural versus urban"
+            type: string
+          - name: "fiscal year begin date"
+            type: date
+          - name: "fiscal year end date"
+            type: date
+          - name: "type of control"
+            type: string
+          - name: "total days title v"
+            type: number
+          - name: "total days title xviii"
+            type: number
+          - name: "total days title xix"
+            type: number
+          - name: "total days other"
+            type: number
+          - name: "total days total"
+            type: number
+          - name: "number of beds"
+            type: number
+          - name: "total bed days available"
+            type: number
+          - name: "total discharges title v"
+            type: number
+          - name: "total discharges title xviii"
+            type: number
+          - name: "total discharges title xix"
+            type: number
+          - name: "total discharges title other"
+            type: number
+          - name: "total discharges total"
+            type: number
+          - name: "snf average length of stay title v"
+            type: number
+          - name: "snf average length of stay title xviii"
+            type: number
+          - name: "snf average length of stay title xix"
+            type: number
+          - name: "snf average length of stay total"
+            type: number
+          - name: "snf admissions title v"
+            type: number
+          - name: "snf admissions title xviii"
+            type: number
+          - name: "snf admissions title xix"
+            type: number
+          - name: "snf admissions other"
+            type: number
+          - name: "snf admissions total"
+            type: number
+          - name: "snf days title v"
+            type: number
+          - name: "snf days title xviii"
+            type: number
+          - name: "snf days title xix"
+            type: number
+          - name: "snf days other"
+            type: number
+          - name: "snf days total"
+            type: number
+          - name: "snf number of beds"
+            type: number
+          - name: "snf bed days available"
+            type: number
+          - name: "snf discharges title v"
+            type: number
+          - name: "snf discharges title xviii"
+            type: number
+          - name: "snf discharges title xix"
+            type: number
+          - name: "snf discharges title other"
+            type: number
+          - name: "snf discharges total"
+            type: number
+          - name: "nf number of beds"
+            type: number
+          - name: "nf bed days available"
+            type: number
+          - name: "nf days title v"
+            type: number
+          - name: "nf days title xix"
+            type: number
+          - name: "nf days other"
+            type: number
+          - name: "nf days total"
+            type: number
+          - name: "nf discharges title v"
+            type: number
+          - name: "nf discharges title xix"
+            type: number
+          - name: "nf discharges title other"
+            type: number
+          - name: "nf discharges total"
+            type: number
+          - name: "nf average length of stay title v"
+            type: number
+          - name: "nf average length of stay title xix"
+            type: number
+          - name: "nf average length of stay total"
+            type: number
+          - name: "nf admissions title v"
+            type: number
+          - name: "nf admissions title xix"
+            type: number
+          - name: "nf admissions other"
+            type: number
+          - name: "nf admissions total"
+            type: number
+          - name: "total rug days"
+            type: number
+          - name: "total salaries from worksheet a"
+            type: number
+          - name: "overhead non-salary costs"
+            type: number
+          - name: "total charges"
+            type: number
+          - name: "total costs"
+            type: number
+          - name: "wage-related costs (core)"
+            type: number
+          - name: "total salaries (adjusted)"
+            type: number
+          - name: "contract labor"
+            type: number
+          - name: "cash on hand and in banks"
+            type: number
+          - name: "temporary investments"
+            type: number
+          - name: "notes receivable"
+            type: number
+          - name: "accounts receivable"
+            type: number
+          - name: "less: allowances for uncollectible notes and accounts receivable"
+            type: number
+          - name: "inventory"
+            type: number
+          - name: "prepaid expenses"
+            type: number
+          - name: "other current assets"
+            type: number
+          - name: "total current assets"
+            type: number
+          - name: "land"
+            type: number
+          - name: "land improvements"
+            type: number
+          - name: "buildings"
+            type: number
+          - name: "leasehold improvements"
+            type: number
+          - name: "fixed equipment"
+            type: number
+          - name: "major movable equipment"
+            type: number
+          - name: "minor equipment depreciable"
+            type: number
+          - name: "total fixed assets"
+            type: number
+          - name: "investments"
+            type: number
+          - name: "other assets"
+            type: number
+          - name: "total other assets"
+            type: number
+          - name: "total assets"
+            type: number
+          - name: "accounts payable"
+            type: number
+          - name: "salaries, wages, and fees payable"
+            type: number
+          - name: "payroll taxes payable"
+            type: number
+          - name: "notes and loans payable (short term)"
+            type: number
+          - name: "deferred income"
+            type: number
+          - name: "other current liabilities"
+            type: number
+          - name: "total current liabilities"
+            type: number
+          - name: "mortgage payable"
+            type: number
+          - name: "notes payable"
+            type: number
+          - name: "unsecured loans"
+            type: number
+          - name: "other long term liabilities"
+            type: number
+          - name: "total long term liabilities"
+            type: number
+          - name: "total liabilities"
+            type: number
+          - name: "general fund balance"
+            type: number
+          - name: "total fund balances"
+            type: number
+          - name: "total liabilities and fund balances"
+            type: number
+          - name: "total general inpatient care services revenue"
+            type: number
+          - name: "inpatient revenue"
+            type: number
+          - name: "outpatient revenue"
+            type: number
+          - name: "gross revenue"
+            type: number
+          - name: "less contractual allowance and discounts on patients' accounts"
+            type: number
+          - name: "net patient revenue"
+            type: number
+          - name: "less total operating expense"
+            type: number
+          - name: "net income from service to patients"
+            type: number
+          - name: "total other income"
+            type: number
+          - name: "total income"
+            type: number
+          - name: "net income"
+            type: number
+          - name: "inpatient pps amount"
+            type: number
+          - name: "nursing and allied health education activities"
+            type: number
+          - name: "allowable bad debts"
+            type: number

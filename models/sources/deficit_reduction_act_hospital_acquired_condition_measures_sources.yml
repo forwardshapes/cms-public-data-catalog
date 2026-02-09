@@ -1,0 +1,40 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: deficit_reduction_act_hospital_acquired_condition_measures
+        tags:
+          - medicare
+          - original medicare
+          - health care use & payments
+          - safety of care
+        description: |
+          The Publicly Reported Deficit Reduction Act (DRA) Hospital-Acquired Condition (HAC) Measures data provides
+          information on hospital-level measures rates for four of the HACs included in the DRA HAC payment provision –
+          foreign object retained after surgery, blood incompatibility, air embolism, and falls and trauma – for
+          Medicare fee-for-service discharges. The Publicly Reported DRA HAC Measures are reported only for
+          informational and quality improvement purposes; the results of the measure calculations do not affect payment
+          and are not a part of the HAC Reduction Program.
+        meta:
+          cms_category: Deficit Reduction Act Hospital Acquired Conditions - CCSQ
+          data_source_url: https://data.cms.gov/quality-of-care/deficit-reduction-act-hospital-acquired-condition-measures
+          data_dictionary_url: https://data.cms.gov/resources/deficit-reduction-act-dra-hospital-acquired-condition-hac-measures-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/deficit-reduction-act-dra-hospital-acquired-condition-hac-measures-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/01edb62e-5c45-4f43-8c91-16cba21cbb74/data-viewer
+          contact: drahac@mathematica-mpr.com
+          dataset_uuid: 01edb62e-5c45-4f43-8c91-16cba21cbb74
+        columns:
+          - name: "provider_id"
+            type: string
+          - name: "measure"
+            type: string
+          - name: "rate"
+            type: number
+          - name: "footnote"
+            type: string
+          - name: "start_quarter"
+            type: string
+          - name: "end_quarter"
+            type: string

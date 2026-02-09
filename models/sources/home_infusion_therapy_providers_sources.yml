@@ -1,0 +1,57 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: home_infusion_therapy_providers
+        tags:
+          - states & territories
+          - zip code
+          - medicare
+          - original medicare
+          - medicare advantage
+          - hospitals & facilities
+          - outpatient facilities
+          - outpatient physical therapy
+          - provider enrollment
+        description: |
+          The Home Infusion Therapy Providers dataset provides information on the Providers in Medicare who specialize
+          in Home Infusion Therapy.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/medicare-provider-supplier-enrollment/home-infusion-therapy-providers
+          data_dictionary_url: https://data.cms.gov/resources/home-infusion-therapy-providers-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/home-infusion-therapy-providers-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/31f25ab6-2fe3-4bad-ac5a-90635ed79935/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: 31f25ab6-2fe3-4bad-ac5a-90635ed79935
+        columns:
+          - name: "enrollment id"
+            type: string
+          - name: "legal business name"
+            type: string
+          - name: "street address line 1"
+            type: string
+          - name: "street address line 2"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "zip code"
+            type: string
+          - name: "practice location phone number"
+            type: string
+          - name: "specialty name"
+            type: string
+          - name: "geographic location type description"
+            type: string
+          - name: "geographic location city name"
+            type: string
+          - name: "geographic location state code"
+            type: string
+          - name: "geographic location zip code"
+            type: string
+          - name: "state county name"
+            type: string

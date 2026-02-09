@@ -1,0 +1,36 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: hospital_service_area
+        tags:
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - inpatient
+          - health care use & payments
+        description: |
+          The Hospital Service Area data is a summary of calendar year Medicare inpatient hospital fee-for-service and
+          Medicare Advantage claims data. It contains number of discharges, total days of care, and total charges
+          summarized by hospital provider number and the ZIP code of the Medicare beneficiary.
+        meta:
+          cms_category: CMS EDG Data Questions - OIT
+          data_source_url: https://data.cms.gov/provider-summary-by-type-of-service/medicare-inpatient-hospitals/hospital-service-area
+          data_dictionary_url: https://data.cms.gov/resources/hospital-service-area-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/hospital-service-area-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/8708ca8b-8636-44ed-8303-724cbfaf78ad/data-viewer
+          contact: CMSEDG_DataRequests_Intake@cms.hhs.gov
+          dataset_uuid: 8708ca8b-8636-44ed-8303-724cbfaf78ad
+        columns:
+          - name: "medicare_prov_num"
+            type: string
+          - name: "zip_cd_of_residence"
+            type: string
+          - name: "total_days_of_care"
+            type: number
+          - name: "total_charges"
+            type: number
+          - name: "total_cases"
+            type: number

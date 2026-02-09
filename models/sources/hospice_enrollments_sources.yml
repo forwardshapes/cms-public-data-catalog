@@ -1,0 +1,67 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: hospice_enrollments
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - hospitals & facilities
+          - hospice
+          - provider enrollment
+        description: |
+          The Hospice Enrollments dataset provides enrollment information of all hospices currently enrolled in
+          Medicare. This data includes information on the hospice's legal business name, doing business as name,
+          organization type and address.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/hospice-enrollments
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2023-03/f736ce50-3d6b-4ee2-802f-2e5424ae71ac/Hospice_Enrollments_Data_Dictionary.pdf
+          data_methodology_url: https://data.cms.gov/sites/default/files/2026-01/Hospice_Data_Guidance.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/25704213-e833-4b8b-9dbc-58dd17149209/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: 25704213-e833-4b8b-9dbc-58dd17149209
+        columns:
+          - name: "enrollment id"
+            type: string
+          - name: "enrollment state"
+            type: string
+          - name: "provider type code"
+            type: string
+          - name: "provider type text"
+            type: string
+          - name: "npi"
+            type: string
+          - name: "multiple npi flag"
+            type: string
+          - name: "ccn"
+            type: string
+          - name: "associate id"
+            type: string
+          - name: "organization name"
+            type: string
+          - name: "doing business as name"
+            type: string
+          - name: "incorporation date"
+            type: date
+          - name: "incorporation state"
+            type: string
+          - name: "organization type structure"
+            type: string
+          - name: "organization other type text"
+            type: string
+          - name: "proprietary_nonprofit"
+            type: string
+          - name: "address line 1"
+            type: string
+          - name: "address line 2"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "zip code"
+            type: string

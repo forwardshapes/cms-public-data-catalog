@@ -1,0 +1,43 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: opioid_treatment_program_providers
+        tags:
+          - medicare
+          - original medicare
+          - drugs
+          - provider enrollment
+        description: |
+          The Opioid Treatment Program (OTP) Providers dataset provides information on Providers who have enrolled in
+          Medicare under the Opioid Treatment Program. It contains provider's name, National Provider Identifier (NPI),
+          address, phone number and the effective enrollment date.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/medicare-provider-supplier-enrollment/opioid-treatment-program-providers
+          data_dictionary_url: https://data.cms.gov/resources/opioid-treatment-program-providers-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/opioid-treatment-program-providers-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/f1a8c197-b53d-4c24-9770-aea5d5a97dfb/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: f1a8c197-b53d-4c24-9770-aea5d5a97dfb
+        columns:
+          - name: "npi"
+            type: string
+          - name: "provider name"
+            type: string
+          - name: "address line 1"
+            type: string
+          - name: "address line 2"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "zip"
+            type: string
+          - name: "medicare id effective date"
+            type: string
+          - name: "phone"
+            type: string

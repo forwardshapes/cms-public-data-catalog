@@ -1,0 +1,55 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_quarterly_part_b_spending_by_drug
+        tags:
+          - medicare
+          - original medicare
+          - drugs
+        description: |
+          The Medicare Quarterly Part B Spending by Drug dataset presents information on spending for drugs
+          administered in doctors’ offices and other outpatient settings by physicians and other healthcare providers to
+          Medicare Part B enrollees. It also includes consumer-friendly descriptions of the drug uses, clinical
+          indications, and manufacturer(s).
+
+          Drug spending metrics for Part B drugs represent the full value of the product, including the Medicare
+          payment and beneficiary liability. All Part B drug spending metrics are calculated at the HCPCS level.
+
+          This dataset reports preliminary data that goes beyond the latest date available in the annual Medicare Part
+          B Spending by Drug dataset. The data are updated each quarter and may change with each new release due to
+          claims lag. Once an entire year of data is available with a sufficient run-out period, that data will move out
+          of the preliminary quarterly dataset and into the annual Medicare Part B Spending by Drug dataset. Due to the
+          preliminary nature of the quarterly dataset, we advise using caution when comparing between the annual and
+          quarterly datasets.
+        meta:
+          cms_category: CMS Program Statistics - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-spending-by-drug/medicare-quarterly-part-b-spending-by-drug
+          data_dictionary_url: https://data.cms.gov/resources/medicare-quarterly-part-b-spending-by-drug-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-quarterly-part-b-spending-by-drug-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/bf6a5b3b-31ee-4abb-b1ad-2607a1e7510a/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: bf6a5b3b-31ee-4abb-b1ad-2607a1e7510a
+        columns:
+          - name: "brnd_name"
+            type: string
+          - name: "gnrc_name"
+            type: string
+          - name: "hcpcs_cd"
+            type: string
+          - name: "hcpcs_desc"
+            type: string
+          - name: "year"
+            type: string
+          - name: "tot_benes"
+            type: number
+          - name: "tot_clms"
+            type: number
+          - name: "tot_spndng"
+            type: number
+          - name: "avg_spnd_per_bene"
+            type: number
+          - name: "avg_spnd_per_clm"
+            type: number

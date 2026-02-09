@@ -1,0 +1,73 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: hospital_change_of_ownership
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - hospitals & facilities
+          - provider enrollment
+        description: |
+          The Hospital Change of Ownership (CHOW) dataset provides information on the hospital ownership changes that
+          occurred on or after January 1, 2016. This data includes information on the buyer and seller organization’s
+          legal business name, provider type, change of ownership type (CHOW, Acquisition/Merger, or Consolidation) and
+          the effective date of the change.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/hospital-change-of-ownership
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2026-01/Hospital_CHOW_Data_Dictionary.pdf
+          data_methodology_url: https://data.cms.gov/sites/default/files/2024-10/Hospital_CHOW_Data_Guidance.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/c04031db-54ce-461c-85d1-d2613d71f167/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: c04031db-54ce-461c-85d1-d2613d71f167
+        columns:
+          - name: "enrollment id - buyer"
+            type: string
+          - name: "enrollment state - buyer"
+            type: string
+          - name: "provider type code - buyer"
+            type: string
+          - name: "provider type text - buyer"
+            type: string
+          - name: "npi - buyer"
+            type: string
+          - name: "multiple npi flag - buyer"
+            type: string
+          - name: "ccn - buyer"
+            type: string
+          - name: "associate id - buyer"
+            type: string
+          - name: "organization name - buyer"
+            type: string
+          - name: "doing business as name - buyer"
+            type: string
+          - name: "chow type code"
+            type: string
+          - name: "chow type text"
+            type: string
+          - name: "effective date"
+            type: date
+          - name: "enrollment id - seller"
+            type: string
+          - name: "enrollment state - seller"
+            type: string
+          - name: "provider type code - seller"
+            type: string
+          - name: "provider type text - seller"
+            type: string
+          - name: "npi - seller"
+            type: string
+          - name: "multiple npi flag - seller"
+            type: string
+          - name: "ccn - seller"
+            type: string
+          - name: "associate id - seller"
+            type: string
+          - name: "organization name - seller"
+            type: string
+          - name: "doing business as name - seller"
+            type: string

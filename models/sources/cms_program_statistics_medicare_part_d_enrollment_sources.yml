@@ -1,0 +1,29 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: cms_program_statistics_medicare_part_d_enrollment
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - medicare advantage
+          - medicare prescription drug
+          - beneficiary enrollment
+          - health equity
+        description: |
+          The CMS Program Statistics - Medicare Part D Enrollment tables provide data on characteristics of the
+          Medicare Part D covered population.
+
+          For additional information on enrollment, providers, and Medicare use and payment, visit the CMS Program
+          Statistics page.
+        meta:
+          cms_category: CMS Program Statistics - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-beneficiary-enrollment/medicare-and-medicaid-reports/cms-program-statistics-medicare-part-d-enrollment
+          data_dictionary_url: https://data.cms.gov/resources/cms-program-statistics-glossary
+          data_methodology_url: https://data.cms.gov/resources/cms-program-statistics-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/d8c69aca-2497-4a83-a181-706a960c77f0/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: d8c69aca-2497-4a83-a181-706a960c77f0

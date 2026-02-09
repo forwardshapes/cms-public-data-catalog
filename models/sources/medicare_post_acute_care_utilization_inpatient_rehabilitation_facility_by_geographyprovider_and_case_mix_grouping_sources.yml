@@ -1,0 +1,85 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_post_acute_care_utilization_inpatient_rehabilitation_facility_by_geographyprovider_and_case_mix_grouping
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - inpatient
+          - rehabilitation
+          - health care use & payments
+        description: |
+          The Medicare Post-Acute Care (PAC) Utilization - Inpatient Rehabilitation Facility (IRF) by
+          Geography/Provider and Case-Mix Grouping (CMG) supplemental dataset provides payment and utilization
+          information for IRFs under the IRF Prospective Payment System (PPS), organized by provider and CMG.
+        meta:
+          cms_category: PDAG Data Products - OEDA
+          data_source_url: https://data.cms.gov/provider-summary-by-type-of-service/medicare-post-acute-care-hospice/medicare-post-acute-care-utilization-inpatient-rehabilitation-facility-by-geographyprovider-and-case-mix-grouping
+          data_dictionary_url: https://data.cms.gov/resources/medicare-pac-utilization-irf-by-geographyprovider-and-cmg-data-dictionary
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-08/2685ddd1-a3a9-406c-a4e7-e56a8b789731/RY%202025%20PAC%20PUF%20Methodologies.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/62e62d07-1837-4dbf-bb4f-a4820e0c7b16/data-viewer
+          contact: PDAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 62e62d07-1837-4dbf-bb4f-a4820e0c7b16
+        columns:
+          - name: "year"
+            type: string
+          - name: "year_type"
+            type: string
+          - name: "smry_ctgry"
+            type: string
+          - name: "srvc_ctgry"
+            type: string
+          - name: "prvdr_id"
+            type: string
+          - name: "prvdr_name"
+            type: string
+          - name: "prvdr_city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "prvdr_zip"
+            type: string
+          - name: "grpng"
+            type: string
+          - name: "grpng_desc"
+            type: string
+          - name: "bene_dstnct_cnt"
+            type: number
+          - name: "tot_epsd_stay_cnt"
+            type: number
+          - name: "tot_srvc_days"
+            type: number
+          - name: "avg_chrg_per_bene"
+            type: number
+          - name: "avg_alowd_amt_per_bene"
+            type: number
+          - name: "avg_pymt_amt_per_bene"
+            type: number
+          - name: "avg_stdzd_pymt_amt_per_bene"
+            type: number
+          - name: "avg_chrg_per_stay"
+            type: number
+          - name: "avg_alowd_amt_per_stay"
+            type: number
+          - name: "avg_pymt_amt_per_stay"
+            type: number
+          - name: "avg_stdzd_pymt_amt_per_stay"
+            type: number
+          - name: "avg_chrg_per_day"
+            type: number
+          - name: "avg_alowd_amt_per_day"
+            type: number
+          - name: "avg_pymt_amt_per_day"
+            type: number
+          - name: "avg_stdzd_pymt_amt_per_day"
+            type: number
+          - name: "casemix"
+            type: string
+          - name: "casemix_day_pct"
+            type: number

@@ -1,0 +1,68 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: aco_reach_providers
+        tags:
+          - medicare
+          - original medicare
+          - value-based care
+          - coordinated care
+          - payment models
+          - accountable care organizations
+        description: |
+          The Accountable Care Organization (ACO) REACH Providers Public Use File (PUF) data details Participant
+          Providers and Preferred Providers in the ACO REACH Model, formerly Global and Professional Direct Contracting
+          (GPDC) Model. This dataset includes information on each providers capitation arrangement, Advanced Payment
+          Option and elected waivers.
+        meta:
+          cms_category: ACO REACH - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/accountable-care-models/aco-reach-providers
+          data_dictionary_url: https://data.cms.gov/resources/aco-reach-providers-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/aco-reach-model-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/e0eba16f-ce0d-4037-96ce-2af70c718c98/data-viewer
+          contact: ACOREACH@cms.hhs.gov
+          dataset_uuid: e0eba16f-ce0d-4037-96ce-2af70c718c98
+        columns:
+          - name: "aco_id"
+            type: string
+          - name: "par_lbn"
+            type: string
+          - name: "aco_name"
+            type: string
+          - name: "perf_year"
+            type: string
+          - name: "start_date"
+            type: date
+          - name: "term_date"
+            type: date
+          - name: "prvdr_class"
+            type: string
+          - name: "capitation_arrangement"
+            type: string
+          - name: "apo_election"
+            type: string
+          - name: "telehealth_waiver"
+            type: string
+          - name: "pdhv_waiver"
+            type: string
+          - name: "snf_waiver"
+            type: string
+          - name: "cmhv_waiver"
+            type: string
+          - name: "homeboundhh_waiver"
+            type: string
+          - name: "hospicecc_waiver"
+            type: string
+          - name: "ptbcost_bei_waiver"
+            type: string
+          - name: "chronicdisease_bei_waiver"
+            type: string
+          - name: "diabeticshoe_waiver"
+            type: string
+          - name: "hit_waiver"
+            type: string
+          - name: "mnt_waiver"
+            type: string

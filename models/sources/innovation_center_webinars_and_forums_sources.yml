@@ -1,0 +1,55 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: innovation_center_webinars_and_forums
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - medicare prescription drug
+          - children's health insurance program
+          - value-based care
+          - payment models
+        description: |
+          The Innovation Center Webinars and Forums dataset contains listings of a variety of events from CMS
+          Innovation Center models, demonstrations, initiatives and programs. The types of events include webinars, open
+          door forums, office hours and conference calls among others. These events provide opportunities to learn about
+          current activity, upcoming proceedings and to ask questions and offer feedback.
+        meta:
+          cms_category: CMS Innovation Center - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/cms-innovation-models-overview/innovation-center-webinars-and-forums
+          data_dictionary_url: https://data.cms.gov/resources/webinars-and-forums-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/webinars-and-forums-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/cc3bd6db-2ae9-4d86-95be-20267f159f73/data-viewer
+          contact: cmmi-dataset-support@cms.hhs.gov
+          dataset_uuid: cc3bd6db-2ae9-4d86-95be-20267f159f73
+        columns:
+          - name: "title"
+            type: string
+          - name: "url"
+            type: string
+          - name: "description"
+            type: string
+          - name: "start date"
+            type: string
+          - name: "end date"
+            type: string
+          - name: "time zone"
+            type: string
+          - name: "related item 1"
+            type: string
+          - name: "related item 2"
+            type: string
+          - name: "related item 3"
+            type: string
+          - name: "related item 4"
+            type: string
+          - name: "related item 5"
+            type: string
+          - name: "upcoming"
+            type: string
+          - name: "unique id"
+            type: number

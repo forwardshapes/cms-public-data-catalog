@@ -1,0 +1,43 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: order_and_referring
+        tags:
+          - medicare
+          - original medicare
+          - provider enrollment
+        description: |
+          The Order and Referring dataset provides information on all physicians and non-physician practitioners, by
+          their National Provider Identifier (NPI), who are of a type/specialty that is legally eligible to order and
+          refer in the Medicare program and who have current enrollment records in Medicare. This dataset identifies
+          Medicare fee-for-service ordering and referring eligibility, supporting transparency and regulatory compliance
+          efforts. The information can be used to verify ordering and referring capabilities as required by Medicare
+          program standards.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/medicare-provider-supplier-enrollment/order-and-referring
+          data_dictionary_url: https://data.cms.gov/resources/order-and-referring-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/order-and-referring-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/c99b5865-1119-4436-bb80-c5af2773ea1f/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: c99b5865-1119-4436-bb80-c5af2773ea1f
+        columns:
+          - name: "npi"
+            type: string
+          - name: "last_name"
+            type: string
+          - name: "first_name"
+            type: string
+          - name: "partb"
+            type: string
+          - name: "dme"
+            type: string
+          - name: "hha"
+            type: string
+          - name: "pmd"
+            type: string
+          - name: "hospice"
+            type: string

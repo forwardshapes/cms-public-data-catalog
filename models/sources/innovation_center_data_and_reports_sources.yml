@@ -1,0 +1,64 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: innovation_center_data_and_reports
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - medicare prescription drug
+          - children's health insurance program
+          - value-based care
+          - payment models
+        description: |
+          The Innovation Center Data and Reports dataset contains a variety of contributions from CMS Innovation Center
+          models, demonstrations, initiatives and programs. These resources include evaluation reports and associated
+          materials, reports to Congress, and case studies among others.
+        meta:
+          cms_category: CMS Innovation Center - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/cms-innovation-models-overview/innovation-center-data-and-reports
+          data_dictionary_url: https://data.cms.gov/resources/data-and-reports-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/data-and-reports-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/c0451a3a-a86c-4bd4-a0b7-c93e6b1f1257/data-viewer
+          contact: cmmi-dataset-support@cms.hhs.gov
+          dataset_uuid: c0451a3a-a86c-4bd4-a0b7-c93e6b1f1257
+        columns:
+          - name: "title"
+            type: string
+          - name: "author"
+            type: string
+          - name: "url"
+            type: string
+          - name: "month of publication"
+            type: string
+          - name: "year of publication"
+            type: number
+          - name: "abstract"
+            type: string
+          - name: "keywords"
+            type: string
+          - name: "type"
+            type: string
+          - name: "related content"
+            type: string
+          - name: "related content 2"
+            type: string
+          - name: "related content 3"
+            type: string
+          - name: "related content 4"
+            type: string
+          - name: "related content 5"
+            type: string
+          - name: "at-a-glance reports url"
+            type: string
+          - name: "at-a-glance reports"
+            type: string
+          - name: "perspective report url"
+            type: string
+          - name: "perspective report"
+            type: string
+          - name: "id"
+            type: number

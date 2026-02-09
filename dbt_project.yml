@@ -1,0 +1,16 @@
+name: 'cms_public_data_catalog'
+version: '1.0.0'
+config-version: 2
+
+# This dbt project is metadata-only - it provides source definitions
+# for CMS datasets from data.cms.gov without actual data ingestion
+
+profile: 'cms_catalog'
+
+model-paths: ["models"]
+docs-paths: ["docs"]
+
+# Minimal configuration for documentation generation
+models:
+  cms_public_data_catalog:
+    +materialized: view

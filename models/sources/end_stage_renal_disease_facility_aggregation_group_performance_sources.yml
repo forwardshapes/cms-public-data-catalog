@@ -1,0 +1,98 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: end_stage_renal_disease_facility_aggregation_group_performance
+        tags:
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - outpatient facilities
+          - clinics
+          - end stage renal disease facilities
+          - value-based care
+          - coordinated care
+          - service delivery models
+        description: |
+          The End-Stage Renal Disease (ESRD) Facility Aggregation Group Performance dataset provides performance
+          information in the End-Stage Renal Disease (ESRD) Treatment Choices (ETC) Model. The dataset includes
+          information on Performance Payment Adjustment (PPA), Modality Performance Score (MPS), home dialysis rate, and
+          transplant rate, as well as the individual components of each rate for each model participant ESRD facility
+          aggregation group.
+
+          All ESRD facilities within the same aggregation group share the same performance information. The
+          supplementary aggregation group crosswalk file may be used to map aggregation groups to individual ETC
+          Participant ESRD facilities.
+        meta:
+          cms_category: ETC Model - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/disease-episode-based-payment-models/end-stage-renal-disease-facility-aggregation-group-performance
+          data_dictionary_url: https://data.cms.gov/resources/esrd-facility-aggregation-group-performance-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/esrd-treatment-choices-etc-model-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/4bae4223-a1dc-4b9c-bd7e-d9622461be35/data-viewer
+          contact: ETC-CMMI@cms.hhs.gov
+          dataset_uuid: 4bae4223-a1dc-4b9c-bd7e-d9622461be35
+        columns:
+          - name: "agg_id"
+            type: string
+          - name: "hrr_num_my"
+            type: number
+          - name: "hdr_my"
+            type: number
+          - name: "hdr_dnm_my"
+            type: number
+          - name: "hdr_num_my"
+            type: number
+          - name: "hd_num_my"
+            type: number
+          - name: "sd_num_my"
+            type: number
+          - name: "nocd_num_my"
+            type: number
+          - name: "tr_my_achscr"
+            type: number
+          - name: "tr_my_impscr"
+            type: number
+          - name: "twr_dnm_my"
+            type: number
+          - name: "twr_num_my"
+            type: number
+          - name: "ldt_dnm_my"
+            type: number
+          - name: "ldt_num_my"
+            type: number
+          - name: "benecnt_ldt_my"
+            type: number
+          - name: "hei_hdr"
+            type: number
+          - name: "hdr_delis_diff"
+            type: number
+          - name: "hdr_delis_my"
+            type: number
+          - name: "hdr_dnm_delis_my"
+            type: number
+          - name: "hdr_num_delis_my"
+            type: number
+          - name: "hei_tr"
+            type: number
+          - name: "tr_delis_diff"
+            type: number
+          - name: "tr_delis_my"
+            type: number
+          - name: "twr_dnm_delis_my"
+            type: number
+          - name: "twr_num_delis_my"
+            type: number
+          - name: "ldt_dnm_delis_my"
+            type: number
+          - name: "ldt_num_delis_my"
+            type: number
+          - name: "mps"
+            type: number
+          - name: "ppa"
+            type: number
+          - name: "ppa_period"
+            type: number
+          - name: "my"
+            type: number

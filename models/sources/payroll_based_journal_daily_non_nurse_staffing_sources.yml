@@ -1,0 +1,195 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: payroll_based_journal_daily_non_nurse_staffing
+        tags:
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - skilled nursing
+          - health care use & payments
+        description: |
+          The Payroll Based Journal (PBJ) Nurse Staffing and Non-Nurse Staffing datasets provide information submitted
+          by nursing homes including rehabilitation services on a quarterly basis. The data include the hours staff are
+          paid to work each day, for each facility. Examples of reporting categories include Director of Nursing,
+          Administrative Registered Nurses, Registered Nursing, Administrative Licensed Practice Nurses, Licensed
+          Practice Nurses, Certified Nurse Aides, Certified Medication Aides, and Nurse Aides in Training. There are
+          also other non-nurse staff categories provided in the data such as Respiratory Therapist, Occupational
+          Therapist, and Social Worker. The datasets also include a facility’s daily census calculated using the Minimum
+          Data Set (MDS) submission.
+        meta:
+          cms_category: Nursing Home Staffing - CCSQ (PBJ Reports)
+          data_source_url: https://data.cms.gov/quality-of-care/payroll-based-journal-daily-non-nurse-staffing
+          data_dictionary_url: https://data.cms.gov/resources/payroll-based-journal-daily-non-nurse-staffing-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/payroll-based-journal-methodology-0
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/b497431a-5b57-42c0-9016-90105b51841e/data-viewer
+          contact: nhstaffing@cms.hhs.gov
+          dataset_uuid: b497431a-5b57-42c0-9016-90105b51841e
+        columns:
+          - name: "provnum"
+            type: string
+          - name: "provname"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "county_name"
+            type: string
+          - name: "county_fips"
+            type: string
+          - name: "cy_qtr"
+            type: string
+          - name: "workdate"
+            type: number
+          - name: "mdscensus"
+            type: number
+          - name: "hrs_admin"
+            type: number
+          - name: "hrs_admin_emp"
+            type: number
+          - name: "hrs_admin_ctr"
+            type: number
+          - name: "hrs_admin_fn"
+            type: number
+          - name: "hrs_meddir"
+            type: number
+          - name: "hrs_meddir_emp"
+            type: number
+          - name: "hrs_meddir_ctr"
+            type: number
+          - name: "hrs_othmd"
+            type: number
+          - name: "hrs_othmd_emp"
+            type: number
+          - name: "hrs_othmd_ctr"
+            type: number
+          - name: "hrs_pa"
+            type: number
+          - name: "hrs_pa_emp"
+            type: number
+          - name: "hrs_pa_ctr"
+            type: number
+          - name: "hrs_np"
+            type: number
+          - name: "hrs_np_emp"
+            type: number
+          - name: "hrs_np_ctr"
+            type: number
+          - name: "hrs_clinnrsspec"
+            type: number
+          - name: "hrs_clinnrsspec_emp"
+            type: number
+          - name: "hrs_clinnrsspec_ctr"
+            type: number
+          - name: "hrs_pharmacist"
+            type: number
+          - name: "hrs_pharmacist_emp"
+            type: number
+          - name: "hrs_pharmacist_ctr"
+            type: number
+          - name: "hrs_dietician"
+            type: number
+          - name: "hrs_dietician_emp"
+            type: number
+          - name: "hrs_dietician_ctr"
+            type: number
+          - name: "hrs_feedasst"
+            type: number
+          - name: "hrs_feedasst_emp"
+            type: number
+          - name: "hrs_feedasst_ctr"
+            type: number
+          - name: "hrs_ot"
+            type: number
+          - name: "hrs_ot_emp"
+            type: number
+          - name: "hrs_ot_ctr"
+            type: number
+          - name: "hrs_otasst"
+            type: number
+          - name: "hrs_otasst_emp"
+            type: number
+          - name: "hrs_otasst_ctr"
+            type: number
+          - name: "hrs_otaide"
+            type: number
+          - name: "hrs_otaide_emp"
+            type: number
+          - name: "hrs_otaide_ctr"
+            type: number
+          - name: "hrs_pt"
+            type: number
+          - name: "hrs_pt_emp"
+            type: number
+          - name: "hrs_pt_ctr"
+            type: number
+          - name: "hrs_ptasst"
+            type: number
+          - name: "hrs_ptasst_emp"
+            type: number
+          - name: "hrs_ptasst_ctr"
+            type: number
+          - name: "hrs_ptaide"
+            type: number
+          - name: "hrs_ptaide_emp"
+            type: number
+          - name: "hrs_ptaide_ctr"
+            type: number
+          - name: "hrs_respther"
+            type: number
+          - name: "hrs_respther_emp"
+            type: number
+          - name: "hrs_respther_ctr"
+            type: number
+          - name: "hrs_resptech"
+            type: number
+          - name: "hrs_resptech_emp"
+            type: number
+          - name: "hrs_resptech_ctr"
+            type: number
+          - name: "hrs_spclangpath"
+            type: number
+          - name: "hrs_spclangpath_emp"
+            type: number
+          - name: "hrs_spclangpath_ctr"
+            type: number
+          - name: "hrs_therrecspec"
+            type: number
+          - name: "hrs_therrecspec_emp"
+            type: number
+          - name: "hrs_therrecspec_ctr"
+            type: number
+          - name: "hrs_qualactvprof"
+            type: number
+          - name: "hrs_qualactvprof_emp"
+            type: number
+          - name: "hrs_qualactvprof_ctr"
+            type: number
+          - name: "hrs_othactv"
+            type: number
+          - name: "hrs_othactv_emp"
+            type: number
+          - name: "hrs_othactv_ctr"
+            type: number
+          - name: "hrs_qualsocwrk"
+            type: number
+          - name: "hrs_qualsocwrk_emp"
+            type: number
+          - name: "hrs_qualsocwrk_ctr"
+            type: number
+          - name: "hrs_othsocwrk"
+            type: number
+          - name: "hrs_othsocwrk_emp"
+            type: number
+          - name: "hrs_othsocwrk_ctr"
+            type: number
+          - name: "hrs_mhsvc"
+            type: number
+          - name: "hrs_mhsvc_emp"
+            type: number
+          - name: "hrs_mhsvc_ctr"
+            type: number

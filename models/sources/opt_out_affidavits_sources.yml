@@ -1,0 +1,50 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: opt_out_affidavits
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - provider enrollment
+        description: |
+          The Opt Out Affidavits dataset provides information on providers who have decided not to participate in
+          Medicare. It contains provider's NPI, specialty, address, and effective dates.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/medicare-provider-supplier-enrollment/opt-out-affidavits
+          data_dictionary_url: https://data.cms.gov/resources/opt-out-affidavits-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/opt-out-affidavits-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/9887a515-7552-4693-bf58-735c77af46d7/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: 9887a515-7552-4693-bf58-735c77af46d7
+        columns:
+          - name: "first name"
+            type: string
+          - name: "last name"
+            type: string
+          - name: "npi"
+            type: number
+          - name: "specialty"
+            type: string
+          - name: "optout effective date"
+            type: string
+          - name: "optout end date"
+            type: string
+          - name: "first line street address"
+            type: string
+          - name: "second line street address"
+            type: string
+          - name: "city name"
+            type: string
+          - name: "state code"
+            type: string
+          - name: "zip code"
+            type: string
+          - name: "eligible to order and refer"
+            type: string
+          - name: "last updated"
+            type: string

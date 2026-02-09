@@ -1,0 +1,122 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: skilled_nursing_facility_all_owners
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - hospitals & facilities
+          - skilled nursing
+          - provider enrollment
+        description: |
+          The Skilled Nursing Facility (SNF) All Owners dataset provides information on all owners of SNFs currently
+          enrolled in Medicare. This data includes ownership information such as ownership name, ownership type,
+          ownership address and ownership effective date.
+
+          On November 17, 2023, CMS published in the Federal Register a final rule titled, “Medicare and Medicaid
+          Programs; Disclosures of Ownership and Additional Disclosable Parties Information for Skilled Nursing
+          Facilities and Nursing Facilities; Medicare Providers’ and Suppliers’ Disclosure of Private Equity Companies
+          and Real Estate Investment Trusts” (88 FR 80141). This final rule implements parts of section 1124(c) of the
+          Act which requires SNFs to disclose detailed information about their ownership and management as well as
+          additional data regarding: (1) other parties with which the SNF is associated; and (2) the ownership
+          structures of these other parties. Refer to Medicare Enrollment for Providers & Suppliers for more information
+          on the Skilled Nursing Facility disclosure requirements.
+
+          Section 6101(b) of the Affordable Care Act states that no later than 1 year after final regulations
+          promulgated under section 1124(c) of the Act are published in the Federal Register, the Secretary shall make
+          the information reported available to the public.
+
+          On November 21, 2024 CMS updated this dataset to include this reported information.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/skilled-nursing-facility-all-owners
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2024-12/7a976b38-70d9-4332-a913-446c89641840/SNF_All_Owners_Data_Dictionary.pdf
+          data_methodology_url: N/A
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/afe44b85-cc6d-40d7-b5df-00ae8910d1d2/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: afe44b85-cc6d-40d7-b5df-00ae8910d1d2
+        columns:
+          - name: "enrollment id"
+            type: string
+          - name: "associate id"
+            type: string
+          - name: "organization name"
+            type: string
+          - name: "associate id - owner"
+            type: string
+          - name: "type - owner"
+            type: string
+          - name: "role code - owner"
+            type: string
+          - name: "role text - owner"
+            type: string
+          - name: "association date - owner"
+            type: date
+          - name: "first name - owner"
+            type: string
+          - name: "middle name - owner"
+            type: string
+          - name: "last name - owner"
+            type: string
+          - name: "title - owner"
+            type: string
+          - name: "organization name - owner"
+            type: string
+          - name: "doing business as name - owner"
+            type: string
+          - name: "address line 1 - owner"
+            type: string
+          - name: "address line 2 - owner"
+            type: string
+          - name: "city - owner"
+            type: string
+          - name: "state - owner"
+            type: string
+          - name: "zip code - owner"
+            type: string
+          - name: "percentage ownership"
+            type: number
+          - name: "created for acquisition - owner"
+            type: string
+          - name: "corporation - owner"
+            type: string
+          - name: "llc - owner"
+            type: string
+          - name: "medical provider supplier - owner"
+            type: string
+          - name: "management services company - owner"
+            type: string
+          - name: "medical staffing company - owner"
+            type: string
+          - name: "holding company - owner"
+            type: string
+          - name: "investment firm - owner"
+            type: string
+          - name: "financial institution - owner"
+            type: string
+          - name: "consulting firm - owner"
+            type: string
+          - name: "for profit - owner"
+            type: string
+          - name: "non profit - owner"
+            type: string
+          - name: "private equity company - owner"
+            type: string
+          - name: "reit - owner"
+            type: string
+          - name: "chain home office - owner"
+            type: string
+          - name: "trust or trustee - owner"
+            type: string
+          - name: "other type - owner"
+            type: string
+          - name: "other type text - owner"
+            type: string
+          - name: "parent company - owner"
+            type: string
+          - name: "owned by another org or ind - owner"
+            type: string

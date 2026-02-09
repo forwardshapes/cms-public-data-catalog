@@ -1,0 +1,50 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: aco_reach_aligned_beneficiaries
+        tags:
+          - medicare
+          - original medicare
+          - value-based care
+          - coordinated care
+          - payment models
+          - accountable care organizations
+        description: |
+          The Accountable Care Organization (ACO) REACH Aligned Beneficiary Public Use File (PUF) data details Medicare
+          Beneficiaries aligned to the ACO REACH Model, formerly Global and Professional Direct Contracting (GPDC)
+          Model, including counties, eligibility months and total aligned beneficiaries. This data is redacted and does
+          not include identifiable information.
+        meta:
+          cms_category: ACO REACH - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/accountable-care-models/aco-reach-aligned-beneficiaries
+          data_dictionary_url: https://data.cms.gov/resources/aco-reach-aligned-beneficiaries-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/aco-reach-model-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/1cd9eded-d2c9-4215-a064-aac6dae3b714/data-viewer
+          contact: ACOREACH@cms.hhs.gov
+          dataset_uuid: 1cd9eded-d2c9-4215-a064-aac6dae3b714
+        columns:
+          - name: "aco_id"
+            type: string
+          - name: "year"
+            type: number
+          - name: "state_id"
+            type: string
+          - name: "county_id"
+            type: string
+          - name: "state_name"
+            type: string
+          - name: "county_name"
+            type: string
+          - name: "elig_months_ad"
+            type: number
+          - name: "elig_months_esrd"
+            type: number
+          - name: "elig_months_total"
+            type: number
+          - name: "aligned_beneficiaries_ad"
+            type: number
+          - name: "aligned_beneficiaries_esrd"
+            type: number

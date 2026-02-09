@@ -1,0 +1,52 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: number_of_accountable_care_organization_assigned_beneficiaries_by_county
+        tags:
+          - medicare
+          - original medicare
+          - value-based care
+          - coordinated care
+          - payment models
+          - accountable care organizations
+        description: |
+          The Shared Savings Program Number of Accountable Care Organization Assigned Beneficiaries by County dataset
+          provides aggregate data of total assigned beneficiaries by Shared Savings Program ACO for each county where at
+          least one of their assigned beneficiaries resides. Assigned beneficiary person-year counts are based on
+          certified Shared Savings Program ACO Participant Lists and assignment methodology for that performance year.
+        meta:
+          cms_category: Shared Savings Program - CM
+          data_source_url: https://data.cms.gov/medicare-shared-savings-program/number-of-accountable-care-organization-assigned-beneficiaries-by-county
+          data_dictionary_url: https://data.cms.gov/resources/number-of-accountable-care-organization-assigned-beneficiaries-by-county-data-dictionary-2023
+          data_methodology_url: https://data.cms.gov/resources/number-of-accountable-care-organization-assigned-beneficiaries-by-county-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/ae8c9418-acc9-4442-b217-33291448f6b8/data-viewer
+          contact: SharedSavingsProgram@cms.hhs.gov
+          dataset_uuid: ae8c9418-acc9-4442-b217-33291448f6b8
+        columns:
+          - name: "year"
+            type: number
+          - name: "aco_id"
+            type: string
+          - name: "state_name"
+            type: string
+          - name: "county_name"
+            type: string
+          - name: "state_id"
+            type: string
+          - name: "county_id"
+            type: string
+          - name: "ab_psn_yrs_esrd"
+            type: number
+          - name: "ab_psn_yrs_dis"
+            type: number
+          - name: "ab_psn_yrs_agdu"
+            type: number
+          - name: "ab_psn_yrs_agnd"
+            type: number
+          - name: "tot_ab_psn_yrs"
+            type: number
+          - name: "tot_ab"
+            type: number

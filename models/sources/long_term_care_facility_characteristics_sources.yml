@@ -1,0 +1,92 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: long_term_care_facility_characteristics
+        tags:
+          - medicare
+          - hospitals & facilities
+          - inpatient
+          - long term care
+          - skilled nursing
+        description: |
+          The Long-Term Care Facility Characteristics, CMS Form 671, dataset provides information submitted by nursing
+          homes on the CMS Form 671 collected during annual surveys. The data include information about resident census,
+          ownership, dedicated special care units, facility characteristics, and staffing.
+        meta:
+          cms_category: NH Facility - CCSQ
+          data_source_url: https://data.cms.gov/quality-of-care/long-term-care-facility-characteristics
+          data_dictionary_url: https://data.cms.gov/resources/long-term-care-facility-characteristics-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/long-term-care-facility-characteristics-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/129a6503-c0f1-4132-b186-4c0232c2d894/data-viewer
+          contact: NursingHomeData@cms.hhs.gov
+          dataset_uuid: 129a6503-c0f1-4132-b186-4c0232c2d894
+        columns:
+          - name: "provider number"
+            type: string
+          - name: "facility name"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "zip code"
+            type: string
+          - name: "certification date"
+            type: date
+          - name: "medicare census"
+            type: number
+          - name: "medicaid census"
+            type: number
+          - name: "other census"
+            type: number
+          - name: "total residents"
+            type: number
+          - name: "program participation code"
+            type: string
+          - name: "hospital based"
+            type: string
+          - name: "ownership type"
+            type: string
+          - name: "multi-facility organization"
+            type: string
+          - name: "multi-facility organization name"
+            type: string
+          - name: "number of aids beds"
+            type: number
+          - name: "number of alzheimer's disease beds"
+            type: number
+          - name: "number of dialysis beds"
+            type: number
+          - name: "number of disabled children/young adult beds"
+            type: number
+          - name: "number of head trauma beds"
+            type: number
+          - name: "number of hospice beds"
+            type: number
+          - name: "number of huntington's disease beds"
+            type: number
+          - name: "number of ventilator beds"
+            type: number
+          - name: "number of other specialized rehab beds"
+            type: number
+          - name: "organized residents' group"
+            type: string
+          - name: "organized family member group"
+            type: string
+          - name: "facility conducts experimental research"
+            type: string
+          - name: "continuing care retirement community (ccrc)"
+            type: string
+          - name: "7 day rn waiver date"
+            type: date
+          - name: "7 day rn hrs waived per week"
+            type: number
+          - name: "24 hr licensed nursing waiver date"
+            type: date
+          - name: "24 hr licensed nursing hrs waived per week"
+            type: number
+          - name: "nurse aide training and competency evaluation program"
+            type: string

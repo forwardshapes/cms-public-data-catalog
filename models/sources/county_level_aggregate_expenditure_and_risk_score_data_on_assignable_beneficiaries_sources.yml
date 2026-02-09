@@ -1,0 +1,73 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: county_level_aggregate_expenditure_and_risk_score_data_on_assignable_beneficiaries
+        tags:
+          - counties
+          - medicare
+          - original medicare
+          - value-based care
+          - coordinated care
+          - financials
+          - payment models
+          - accountable care organizations
+        description: |
+          The Shared Savings Program County-level Aggregate Expenditure and Risk Score Data on Assignable Beneficiaries
+          Public Use File (PUF) for the Medicare Shared Savings Program (Shared Savings Program) provides aggregate data
+          consisting of per capita Parts A and B FFS expenditures, average CMS-HCC prospective risk scores and total
+          person-years for Shared Savings Program assignable beneficiaries by Medicare enrollment type (End Stage Renal
+          Disease (ESRD), disabled, aged/dual eligible, aged/non-dual eligible).
+        meta:
+          cms_category: Shared Savings Program - CM
+          data_source_url: https://data.cms.gov/medicare-shared-savings-program/county-level-aggregate-expenditure-and-risk-score-data-on-assignable-beneficiaries
+          data_dictionary_url: https://data.cms.gov/resources/county-level-aggregate-expenditure-and-risk-score-data-on-assignable-beneficiaries-data-dictionary-0
+          data_methodology_url: https://data.cms.gov/resources/county-level-aggregate-expenditure-and-risk-score-data-on-assignable-beneficiaries-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/5f9f1216-6fd9-455d-bfbc-0efade687a4e/data-viewer
+          contact: SharedSavingsProgram@cms.hhs.gov
+          dataset_uuid: 5f9f1216-6fd9-455d-bfbc-0efade687a4e
+        columns:
+          - name: "year"
+            type: number
+          - name: "state_name"
+            type: string
+          - name: "county_name"
+            type: string
+          - name: "state_id"
+            type: string
+          - name: "county_id"
+            type: string
+          - name: "per_capita_exp_esrd"
+            type: number
+          - name: "avg_risk_score_esrd"
+            type: number
+          - name: "avg_demog_score_esrd"
+            type: number
+          - name: "person_years_esrd"
+            type: number
+          - name: "per_capita_exp_dis"
+            type: number
+          - name: "avg_risk_score_dis"
+            type: number
+          - name: "avg_demog_score_dis"
+            type: number
+          - name: "person_years_dis"
+            type: number
+          - name: "per_capita_exp_agdu"
+            type: number
+          - name: "avg_risk_score_agdu"
+            type: number
+          - name: "avg_demog_score_agdu"
+            type: number
+          - name: "person_years_agdu"
+            type: number
+          - name: "per_capita_exp_agnd"
+            type: number
+          - name: "avg_risk_score_agnd"
+            type: number
+          - name: "avg_demog_score_agnd"
+            type: number
+          - name: "person_years_agnd"
+            type: number

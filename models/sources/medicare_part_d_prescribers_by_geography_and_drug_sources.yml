@@ -1,0 +1,76 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_part_d_prescribers_by_geography_and_drug
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - medicare prescription drug
+          - physicians & practitioners
+          - drugs
+          - health equity
+        description: |
+          The Medicare Part D Prescribers by Geography and Drug dataset contains information on prescription drugs
+          prescribed by individual physicians and other health care providers and paid for under the Medicare Part D
+          Prescription Drug Program. For each drug, the dataset includes the total number of prescriptions that were
+          dispensed, which include original prescriptions and any refills, and the total drug cost. The total drug cost
+          includes the ingredient cost of the medication, dispensing fees, sales tax, and any applicable administration
+          fees and is based on the amount paid by the Part D plan, Medicare beneficiary, government subsidies, and any
+          other third-party payers.
+        meta:
+          cms_category: Medicare Provider Data - OEDA
+          data_source_url: https://data.cms.gov/provider-summary-by-type-of-service/medicare-part-d-prescribers/medicare-part-d-prescribers-by-geography-and-drug
+          data_dictionary_url: https://data.cms.gov/resources/medicare-part-d-prescribers-by-geography-and-drug-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-part-d-prescribers-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/c8ea3f8e-3a09-4fea-86f2-8902fb4b0920/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: c8ea3f8e-3a09-4fea-86f2-8902fb4b0920
+        columns:
+          - name: "prscrbr_geo_lvl"
+            type: string
+          - name: "prscrbr_geo_cd"
+            type: string
+          - name: "prscrbr_geo_desc"
+            type: string
+          - name: "brnd_name"
+            type: string
+          - name: "gnrc_name"
+            type: string
+          - name: "tot_prscrbrs"
+            type: number
+          - name: "tot_clms"
+            type: number
+          - name: "tot_30day_fills"
+            type: number
+          - name: "tot_drug_cst"
+            type: number
+          - name: "tot_benes"
+            type: number
+          - name: "ge65_sprsn_flag"
+            type: string
+          - name: "ge65_tot_clms"
+            type: number
+          - name: "ge65_tot_30day_fills"
+            type: number
+          - name: "ge65_tot_drug_cst"
+            type: number
+          - name: "ge65_bene_sprsn_flag"
+            type: string
+          - name: "ge65_tot_benes"
+            type: number
+          - name: "lis_bene_cst_shr"
+            type: number
+          - name: "nonlis_bene_cst_shr"
+            type: number
+          - name: "opioid_drug_flag"
+            type: string
+          - name: "opioid_la_drug_flag"
+            type: string
+          - name: "antbtc_drug_flag"
+            type: string
+          - name: "antpsyct_drug_flag"
+            type: string

@@ -1,0 +1,88 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: skilled_nursing_facility_enrollments
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - hospitals & facilities
+          - skilled nursing
+          - provider enrollment
+        description: |
+          The Skilled Nursing Facility (SNF) Enrollments dataset provides enrollment information of all SNF 's
+          currently enrolled in Medicare. This data includes information on the SNF's legal business name, doing
+          business as name, organization type and address.
+
+          On November 17, 2023, CMS published in the Federal Register a final rule titled, “Medicare and Medicaid
+          Programs; Disclosures of Ownership and Additional Disclosable Parties Information for Skilled Nursing
+          Facilities and Nursing Facilities; Medicare Providers’ and Suppliers’ Disclosure of Private Equity Companies
+          and Real Estate Investment Trusts” (88 FR 80141). This final rule implements parts of section 1124(c) of the
+          Act which requires SNFs to disclose detailed information about their ownership and management as well as
+          additional data regarding: (1) other parties with which the SNF is associated; and (2) the ownership
+          structures of these other parties. Refer to Medicare Enrollment for Providers & Suppliers for more information
+          on the Skilled Nursing Facility disclosure requirements.
+
+          Section 6101(b) of the Affordable Care Act states that no later than 1 year after final regulations
+          promulgated under section 1124(c) of the Act are published in the Federal Register, the Secretary shall make
+          the information reported available to the public.
+
+          On November 21, 2024 CMS updated this dataset to include this reported information.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/skilled-nursing-facility-enrollments
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2024-10/SNF_Enrollments_Data_Dictionary.pdf
+          data_methodology_url: N/A
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/5f2c306f-3b1c-42cd-b037-187b2ce22126/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: 5f2c306f-3b1c-42cd-b037-187b2ce22126
+        columns:
+          - name: "enrollment id"
+            type: string
+          - name: "enrollment state"
+            type: string
+          - name: "provider type code"
+            type: string
+          - name: "provider type text"
+            type: string
+          - name: "npi"
+            type: string
+          - name: "multiple npi flag"
+            type: string
+          - name: "ccn"
+            type: string
+          - name: "associate id"
+            type: string
+          - name: "organization name"
+            type: string
+          - name: "doing business as name"
+            type: string
+          - name: "incorporation date"
+            type: date
+          - name: "incorporation state"
+            type: string
+          - name: "organization type structure"
+            type: string
+          - name: "organization other type text"
+            type: string
+          - name: "proprietary_nonprofit"
+            type: string
+          - name: "nursing home provider name"
+            type: string
+          - name: "affiliation entity name"
+            type: string
+          - name: "affiliation entity id"
+            type: string
+          - name: "address line 1"
+            type: string
+          - name: "address line 2"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "zip code"
+            type: string

@@ -1,0 +1,48 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_telehealth_trends
+        tags:
+          - medicare
+        description: |
+          The Medicare Telehealth Trends dataset provides information about people with Medicare who used telehealth
+          services between January 1, 2020 and June 30, 2025. The data were used to generate the Medicare Telehealth
+          Trends Report.
+        meta:
+          cms_category: CMS Program Statistics - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-service-type-reports/medicare-telehealth-trends
+          data_dictionary_url: https://data.cms.gov/resources/medicare-telehealth-trends-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-telehealth-trends-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/939226be-b107-476e-8777-f199a840138a/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 939226be-b107-476e-8777-f199a840138a
+        columns:
+          - name: "year"
+            type: string
+          - name: "quarter"
+            type: string
+          - name: "bene_geo_desc"
+            type: string
+          - name: "bene_mdcd_mdcr_enrl_stus"
+            type: string
+          - name: "bene_race_desc"
+            type: string
+          - name: "bene_sex_desc"
+            type: string
+          - name: "bene_mdcr_entlmt_stus"
+            type: string
+          - name: "bene_age_desc"
+            type: string
+          - name: "bene_ruca_desc"
+            type: string
+          - name: "total_bene_th_elig"
+            type: number
+          - name: "total_partb_enrl"
+            type: number
+          - name: "total_bene_telehealth"
+            type: number
+          - name: "pct_telehealth"
+            type: number

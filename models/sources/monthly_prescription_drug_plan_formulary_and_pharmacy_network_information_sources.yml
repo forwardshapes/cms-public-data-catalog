@@ -1,0 +1,61 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: monthly_prescription_drug_plan_formulary_and_pharmacy_network_information
+        tags:
+          - medicare
+          - medicare advantage
+          - medicare prescription drug
+          - all other provider care types
+          - drugs
+          - health care use & payments
+        description: |
+          The Monthly Prescription Drug Plan Formulary and Pharmacy Network Information files contain formulary and
+          pharmacy network data for Medicare Prescription Drug Plans and Medicare Advantage (MA) Prescription Drug Plans
+          (with the exception of employer and Program of All-Inclusive Care for the Elderly plans).
+
+          These non-identifiable files are available on a monthly basis and are comprised of the following tables:
+
+          Plan Information - Information such as plan name, contract ID, plan ID, service area, and plan type.
+          Geographic Locator - MA and Prescription Drug Plans region codes and county codes. Basic Drugs Formulary -
+          Formulary details for each plan including National Drug Codes (NDCs), cost share tier level, and indicators
+          for step therapy, quantity limits, prior authorization, and a newly added Selected Drug flag. Excluded Drugs
+          Formulary - Enhanced alternative plans may elect to provide a supplemental benefit and cover excluded drugs.
+          File includes formulary details for excluded drugs that are covered by the plan (for enhanced alternative
+          plans only). Beneficiary Cost - Plan level cost sharing details for preferred, non-preferred, and mail order
+          network pharmacies. Pharmacy Network - National Provider Identifier (NPI) numbers for each network pharmacy
+          including preferred, retail, and mail order indicators, and brand, generic, and selected drug dispensing fees
+          for 30/60/90 days supply, respectively. Indication Based Coverage Formulary File - Includes drugs covered
+          based on FDA-approved indication for each plan. Insulin Beneficiary Cost File - Plan level copay and
+          coinsurance amounts for insulin at preferred, non-preferred and mail order network pharmacies.
+
+          These are large files and can take time to download.
+
+          Please read the “Agreement for Use” in the Resources section below. This document contains important
+          information regarding timeframes for obtaining data as well as data accuracy and integrity.
+
+          The Quarterly Prescription Drug Plan Formulary, Pharmacy Network, and Pricing Information is also available
+          to access for the quarterly level information.
+
+          Please note: The Part D benefit year information for plans become available in October of the year prior. For
+          example, year 2026 data is available in the October, November and December 2025 monthly files. Year 2026 data
+          continues to be available in the January through September 2026 monthly files, then beginning in October of
+          2026 year 2027 data becomes available.
+
+          Estimated release dates for upcoming 2026 monthly data (files reflect data for the month in which the file is
+          released):
+
+          2/25/26 3/25/26 4/22/26 5/20/26 6/17/26 7/29/26 8/26/26 9/23/26
+
+          Files older than contract year 2019 can be purchased.
+        meta:
+          cms_category: Plan Finder - CM
+          data_source_url: https://data.cms.gov/provider-summary-by-type-of-service/medicare-part-d-prescribers/monthly-prescription-drug-plan-formulary-and-pharmacy-network-information
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2025-10/0564eb37-402d-4110-bd98-2d5399dc30e7/PUFRecordLayout-2026.pdf
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-10/8f1d8b42-bfd1-4f9c-b86d-b92af0c6f3d5/Methodology-PUF-2026.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/cb2a224f-4d52-4cae-aa55-8c00c671384f/data-viewer
+          contact: planfinderqa@cms.hhs.gov
+          dataset_uuid: cb2a224f-4d52-4cae-aa55-8c00c671384f

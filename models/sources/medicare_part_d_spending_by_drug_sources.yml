@@ -1,0 +1,126 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_part_d_spending_by_drug
+        tags:
+          - medicare
+          - medicare prescription drug
+          - medical suppliers & equipment
+          - drugs
+        description: |
+          The Medicare Part D by Drug dataset presents information on spending for drugs prescribed to Medicare
+          beneficiaries enrolled in Part D by physicians and other healthcare providers. Drugs prescribed in the
+          Medicare Part D program are drugs patients generally administer themselves.
+
+          The dataset focuses on average spending per dosage unit and change in average spending per dosage unit over
+          time. It also includes spending information for manufacturer(s) of the drugs as well as consumer-friendly
+          information of drug uses and clinical indications.
+
+          Drug spending metrics for Part D drugs are based on the gross drug cost, which represents total spending for
+          the prescription claim, including Medicare, plan, and beneficiary payments. The Part D spending metrics do not
+          reflect any manufacturers’ rebates or other price concessions as CMS is prohibited from publicly disclosing
+          such information.
+        meta:
+          cms_category: CMS Drug Spending - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-spending-by-drug/medicare-part-d-spending-by-drug
+          data_dictionary_url: https://data.cms.gov/resources/medicare-part-d-spending-by-drug-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-part-d-spending-by-drug-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/7e0b4365-fd63-4a29-8f5e-e0ac9f66a81b/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 7e0b4365-fd63-4a29-8f5e-e0ac9f66a81b
+        columns:
+          - name: "brnd_name"
+            type: string
+          - name: "gnrc_name"
+            type: string
+          - name: "tot_mftr"
+            type: number
+          - name: "mftr_name"
+            type: string
+          - name: "tot_spndng_2019"
+            type: number
+          - name: "tot_dsg_unts_2019"
+            type: number
+          - name: "tot_clms_2019"
+            type: number
+          - name: "tot_benes_2019"
+            type: number
+          - name: "avg_spnd_per_dsg_unt_wghtd_2019"
+            type: number
+          - name: "avg_spnd_per_clm_2019"
+            type: number
+          - name: "avg_spnd_per_bene_2019"
+            type: number
+          - name: "outlier_flag_2019"
+            type: number
+          - name: "tot_spndng_2020"
+            type: number
+          - name: "tot_dsg_unts_2020"
+            type: number
+          - name: "tot_clms_2020"
+            type: number
+          - name: "tot_benes_2020"
+            type: number
+          - name: "avg_spnd_per_dsg_unt_wghtd_2020"
+            type: number
+          - name: "avg_spnd_per_clm_2020"
+            type: number
+          - name: "avg_spnd_per_bene_2020"
+            type: number
+          - name: "outlier_flag_2020"
+            type: number
+          - name: "tot_spndng_2021"
+            type: number
+          - name: "tot_dsg_unts_2021"
+            type: number
+          - name: "tot_clms_2021"
+            type: number
+          - name: "tot_benes_2021"
+            type: number
+          - name: "avg_spnd_per_dsg_unt_wghtd_2021"
+            type: number
+          - name: "avg_spnd_per_clm_2021"
+            type: number
+          - name: "avg_spnd_per_bene_2021"
+            type: number
+          - name: "outlier_flag_2021"
+            type: number
+          - name: "tot_spndng_2022"
+            type: number
+          - name: "tot_dsg_unts_2022"
+            type: number
+          - name: "tot_clms_2022"
+            type: number
+          - name: "tot_benes_2022"
+            type: number
+          - name: "avg_spnd_per_dsg_unt_wghtd_2022"
+            type: number
+          - name: "avg_spnd_per_clm_2022"
+            type: number
+          - name: "avg_spnd_per_bene_2022"
+            type: number
+          - name: "outlier_flag_2022"
+            type: number
+          - name: "tot_spndng_2023"
+            type: number
+          - name: "tot_dsg_unts_2023"
+            type: number
+          - name: "tot_clms_2023"
+            type: number
+          - name: "tot_benes_2023"
+            type: number
+          - name: "avg_spnd_per_dsg_unt_wghtd_2023"
+            type: number
+          - name: "avg_spnd_per_clm_2023"
+            type: number
+          - name: "avg_spnd_per_bene_2023"
+            type: number
+          - name: "outlier_flag_2023"
+            type: number
+          - name: "chg_avg_spnd_per_dsg_unt_22_23"
+            type: number
+          - name: "cagr_avg_spnd_per_dsg_unt_19_23"
+            type: number

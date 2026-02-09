@@ -1,0 +1,66 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: innovation_center_model_participants
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - medicare prescription drug
+          - children's health insurance program
+          - value-based care
+          - payment models
+        description: |
+          The Innovation Center Model Participants dataset contains information on current CMS Innovation Center
+          models, demonstrations, initiatives, and programs. This can include the name of the initiative, organization
+          name, location information, address, phase of participation, social media and website URLs, Metropolitan
+          Statistical Area, categories related to health care quality, cost, payment, and delivery, among others.
+          Information on past participants can be found below under resources.
+        meta:
+          cms_category: CMS Innovation Center - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/cms-innovation-models-overview/innovation-center-model-participants
+          data_dictionary_url: https://data.cms.gov/resources/model-participants-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/model-participants-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/44e93e18-b9b3-4650-9471-2b1b31dc588b/data-viewer
+          contact: cmmi-dataset-support@cms.hhs.gov
+          dataset_uuid: 44e93e18-b9b3-4650-9471-2b1b31dc588b
+        columns:
+          - name: "name of initiative"
+            type: string
+          - name: "organization name"
+            type: string
+          - name: "notes"
+            type: string
+          - name: "location 1"
+            type: string
+          - name: "street address"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "state based"
+            type: string
+          - name: "phase 1"
+            type: string
+          - name: "phase 2"
+            type: string
+          - name: "facebook"
+            type: string
+          - name: "twitter"
+            type: string
+          - name: "youtube"
+            type: string
+          - name: "website"
+            type: string
+          - name: "category"
+            type: string
+          - name: "msa_name"
+            type: string
+          - name: "unique id"
+            type: string
+          - name: "map display"
+            type: string

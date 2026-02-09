@@ -1,0 +1,154 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_monthly_enrollment
+        tags:
+          - national
+          - states & territories
+          - counties
+          - medicare
+          - original medicare
+          - medicare advantage
+          - medicare prescription drug
+          - beneficiary enrollment
+          - health equity
+        description: |
+          The Medicare Monthly Enrollment data provides current monthly information on the number of Medicare
+          beneficiaries with hospital/medical coverage and prescription drug coverage, available for several geographic
+          areas including national, state/territory, and county. The hospital/medical coverage data can be broken down
+          further by health care delivery (Original Medicare versus Medicare Advantage and Other Health Plans) and the
+          prescription drug coverage data can be examined by those enrolled in stand-alone Prescription Drug Plans and
+          those enrolled in Medicare Advantage Prescription Drug plans. The dataset provides monthly and yearly enrollee
+          trends.
+        meta:
+          cms_category: CMS Program Statistics - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-beneficiary-enrollment/medicare-and-medicaid-reports/medicare-monthly-enrollment
+          data_dictionary_url: https://data.cms.gov/resources/medicare-monthly-enrollment-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-monthly-enrollment-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/d7fabe1e-d19b-4333-9eff-e80e0643f2fd/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: d7fabe1e-d19b-4333-9eff-e80e0643f2fd
+        columns:
+          - name: "year"
+            type: string
+          - name: "month"
+            type: string
+          - name: "bene_geo_lvl"
+            type: string
+          - name: "bene_state_abrvtn"
+            type: string
+          - name: "bene_state_desc"
+            type: string
+          - name: "bene_county_desc"
+            type: string
+          - name: "bene_fips_cd"
+            type: string
+          - name: "tot_benes"
+            type: number
+          - name: "orgnl_mdcr_benes"
+            type: number
+          - name: "ma_and_oth_benes"
+            type: number
+          - name: "aged_tot_benes"
+            type: number
+          - name: "aged_esrd_benes"
+            type: number
+          - name: "aged_no_esrd_benes"
+            type: number
+          - name: "dsbld_tot_benes"
+            type: number
+          - name: "dsbld_esrd_and_esrd_only_benes"
+            type: number
+          - name: "dsbld_no_esrd_benes"
+            type: number
+          - name: "male_tot_benes"
+            type: number
+          - name: "female_tot_benes"
+            type: number
+          - name: "white_tot_benes"
+            type: number
+          - name: "black_tot_benes"
+            type: number
+          - name: "api_tot_benes"
+            type: number
+          - name: "hspnc_tot_benes"
+            type: number
+          - name: "natind_tot_benes"
+            type: number
+          - name: "othr_tot_benes"
+            type: number
+          - name: "age_lt_25_benes"
+            type: number
+          - name: "age_25_to_44_benes"
+            type: number
+          - name: "age_45_to_64_benes"
+            type: number
+          - name: "age_65_to_69_benes"
+            type: number
+          - name: "age_70_to_74_benes"
+            type: number
+          - name: "age_75_to_79_benes"
+            type: number
+          - name: "age_80_to_84_benes"
+            type: number
+          - name: "age_85_to_89_benes"
+            type: number
+          - name: "age_90_to_94_benes"
+            type: number
+          - name: "age_gt_94_benes"
+            type: number
+          - name: "dual_tot_benes"
+            type: number
+          - name: "full_dual_tot_benes"
+            type: number
+          - name: "part_dual_tot_benes"
+            type: number
+          - name: "nodual_tot_benes"
+            type: number
+          - name: "qmb_only_benes"
+            type: number
+          - name: "qmb_plus_benes"
+            type: number
+          - name: "slmb_only_benes"
+            type: number
+          - name: "slmb_plus_benes"
+            type: number
+          - name: "qdwi_qi_benes"
+            type: number
+          - name: "othr_full_dual_mdcd_benes"
+            type: number
+          - name: "a_b_tot_benes"
+            type: number
+          - name: "a_b_orgnl_mdcr_benes"
+            type: number
+          - name: "a_b_ma_and_oth_benes"
+            type: number
+          - name: "a_tot_benes"
+            type: number
+          - name: "a_orgnl_mdcr_benes"
+            type: number
+          - name: "a_ma_and_oth_benes"
+            type: number
+          - name: "b_tot_benes"
+            type: number
+          - name: "b_orgnl_mdcr_benes"
+            type: number
+          - name: "b_ma_and_oth_benes"
+            type: number
+          - name: "prscrptn_drug_tot_benes"
+            type: number
+          - name: "prscrptn_drug_pdp_benes"
+            type: number
+          - name: "prscrptn_drug_mapd_benes"
+            type: number
+          - name: "prscrptn_drug_deemed_eligible_full_lis_benes"
+            type: number
+          - name: "prscrptn_drug_full_lis_benes"
+            type: number
+          - name: "prscrptn_drug_partial_lis_benes"
+            type: number
+          - name: "prscrptn_drug_no_lis_benes"
+            type: number

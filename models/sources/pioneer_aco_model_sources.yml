@@ -1,0 +1,151 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: pioneer_aco_model
+        tags:
+          - medicare
+          - original medicare
+          - value-based care
+          - coordinated care
+          - payment models
+          - accountable care organizations
+        description: |
+          The Pioneer Accountable Care Organization (ACO) Model Public Use File (PUF) provides information on ACOs
+          participating in the model. This dataset includes information on each ACO regarding beneficiaries, financial
+          and quality results.
+        meta:
+          cms_category: ACO REACH - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/accountable-care-models/pioneer-aco-model
+          data_dictionary_url: https://data.cms.gov/resources/pioneer-aco-model-performance-year-2015-2016-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/pioneer-aco-model-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/bb2a336c-0710-4de9-80ad-6a2a5cbdbdeb/data-viewer
+          contact: ACOREACH@cms.hhs.gov
+          dataset_uuid: bb2a336c-0710-4de9-80ad-6a2a5cbdbdeb
+        columns:
+          - name: "aco_id"
+            type: string
+          - name: "aco_name"
+            type: string
+          - name: "perf_yr"
+            type: string
+          - name: "pbp_election"
+            type: string
+          - name: "bene_ct"
+            type: number
+          - name: "mnth_py"
+            type: number
+          - name: "bnmrk_expnd"
+            type: number
+          - name: "perf_yr_expnd"
+            type: number
+          - name: "gross_savings"
+            type: number
+          - name: "shared_savings"
+            type: number
+          - name: "qual_scre"
+            type: number
+          - name: "mnth_ad_by1"
+            type: number
+          - name: "expnd_ad_by1"
+            type: number
+          - name: "risk_scre_ad_by1"
+            type: number
+          - name: "mnth_ad_by2"
+            type: number
+          - name: "expnd_ad_by2"
+            type: number
+          - name: "risk_scre_ad_by2"
+            type: number
+          - name: "mnth_ad_by3"
+            type: number
+          - name: "expnd_ad_by3"
+            type: number
+          - name: "risk_scre_ad_by3"
+            type: number
+          - name: "bnmrk_ad"
+            type: number
+          - name: "risk_scre_ad_py"
+            type: number
+          - name: "mnth_an_by1"
+            type: number
+          - name: "expnd_an_by1"
+            type: number
+          - name: "risk_scre_an_by1"
+            type: number
+          - name: "mnth_an_by2"
+            type: number
+          - name: "expnd_an_by2"
+            type: number
+          - name: "risk_scre_an_by2"
+            type: number
+          - name: "mnth_an_by3"
+            type: number
+          - name: "expnd_an_by3"
+            type: number
+          - name: "risk_scre_an_by3"
+            type: number
+          - name: "bnmrk_an"
+            type: number
+          - name: "risk_scre_an_py"
+            type: number
+          - name: "mnth_disa_by1"
+            type: number
+          - name: "expnd_disa_by1"
+            type: number
+          - name: "risk_scre_disa_by1"
+            type: number
+          - name: "mnth_disa_by2"
+            type: number
+          - name: "expnd_disa_by2"
+            type: number
+          - name: "risk_scre_disa_by2"
+            type: number
+          - name: "mnth_disa_by3"
+            type: number
+          - name: "expnd_disa_by3"
+            type: number
+          - name: "risk_scre_disa_by3"
+            type: number
+          - name: "bnmrk_disa"
+            type: number
+          - name: "risk_scre_disa_py"
+            type: number
+          - name: "mnth_esrd_by1"
+            type: number
+          - name: "expnd_esrd_by1"
+            type: number
+          - name: "risk_scre_esrd_by1"
+            type: number
+          - name: "mnth_esrd_by2"
+            type: number
+          - name: "expnd_esrd_by2"
+            type: number
+          - name: "risk_scre_esrd_by2"
+            type: number
+          - name: "mnth_esrd_by3"
+            type: number
+          - name: "expnd_esrd_by3"
+            type: number
+          - name: "risk_scre_esrd_by3"
+            type: number
+          - name: "bnmrk_esrd"
+            type: number
+          - name: "risk_scre_esrd_py"
+            type: number
+          - name: "expnd_hha"
+            type: number
+          - name: "expnd_snf"
+            type: number
+          - name: "expnd_outp"
+            type: number
+          - name: "expnd_hosp"
+            type: number
+          - name: "expnd_inp"
+            type: number
+          - name: "expnd_prof"
+            type: number
+          - name: "expnd_dme"
+            type: number

@@ -1,0 +1,290 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: aco_reach_financial_and_quality_results
+        tags:
+          - medicare
+          - original medicare
+          - value-based care
+          - coordinated care
+          - payment models
+          - accountable care organizations
+        description: |
+          The Accountable Care Organization (ACO) REACH Financial and Quality Results Public Use File (PUF) details
+          performance for the ACO REACH Model, formerly Global and Professional Direct Contracting (GPDC) Model, prior
+          to settlement. This data includes information such as the ACOs risk arrangement, stop loss, capitation,
+          savings rate, and quality results.
+        meta:
+          cms_category: ACO REACH - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/accountable-care-models/aco-reach-financial-and-quality-results
+          data_dictionary_url: https://data.cms.gov/resources/aco-reach-financial-and-quality-results-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/aco-reach-model-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/6c3532b3-8325-48fd-a939-12b41d2b126a/data-viewer
+          contact: ACOREACH@cms.hhs.gov
+          dataset_uuid: 6c3532b3-8325-48fd-a939-12b41d2b126a
+        columns:
+          - name: "aco_id"
+            type: string
+          - name: "aco_name"
+            type: string
+          - name: "aco_type"
+            type: string
+          - name: "first_part_year"
+            type: string
+          - name: "perf_year"
+            type: string
+          - name: "risk_arrangement"
+            type: string
+          - name: "stop_loss_election"
+            type: string
+          - name: "capitation_arrangement"
+            type: string
+          - name: "enhanced_pcc_election"
+            type: string
+          - name: "apo_election"
+            type: string
+          - name: "alignment_plus"
+            type: string
+          - name: "discount"
+            type: number
+          - name: "retention_withhold"
+            type: number
+          - name: "unadj_benchmark"
+            type: number
+          - name: "final_benchmark"
+            type: number
+          - name: "norm_risk_score"
+            type: number
+          - name: "cif_cap_risk"
+            type: number
+          - name: "heba_up_amt"
+            type: number
+          - name: "heba_down_amt"
+            type: number
+          - name: "heba_up_mnths"
+            type: number
+          - name: "heba_down_mnths"
+            type: number
+          - name: "sav_rate"
+            type: number
+          - name: "trended_ad_baseline"
+            type: number
+          - name: "trended_esrd_baseline"
+            type: number
+          - name: "regional_ad_baseline"
+            type: number
+          - name: "regional_esrd_baseline"
+            type: number
+          - name: "hist_ad_baseline_adj"
+            type: number
+          - name: "hist_esrd_baseline_adj"
+            type: number
+          - name: "tot_cost_care_net"
+            type: number
+          - name: "tot_cost_care"
+            type: number
+          - name: "gross_savings"
+            type: number
+          - name: "shared_savings"
+            type: number
+          - name: "shared_savings_seq"
+            type: number
+          - name: "cap_pmt_amt"
+            type: number
+          - name: "epcc_pmt_amt"
+            type: number
+          - name: "clm_pmt_amt"
+            type: number
+          - name: "expnd_dme"
+            type: number
+          - name: "expnd_hha"
+            type: number
+          - name: "expnd_hsp"
+            type: number
+          - name: "expnd_inp_all"
+            type: number
+          - name: "expnd_opd"
+            type: number
+          - name: "expnd_pb"
+            type: number
+          - name: "expnd_snf"
+            type: number
+          - name: "hist_by1_ad_pbpm"
+            type: number
+          - name: "hist_by1_esrd_pbpm"
+            type: number
+          - name: "hist_by2_ad_pbpm"
+            type: number
+          - name: "hist_by2_esrd_pbpm"
+            type: number
+          - name: "hist_by3_ad_pbpm"
+            type: number
+          - name: "hist_by3_esrd_pbpm"
+            type: number
+          - name: "hist_by1_ad_riskscore"
+            type: number
+          - name: "hist_by1_esrd_riskscore"
+            type: number
+          - name: "hist_by2_ad_riskscore"
+            type: number
+          - name: "hist_by2_esrd_riskscore"
+            type: number
+          - name: "hist_by3_ad_riskscore"
+            type: number
+          - name: "hist_by3_esrd_riskscore"
+            type: number
+          - name: "hist_by4_ad_riskscore"
+            type: number
+          - name: "hist_by4_esrd_riskscore"
+            type: number
+          - name: "py_ad_blend_mnths"
+            type: number
+          - name: "py_esrd_blend_mnths"
+            type: number
+          - name: "py_ad_ratebook_mnths"
+            type: number
+          - name: "py_esrd_ratebook_mnths"
+            type: number
+          - name: "py_ad_blend_riskscore"
+            type: number
+          - name: "py_esrd_blend_riskscore"
+            type: number
+          - name: "py_ad_ratebook_riskscore"
+            type: number
+          - name: "py_esrd_ratebook_riskscore"
+            type: number
+          - name: "n_eta"
+            type: number
+          - name: "n_cah"
+            type: number
+          - name: "n_fqhc"
+            type: number
+          - name: "n_rhc"
+            type: number
+          - name: "n_hosp"
+            type: number
+          - name: "n_fac_other"
+            type: number
+          - name: "n_pcp"
+            type: number
+          - name: "n_spec"
+            type: number
+          - name: "n_np"
+            type: number
+          - name: "n_pa"
+            type: number
+          - name: "n_cns"
+            type: number
+          - name: "qual_scr"
+            type: string
+          - name: "acr_scr"
+            type: number
+          - name: "uamcc_scr"
+            type: number
+          - name: "dah_scr"
+            type: number
+          - name: "tfu_scr"
+            type: number
+          - name: "ssm_taci_scr"
+            type: number
+          - name: "ssm_com_scr"
+            type: number
+          - name: "ssm_cc_scr"
+            type: number
+          - name: "ssm_sdm_scr"
+            type: number
+          - name: "ssm_pr_scr"
+            type: number
+          - name: "ssm_chos_scr"
+            type: number
+          - name: "ssm_hpe_scr"
+            type: number
+          - name: "ssm_spr_scr"
+            type: number
+          - name: "cisep_flag"
+            type: string
+          - name: "hpp_flag"
+            type: string
+          - name: "hdr_adjust"
+            type: number
+          - name: "bene_cnt"
+            type: number
+          - name: "n_ben_age_0_64"
+            type: number
+          - name: "n_ben_age_65_74"
+            type: number
+          - name: "n_ben_age_75_84"
+            type: number
+          - name: "n_ben_age_85plus"
+            type: number
+          - name: "n_ben_male"
+            type: number
+          - name: "n_ben_female"
+            type: number
+          - name: "n_ben_sex_unknown"
+            type: number
+          - name: "n_ben_race_white"
+            type: number
+          - name: "n_ben_race_black"
+            type: number
+          - name: "n_ben_race_asian"
+            type: number
+          - name: "n_ben_race_hisp"
+            type: number
+          - name: "n_ben_race_native"
+            type: number
+          - name: "n_ben_race_pi"
+            type: number
+          - name: "n_ben_race_other"
+            type: number
+          - name: "perc_dual"
+            type: number
+          - name: "perc_lti"
+            type: number
+          - name: "expnd_inp_s_trm"
+            type: number
+          - name: "expnd_inp_l_trm"
+            type: number
+          - name: "expnd_inp_rehab"
+            type: number
+          - name: "expnd_inp_psych"
+            type: number
+          - name: "expnd_ambupay"
+            type: number
+          - name: "adm_s_trm_n"
+            type: number
+          - name: "adm_l_trm_n"
+            type: number
+          - name: "adm_rehab_n"
+            type: number
+          - name: "adm_psych_n"
+            type: number
+          - name: "adm_n"
+            type: number
+          - name: "p_edv_vis"
+            type: number
+          - name: "p_edv_vis_hosp"
+            type: number
+          - name: "p_ct_vis"
+            type: number
+          - name: "p_mri_vis"
+            type: number
+          - name: "p_em_pcp_vis"
+            type: number
+          - name: "p_em_sp_vis"
+            type: number
+          - name: "p_em_total"
+            type: number
+          - name: "p_nurse_vis"
+            type: number
+          - name: "p_fqhc_rhc_vis"
+            type: number
+          - name: "p_snf_adm"
+            type: number
+          - name: "snf_los"
+            type: number
+          - name: "snf_payperstay"
+            type: number

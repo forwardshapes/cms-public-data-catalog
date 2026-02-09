@@ -1,0 +1,55 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: value_modifier
+        tags:
+          - medicare
+          - original medicare
+          - value-based care
+          - payment models
+        description: |
+          The Medicare Value-Based Payment Modifier (Value Modifier) data contains the performance results of
+          de-identified practices that were subject to the Value Modifier, such as the practices' quality and cost tiers
+          along with any applicable Value Modifier payment adjustment. The Value Modifier provided for differential
+          payment under the Medicare Physician Fee Schedule based on the quality of care furnished to Medicare
+          beneficiaries compared to the cost of care during a performance period. Calendar Year 2015 was the first
+          payment adjustment period under the Value Modifier based on performance in 2013. Calendar Year 2018 was the
+          final payment adjustment period under the Value Modifier based on performance in 2016.
+        meta:
+          cms_category: Quality Payment Program - CCSQ
+          data_source_url: https://data.cms.gov/medicare-value-based-payment-modifier-program/value-modifier
+          data_dictionary_url: https://data.cms.gov/resources/value-modifier-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/2018-value-modifier-performance-year-2016-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/c3e8e9c3-5193-47fb-a5bb-d3ddb00e7197/data-viewer
+          contact: qpp@cms.hhs.gov
+          dataset_uuid: c3e8e9c3-5193-47fb-a5bb-d3ddb00e7197
+        columns:
+          - name: "practice_id"
+            type: string
+          - name: "state"
+            type: string
+          - name: "num_eps_vm"
+            type: string
+          - name: "mssp"
+            type: number
+          - name: "gpro"
+            type: number
+          - name: "elig_up_adjust"
+            type: string
+          - name: "category"
+            type: string
+          - name: "vm_payment_adj"
+            type: number
+          - name: "updated_vm"
+            type: number
+          - name: "cost_comp_tier_text"
+            type: string
+          - name: "qual_comp_tier_text"
+            type: string
+          - name: "zb_cost_cmpscr_pool_rnd"
+            type: number
+          - name: "zb_qual_cmpscr_pool_rnd"
+            type: number

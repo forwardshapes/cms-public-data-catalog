@@ -1,0 +1,28 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_current_beneficiary_survey_survey_file
+        tags:
+          - national
+          - medicare
+          - original medicare
+          - medicare advantage
+          - medicare prescription drug
+          - health equity
+          - patient experience
+        description: |
+          The Medicare Current Beneficiary Survey (MCBS) - Survey File Microdata Public Use File (PUF) dataset provides
+          information on topics such as Medicare beneficiaries' access to care, health status, other information
+          regarding beneficiaries’ knowledge of, attitudes toward, and satisfaction with their health care, as well as
+          demographic data and information on all types of health insurance coverage.
+        meta:
+          cms_category: Medicare Current Beneficiary Survey - OEDA
+          data_source_url: https://data.cms.gov/medicare-current-beneficiary-survey-mcbs/medicare-current-beneficiary-survey-survey-file
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2025-11/SFPUF2023_Codebooks.zip
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-12/7e0bc53c-3737-464c-b84f-2c9de58833c5/2023%20Survey%20File%20Methodology.zip
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/cab71ec9-221c-4969-93dc-196d9f824689/data-viewer
+          contact: MCBS@cms.hhs.gov
+          dataset_uuid: cab71ec9-221c-4969-93dc-196d9f824689

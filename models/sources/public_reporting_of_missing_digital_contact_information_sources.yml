@@ -1,0 +1,28 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: public_reporting_of_missing_digital_contact_information
+        tags:
+          - medicare
+          - provider enrollment
+        description: |
+          In the May 2020 CMS Interoperability and Patient Access final rule, CMS finalized the policy to publicly
+          report the names and NPIs of those providers who do not have digital contact information included in the
+          National Plan and Provider Enumeration System (NPPES) system (85 FR 25584). This data includes the NPI and
+          provider name of providers and clinicians without digital contact information in NPPES.
+        meta:
+          cms_category: CMS Health Informatics and Interoperability Group - CPI
+          data_source_url: https://data.cms.gov/provider-compliance/public-reporting-of-missing-digital-contact-information
+          data_dictionary_url: https://data.cms.gov/resources/public-reporting-of-missing-digital-contact-information-data-dictionary
+          data_methodology_url: https://data.cms.gov/sites/default/files/2021-12/8eb2b4bf-6e5f-4e05-bcdb-39c07ad8f77a/Missing_Digital_Contact_Info_Methods%20.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/63a83bb1-4c02-43b3-8ef4-e3d3c6cf62fa/data-viewer
+          contact: CMSInteroperability@cms.hhs.gov
+          dataset_uuid: 63a83bb1-4c02-43b3-8ef4-e3d3c6cf62fa
+        columns:
+          - name: "npi"
+            type: string
+          - name: "provider name"
+            type: string

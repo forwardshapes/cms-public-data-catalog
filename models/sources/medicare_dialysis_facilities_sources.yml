@@ -1,0 +1,68 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_dialysis_facilities
+        tags:
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - outpatient facilities
+          - end stage renal disease facilities
+          - chronic conditions
+        description: |
+          The Medicare Dialysis Facilities data provides information on clinical and patient measures for
+          Medicare-certified ESRD facilities, also known as dialysis facilities. It contains data on patient
+          characteristics, treatment patterns, hospitalization, mortality, and transplantation patterns in
+          Medicare-certified dialysis facilities.
+
+          The following four data files are available for download each year, where yyyy denotes the fiscal year.
+
+          DFR_Data_FYyyyy.csv file includes all summaries (facility- and regional-level) reported in the Dialysis
+          Facility Report (DFR). The file includes one record for each dialysis facility and is the file recommended for
+          download (i.e., wide format). dfr_facility_socrata_fyyyyy.csv file includes only facility-level summaries
+          reported in the DFR. The file includes one record per measure per year (i.e., long format) and contains more
+          records than most spreadsheet programs can handle, which will result in an incomplete load of data. Use of a
+          database or statistical software is required. dfr_us_state_socrata_fyyyyyy.csv file includes state- and
+          national-level summaries reported in DFR. The file includes one record per measure per year (i.e., long
+          format). dfr_network_socrata_fyyyyyy.csv file includes ESRD network-level summaries reported in the DFR. The
+          file includes one record per measure per year (i.e., long format).
+        meta:
+          cms_category: ESRD Questions - CCSQ
+          data_source_url: https://data.cms.gov/quality-of-care/medicare-dialysis-facilities
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2026-01/FY2026%20DFR%20PUF%20Data%20Dictonary.xlsx
+          data_methodology_url: https://data.cms.gov/sites/default/files/2026-01/FY26%20DFR_Guide.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/f8610e87-ba25-43a3-a49e-927dbc8701ae/data-viewer
+          contact: ESRDQuestions@cms.hhs.gov
+          dataset_uuid: f8610e87-ba25-43a3-a49e-927dbc8701ae
+        columns:
+          - name: "state"
+            type: string
+          - name: "ccn"
+            type: string
+          - name: "provider_name"
+            type: string
+          - name: "city"
+            type: string
+          - name: "ownership_type"
+            type: string
+          - name: "esrd_network"
+            type: string
+          - name: "npi"
+            type: number
+          - name: "chain"
+            type: string
+          - name: "modality"
+            type: string
+          - name: "alternate_ccns"
+            type: string
+          - name: "measure"
+            type: string
+          - name: "measure_score"
+            type: number
+          - name: "year"
+            type: number
+          - name: "measure_id"
+            type: string

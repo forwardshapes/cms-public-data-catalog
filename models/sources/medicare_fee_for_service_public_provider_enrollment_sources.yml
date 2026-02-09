@@ -1,0 +1,47 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_fee_for_service_public_provider_enrollment
+        tags:
+          - medicare
+          - original medicare
+          - provider enrollment
+        description: |
+          The Medicare Fee-For-Service Public Provider Enrollment dataset includes information on providers who are
+          actively approved to bill Medicare or have completed the 855O at the time the data was pulled from the
+          Provider Enrollment, Chain, and Ownership System (PECOS). The release of this provider enrollment data is not
+          related to other provider information releases such as Physician Compare or Data Transparency.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/medicare-provider-supplier-enrollment/medicare-fee-for-service-public-provider-enrollment
+          data_dictionary_url: https://data.cms.gov/resources/medicare-fee-for-service-public-provider-enrollment-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/fee-for-service-public-provider-enrollment-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/2457ea29-fc82-48b0-86ec-3b0755de7515/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: 2457ea29-fc82-48b0-86ec-3b0755de7515
+        columns:
+          - name: "npi"
+            type: string
+          - name: "multiple_npi_flag"
+            type: string
+          - name: "pecos_asct_cntl_id"
+            type: string
+          - name: "enrlmt_id"
+            type: string
+          - name: "provider_type_cd"
+            type: string
+          - name: "provider_type_desc"
+            type: string
+          - name: "state_cd"
+            type: string
+          - name: "first_name"
+            type: string
+          - name: "mdl_name"
+            type: string
+          - name: "last_name"
+            type: string
+          - name: "org_name"
+            type: string

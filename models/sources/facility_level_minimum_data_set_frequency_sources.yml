@@ -1,0 +1,58 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: facility_level_minimum_data_set_frequency
+        tags:
+          - medicare
+          - hospitals & facilities
+          - skilled nursing
+        description: |
+          The Facility-Level Minimum Data Set (MDS) Frequency dataset provides information for active nursing home
+          residents on topics, such as race/ethnicity, age, or marital status; discharge dispositions; hearing, speech,
+          and vision; cognitive patterns; mood; functional abilities and goals; bladder and bowel; active diagnoses;
+          health conditions; swallowing/nutritional status; oral/dental status; skin conditions; medications; special
+          treatments, procedures, and programs; restraints and alarms; and participation in assessment and goal setting.
+        meta:
+          cms_category: NH Facility - CCSQ
+          data_source_url: https://data.cms.gov/quality-of-care/facility-level-minimum-data-set-frequency
+          data_dictionary_url: https://data.cms.gov/resources/facility-level-minimum-data-set-frequency-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/facility-level-minimum-data-set-frequency-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/d086edc0-4953-4fb9-a663-b35526371add/data-viewer
+          contact: NursingHomeData@cms.hhs.gov
+          dataset_uuid: d086edc0-4953-4fb9-a663-b35526371add
+        columns:
+          - name: "ccn"
+            type: string
+          - name: "provider name"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "zip code"
+            type: string
+          - name: "fips county code"
+            type: string
+          - name: "county name"
+            type: string
+          - name: "report date"
+            type: date
+          - name: "mds item question/description"
+            type: string
+          - name: "mds item response"
+            type: string
+          - name: "overall percent"
+            type: number
+          - name: "total residents"
+            type: number
+          - name: "short-stay percent"
+            type: number
+          - name: "short-stay residents"
+            type: number
+          - name: "long-stay percent"
+            type: number
+          - name: "long-stay residents"
+            type: number

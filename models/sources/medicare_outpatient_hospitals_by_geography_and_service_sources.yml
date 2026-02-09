@@ -1,0 +1,60 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_outpatient_hospitals_by_geography_and_service
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - outpatient facilities
+          - health care use & payments
+          - health equity
+        description: |
+          The Medicare Outpatient Hospitals by Geography and Service dataset provides information on services for
+          Original Medicare Part B beneficiaries by OPPS hospitals. These datasets contain information on the number of
+          services, payments, and submitted charges organized by geography and comprehensive Ambulatory Payment
+          Classification (APC).
+        meta:
+          cms_category: Medicare Provider Data - OEDA
+          data_source_url: https://data.cms.gov/provider-summary-by-type-of-service/medicare-outpatient-hospitals/medicare-outpatient-hospitals-by-geography-and-service
+          data_dictionary_url: https://data.cms.gov/resources/medicare-outpatient-hospitals-by-geography-and-service-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-outpatient-hospitals-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/04baec39-4a54-400e-824d-8e75251ceda9/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 04baec39-4a54-400e-824d-8e75251ceda9
+        columns:
+          - name: "rndrng_prvdr_geo_lvl"
+            type: string
+          - name: "rndrng_prvdr_geo_cd"
+            type: string
+          - name: "rndrng_prvdr_geo_desc"
+            type: string
+          - name: "srvc_lvl"
+            type: string
+          - name: "apc_cd"
+            type: string
+          - name: "apc_desc"
+            type: string
+          - name: "hcpcs_cd"
+            type: string
+          - name: "hcpcs_desc"
+            type: string
+          - name: "bene_cnt"
+            type: number
+          - name: "capc_srvcs"
+            type: number
+          - name: "avg_tot_sbmtd_chrgs"
+            type: number
+          - name: "avg_mdcr_alowd_amt"
+            type: number
+          - name: "avg_mdcr_pymt_amt"
+            type: number
+          - name: "outlier_srvcs"
+            type: number
+          - name: "avg_mdcr_outlier_amt"
+            type: number

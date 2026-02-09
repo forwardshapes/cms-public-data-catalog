@@ -1,0 +1,52 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: revalidation_due_date_list
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - provider enrollment
+        description: |
+          The Revalidation Due Date List dataset contains revalidation due dates for Medicare providers who are due to
+          revalidate in the following six months. If a provider's due date does not fall within the ensuing six months,
+          the due date is marked 'TBD'. In addition the dataset also includes subfiles with reassignment information for
+          a given provider as well as due date listings for clinics and group practices and their providers.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/medicare-provider-supplier-enrollment/revalidation-due-date-list
+          data_dictionary_url: https://data.cms.gov/resources/revalidation-due-date-list-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/additional-information-on-revalidation
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/3746498e-874d-45d8-9c69-68603cafea60/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: 3746498e-874d-45d8-9c69-68603cafea60
+        columns:
+          - name: "enrollment id"
+            type: string
+          - name: "national provider identifier"
+            type: string
+          - name: "first name"
+            type: string
+          - name: "last name"
+            type: string
+          - name: "organization name"
+            type: string
+          - name: "enrollment state code"
+            type: string
+          - name: "enrollment type"
+            type: string
+          - name: "provider type text"
+            type: string
+          - name: "enrollment specialty"
+            type: string
+          - name: "revalidation due date"
+            type: date
+          - name: "adjusted due date"
+            type: date
+          - name: "individual total reassign to"
+            type: number
+          - name: "receiving benefits reassignment"
+            type: number

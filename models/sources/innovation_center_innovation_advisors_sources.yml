@@ -1,0 +1,40 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: innovation_center_innovation_advisors
+        tags:
+          - medicare
+          - original medicare
+          - medicaid
+          - value-based care
+          - payment models
+        description: |
+          The CMS Innovation Center Innovation Advisors dataset provides information on individuals chosen by CMS as
+          participants in the Innovation Advisors Program. The data includes the name of the initiative, as well as
+          participants names, geographic location including city and state, and geographic reach of the practice.
+        meta:
+          cms_category: CMS Innovation Center - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/cms-innovation-models-overview/innovation-center-innovation-advisors
+          data_dictionary_url: https://data.cms.gov/resources/innovation-advisors-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/innovation-advisors-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/6d6fe0be-25d8-473b-84f6-b3b9ef3e4469/data-viewer
+          contact: cmmi-dataset-support@cms.hhs.gov
+          dataset_uuid: 6d6fe0be-25d8-473b-84f6-b3b9ef3e4469
+        columns:
+          - name: "name of initiative"
+            type: string
+          - name: "participant name"
+            type: string
+          - name: "geographic reach"
+            type: string
+          - name: "location"
+            type: string
+          - name: "participant's organization"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string

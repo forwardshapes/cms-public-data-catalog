@@ -1,0 +1,45 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: payroll_based_journal_employee_detail_nursing_home_staffing
+        tags:
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - skilled nursing
+          - health care use & payments
+        description: |
+          The Payroll Based Journal (PBJ) Employee Detail Nursing Home Staffing dataset provides information submitted
+          by nursing homes including rehabilitation services on a quarterly basis. The data include a system generated
+          employee identification number, work date, job type and employment status, and hours worked for each nursing
+          home employee.
+        meta:
+          cms_category: Nursing Home Staffing - CCSQ (PBJ Reports)
+          data_source_url: https://data.cms.gov/quality-of-care/payroll-based-journal-employee-detail-nursing-home-staffing
+          data_dictionary_url: https://data.cms.gov/resources/payroll-based-journal-employee-detail-nursing-home-staffing-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/payroll-based-journal-employee-detail-nursing-home-staffing-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/d65b8be0-946e-410b-ab06-01829628d5a1/data-viewer
+          contact: nhstaffing@cms.hhs.gov
+          dataset_uuid: d65b8be0-946e-410b-ab06-01829628d5a1
+        columns:
+          - name: "provnum"
+            type: string
+          - name: "state"
+            type: string
+          - name: "cy_qtr"
+            type: string
+          - name: "workdate"
+            type: string
+          - name: "sys_emplee_id"
+            type: string
+          - name: "emplee_job_cd_id"
+            type: string
+          - name: "emp_ctr"
+            type: string
+          - name: "work_hrs_num"
+            type: number
+          - name: "work_hrs_fn"
+            type: string

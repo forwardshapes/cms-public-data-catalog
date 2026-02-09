@@ -1,0 +1,103 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: managing_clinician_aggregation_group_performance
+        tags:
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - outpatient facilities
+          - clinics
+          - end stage renal disease facilities
+          - value-based care
+          - coordinated care
+          - service delivery models
+        description: |
+          The Managing Clinician Aggregation Group Performance dataset provides performance information in the
+          End-Stage Renal Disease (ESRD) Treatment Choices (ETC) Model. The dataset includes information on Performance
+          Payment Adjustment (PPA), Modality Performance Score (MPS), home dialysis rate, and transplant rate, as well
+          as the individual components of each rate for each model participant Managing Clinician aggregation group.
+
+          All Managing Clinicians within the same aggregation group share the same performance information. The
+          supplementary aggregation group crosswalk file may be used to map aggregation groups to individual ETC
+          Participant Managing Clinicians.
+        meta:
+          cms_category: ETC Model - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/disease-episode-based-payment-models/managing-clinician-aggregation-group-performance
+          data_dictionary_url: https://data.cms.gov/resources/managing-clinician-aggregation-group-performance-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/esrd-treatment-choices-etc-model-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/6a0dbf98-e4b0-4037-ac63-1439b08f4a71/data-viewer
+          contact: ETC-CMMI@cms.hhs.gov
+          dataset_uuid: 6a0dbf98-e4b0-4037-ac63-1439b08f4a71
+        columns:
+          - name: "agg_id"
+            type: string
+          - name: "hrr_num_my"
+            type: number
+          - name: "hdr_my"
+            type: number
+          - name: "hdr_dnm_my"
+            type: number
+          - name: "hdr_num_my"
+            type: number
+          - name: "hd_num_my"
+            type: number
+          - name: "sd_num_my"
+            type: number
+          - name: "nocd_num_my"
+            type: number
+          - name: "tr_my_achscr"
+            type: number
+          - name: "tr_my_impscr"
+            type: number
+          - name: "twr_dnm_my"
+            type: number
+          - name: "twr_num_my"
+            type: number
+          - name: "ldt_dnm_l_my"
+            type: number
+          - name: "ldt_num_l_my"
+            type: number
+          - name: "ldt_num_r_my"
+            type: number
+          - name: "benecnt_ldt_my"
+            type: number
+          - name: "benecnt_pmp_my"
+            type: number
+          - name: "hei_hdr"
+            type: number
+          - name: "hdr_delis_diff"
+            type: number
+          - name: "hdr_delis_my"
+            type: number
+          - name: "hdr_dnm_delis_my"
+            type: number
+          - name: "hdr_num_delis_my"
+            type: number
+          - name: "hei_tr"
+            type: number
+          - name: "tr_delis_diff"
+            type: number
+          - name: "tr_delis_my"
+            type: number
+          - name: "twr_dnm_delis_my"
+            type: number
+          - name: "twr_num_delis_my"
+            type: number
+          - name: "ldt_dnm_l_delis_my"
+            type: number
+          - name: "ldt_num_l_delis_my"
+            type: number
+          - name: "ldt_num_r_delis_my"
+            type: number
+          - name: "mps"
+            type: number
+          - name: "ppa"
+            type: number
+          - name: "ppa_period"
+            type: number
+          - name: "my"
+            type: number

@@ -1,0 +1,41 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: cpc_initiative_participating_primary_care_practices
+        tags:
+          - medicare
+          - original medicare
+          - value-based care
+          - payment models
+        description: |
+          The Comprehensive Primary Care (CPC) Initiative - Participating Primary Care Practices dataset provides a
+          list of practices involved in a multi-payer initiative which fosters collaboration between public and private
+          health care payers to strengthen primary care.
+        meta:
+          cms_category: CMS Innovation Center - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/accountable-care-models/cpc-initiative-participating-primary-care-practices
+          data_dictionary_url: https://data.cms.gov/resources/cpc-initiative-participating-primary-care-practices-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/cpc-initiative-participating-primary-care-practices-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/24da2642-7269-4c75-9a62-0dc3a195b205/data-viewer
+          contact: cmmi-dataset-support@cms.hhs.gov
+          dataset_uuid: 24da2642-7269-4c75-9a62-0dc3a195b205
+        columns:
+          - name: "name of initiative"
+            type: string
+          - name: "participating practice"
+            type: string
+          - name: "participating practice location"
+            type: string
+          - name: "state"
+            type: string
+          - name: "city"
+            type: string
+          - name: "geographic reach"
+            type: string
+          - name: "street address"
+            type: string
+          - name: "zip code"
+            type: string

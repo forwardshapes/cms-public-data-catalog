@@ -1,0 +1,35 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_provider_and_supplier_taxonomy_crosswalk
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - medical suppliers & equipment
+          - provider enrollment
+        description: |
+          The Medicare Provider and Supplier Taxonomy Crosswalk dataset lists the providers and suppliers eligible to
+          enroll in Medicare programs with the proper healthcare provider taxonomy code. This data includes the Medicare
+          speciality codes, if available, provider/supplier type description, taxonomy code, and the taxonomy
+          description.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/medicare-provider-supplier-enrollment/medicare-provider-and-supplier-taxonomy-crosswalk
+          data_dictionary_url: https://data.cms.gov/resources/medicare-provider-and-supplier-taxonomy-crosswalk-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-provider-and-supplier-taxonomy-crosswalk-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/113eb0bc-0c9a-4d91-9f93-3f6b28c0bf6b/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: 113eb0bc-0c9a-4d91-9f93-3f6b28c0bf6b
+        columns:
+          - name: "medicare specialty code"
+            type: string
+          - name: "medicare provider/supplier type description"
+            type: string
+          - name: "provider taxonomy code"
+            type: string
+          - name: "provider taxonomy description:  type, classification, specialization"
+            type: string

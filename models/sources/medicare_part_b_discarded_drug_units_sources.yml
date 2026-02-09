@@ -1,0 +1,44 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_part_b_discarded_drug_units
+        tags:
+          - medicare
+          - original medicare
+          - drugs
+        description: |
+          The Medicare Part B Discarded Drug Units dataset provides spending information on claims for Medicare Part B
+          drugs that were identified as having discarded amounts of a drug. As of January 1, 2017, the Centers for
+          Medicare & Medicaid Services (CMS) requires all physicians, hospitals, and other providers submitting claims
+          for Medicare Part B drugs to report any discarded amount of a single use vial or other single use package drug
+          on its claim for payment. With the passage of the Infrastructure Investment and Jobs Act in November 2021,
+          manufacturers must pay a refund to Medicare for discarded amounts above a specified threshold effective for
+          drugs furnished beginning with January 1, 2023.
+        meta:
+          cms_category: CMS Drug Spending - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-spending-by-drug/medicare-part-b-discarded-drug-units
+          data_dictionary_url: https://data.cms.gov/resources/medicare-part-b-discarded-drug-units-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-part-b-discarded-drug-units-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/09fd71b8-eb3e-45af-a01e-f8ab5a190e84/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 09fd71b8-eb3e-45af-a01e-f8ab5a190e84
+        columns:
+          - name: "hcpcs_cd"
+            type: string
+          - name: "brnd_name"
+            type: string
+          - name: "gnrc_name"
+            type: string
+          - name: "tot_mdcr_alowd_amt"
+            type: number
+          - name: "tot_mdcr_alowd_admnrd_amt"
+            type: number
+          - name: "tot_mdcr_alowd_dscrd_amt"
+            type: number
+          - name: "pct_admnrd_units"
+            type: number
+          - name: "pct_dscrd_units"
+            type: number

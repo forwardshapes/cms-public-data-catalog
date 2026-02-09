@@ -1,0 +1,114 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: reach_acos
+        tags:
+          - medicare
+          - original medicare
+          - value-based care
+          - coordinated care
+          - payment models
+          - accountable care organizations
+        description: |
+          The REACH Accountable Care Organizations (ACOs) dataset provides overview information on REACH ACOs including
+          their name, number of years in the program, and contact information of key personnel.
+        meta:
+          cms_category: ACO REACH - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/accountable-care-models/reach-acos
+          data_dictionary_url: https://data.cms.gov/resources/aco-reach-model-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/aco-reach-model-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/eddc0a1b-dab8-478e-a883-3385e0275a17/data-viewer
+          contact: ACOREACH@cms.hhs.gov
+          dataset_uuid: eddc0a1b-dab8-478e-a883-3385e0275a17
+        columns:
+          - name: "entity_id"
+            type: string
+          - name: "performance_year"
+            type: string
+          - name: "agreement_start_date(cohort)"
+            type: string
+          - name: "entity_legal_business_name"
+            type: string
+          - name: "entity_type"
+            type: string
+          - name: "agreement_option"
+            type: string
+          - name: "service_areas"
+            type: string
+          - name: "street_address"
+            type: string
+          - name: "apt/suite"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state/territory"
+            type: string
+          - name: "zip_code"
+            type: string
+          - name: "zip_code+4"
+            type: string
+          - name: "website"
+            type: string
+          - name: "phone"
+            type: string
+          - name: "alignment_frequency"
+            type: string
+          - name: "payment_mechanism"
+            type: string
+          - name: "stop-loss_selected"
+            type: string
+          - name: "enhanced_pcc%"
+            type: number
+          - name: "cardiac_and_pulmonary_rehabilitation"
+            type: string
+          - name: "care_management_home_visit"
+            type: string
+          - name: "chronic_disease_management_reward(bei)"
+            type: string
+          - name: "concurrent_care_for_hospice_beneficiaries"
+            type: string
+          - name: "cost_sharing_for_part_b_services(bei)"
+            type: string
+          - name: "diabetic_shoes"
+            type: string
+          - name: "home_health_homebound_waiver"
+            type: string
+          - name: "home_infusion_therapy"
+            type: string
+          - name: "hospice_care_certification"
+            type: string
+          - name: "medical_nutrition_therapy"
+            type: string
+          - name: "post_discharge_home_visit"
+            type: string
+          - name: "skilled_nursing_facility(snf)_3-day_stay_waiver"
+            type: string
+          - name: "telehealth"
+            type: string
+          - name: "provisional_reconciliation"
+            type: string
+          - name: "aco_compliance_contact_name"
+            type: string
+          - name: "aco_medical_director_name"
+            type: string
+          - name: "aco_executive_name_1"
+            type: string
+          - name: "aco_executive_phone_1"
+            type: string
+          - name: "aco_executive_email_1"
+            type: string
+          - name: "aco_executive_name_2"
+            type: string
+          - name: "aco_executive_phone_2"
+            type: string
+          - name: "aco_executive_email_2"
+            type: string
+          - name: "aco_executive_name_3"
+            type: string
+          - name: "aco_executive_phone_3"
+            type: string
+          - name: "aco_executive_email_3"
+            type: string

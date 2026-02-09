@@ -1,0 +1,221 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_durable_medical_equipment_devices_supplies_by_referring_provider
+        tags:
+          - medicare
+          - original medicare
+          - physicians & practitioners
+          - medical suppliers & equipment
+          - health care use & payments
+          - health equity
+        description: |
+          The Medicare Durable Medical Equipment, Devices & Supplies by Referring Provider dataset contains information
+          on usage, payments, submitted charges and beneficiary demographic and health characteristics organized by
+          National Provider Identifier (NPI).
+        meta:
+          cms_category: Medicare Provider Data - OEDA
+          data_source_url: https://data.cms.gov/provider-summary-by-type-of-service/medicare-durable-medical-equipment-devices-supplies/medicare-durable-medical-equipment-devices-supplies-by-referring-provider
+          data_dictionary_url: https://data.cms.gov/resources/medicare-durable-medical-equipment-devices-supplies-by-referring-provider-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-durable-medical-equipment-devices-supplies-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/f8603e5b-9c47-4c52-9b47-a4ef92dfada4/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: f8603e5b-9c47-4c52-9b47-a4ef92dfada4
+        columns:
+          - name: "rfrg_npi"
+            type: string
+          - name: "rfrg_prvdr_last_name_org"
+            type: string
+          - name: "rfrg_prvdr_first_name"
+            type: string
+          - name: "rfrg_prvdr_mi"
+            type: string
+          - name: "rfrg_prvdr_crdntls"
+            type: string
+          - name: "rfrg_prvdr_ent_cd"
+            type: string
+          - name: "rfrg_prvdr_st1"
+            type: string
+          - name: "rfrg_prvdr_st2"
+            type: string
+          - name: "rfrg_prvdr_city"
+            type: string
+          - name: "rfrg_prvdr_state_abrvtn"
+            type: string
+          - name: "rfrg_prvdr_state_fips"
+            type: string
+          - name: "rfrg_prvdr_zip5"
+            type: string
+          - name: "rfrg_prvdr_ruca"
+            type: string
+          - name: "rfrg_prvdr_ruca_desc"
+            type: string
+          - name: "rfrg_prvdr_cntry"
+            type: string
+          - name: "rfrg_prvdr_spclty_desc"
+            type: string
+          - name: "rfrg_prvdr_spclty_srce"
+            type: string
+          - name: "tot_suplrs"
+            type: number
+          - name: "tot_suplr_hcpcs_cds"
+            type: number
+          - name: "tot_suplr_benes"
+            type: number
+          - name: "tot_suplr_clms"
+            type: number
+          - name: "tot_suplr_srvcs"
+            type: number
+          - name: "suplr_sbmtd_chrgs"
+            type: number
+          - name: "suplr_mdcr_alowd_amt"
+            type: number
+          - name: "suplr_mdcr_pymt_amt"
+            type: number
+          - name: "suplr_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "dme_sprsn_ind"
+            type: string
+          - name: "dme_tot_suplrs"
+            type: number
+          - name: "dme_tot_suplr_hcpcs_cds"
+            type: number
+          - name: "dme_tot_suplr_benes"
+            type: number
+          - name: "dme_tot_suplr_clms"
+            type: number
+          - name: "dme_tot_suplr_srvcs"
+            type: number
+          - name: "dme_suplr_sbmtd_chrgs"
+            type: number
+          - name: "dme_suplr_mdcr_alowd_amt"
+            type: number
+          - name: "dme_suplr_mdcr_pymt_amt"
+            type: number
+          - name: "dme_suplr_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "pos_sprsn_ind"
+            type: string
+          - name: "pos_tot_suplrs"
+            type: number
+          - name: "pos_tot_suplr_hcpcs_cds"
+            type: number
+          - name: "pos_tot_suplr_benes"
+            type: number
+          - name: "pos_tot_suplr_clms"
+            type: number
+          - name: "pos_tot_suplr_srvcs"
+            type: number
+          - name: "pos_suplr_sbmtd_chrgs"
+            type: number
+          - name: "pos_suplr_mdcr_alowd_amt"
+            type: number
+          - name: "pos_suplr_mdcr_pymt_amt"
+            type: number
+          - name: "pos_suplr_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "drug_sprsn_ind"
+            type: string
+          - name: "drug_tot_suplrs"
+            type: number
+          - name: "drug_tot_suplr_hcpcs_cds"
+            type: number
+          - name: "drug_tot_suplr_benes"
+            type: number
+          - name: "drug_tot_suplr_clms"
+            type: number
+          - name: "drug_tot_suplr_srvcs"
+            type: number
+          - name: "drug_suplr_sbmtd_chrgs"
+            type: number
+          - name: "drug_suplr_mdcr_alowd_amt"
+            type: number
+          - name: "drug_suplr_mdcr_pymt_amt"
+            type: number
+          - name: "drug_suplr_mdcr_stdzd_pymt_amt"
+            type: number
+          - name: "bene_avg_age"
+            type: number
+          - name: "bene_age_lt_65_cnt"
+            type: number
+          - name: "bene_age_65_74_cnt"
+            type: number
+          - name: "bene_age_75_84_cnt"
+            type: number
+          - name: "bene_age_gt_84_cnt"
+            type: number
+          - name: "bene_feml_cnt"
+            type: number
+          - name: "bene_male_cnt"
+            type: number
+          - name: "bene_race_wht_cnt"
+            type: number
+          - name: "bene_race_black_cnt"
+            type: number
+          - name: "bene_race_api_cnt"
+            type: number
+          - name: "bene_race_hspnc_cnt"
+            type: number
+          - name: "bene_race_natind_cnt"
+            type: number
+          - name: "bene_race_othr_cnt"
+            type: number
+          - name: "bene_ndual_cnt"
+            type: number
+          - name: "bene_dual_cnt"
+            type: number
+          - name: "bene_cc_bh_adhd_othcd_v1_pct"
+            type: number
+          - name: "bene_cc_bh_alcohol_drug_v1_pct"
+            type: number
+          - name: "bene_cc_bh_tobacco_v1_pct"
+            type: number
+          - name: "bene_cc_bh_alz_nonalzdem_v2_pct"
+            type: number
+          - name: "bene_cc_bh_anxiety_v1_pct"
+            type: number
+          - name: "bene_cc_bh_bipolar_v1_pct"
+            type: number
+          - name: "bene_cc_bh_mood_v2_pct"
+            type: number
+          - name: "bene_cc_bh_depress_v1_pct"
+            type: number
+          - name: "bene_cc_bh_pd_v1_pct"
+            type: number
+          - name: "bene_cc_bh_ptsd_v1_pct"
+            type: number
+          - name: "bene_cc_bh_schizo_othpsy_v1_pct"
+            type: number
+          - name: "bene_cc_ph_asthma_v2_pct"
+            type: number
+          - name: "bene_cc_ph_afib_v2_pct"
+            type: number
+          - name: "bene_cc_ph_cancer6_v2_pct"
+            type: number
+          - name: "bene_cc_ph_ckd_v2_pct"
+            type: number
+          - name: "bene_cc_ph_copd_v2_pct"
+            type: number
+          - name: "bene_cc_ph_diabetes_v2_pct"
+            type: number
+          - name: "bene_cc_ph_hf_nonihd_v2_pct"
+            type: number
+          - name: "bene_cc_ph_hyperlipidemia_v2_pct"
+            type: number
+          - name: "bene_cc_ph_hypertension_v2_pct"
+            type: number
+          - name: "bene_cc_ph_ischemicheart_v2_pct"
+            type: number
+          - name: "bene_cc_ph_osteoporosis_v2_pct"
+            type: number
+          - name: "bene_cc_ph_parkinson_v2_pct"
+            type: number
+          - name: "bene_cc_ph_arthritis_v2_pct"
+            type: number
+          - name: "bene_cc_ph_stroke_tia_v2_pct"
+            type: number
+          - name: "bene_avg_risk_scre"
+            type: number

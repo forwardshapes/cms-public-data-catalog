@@ -1,0 +1,47 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: advance_investment_payment_spend_plan
+        tags:
+          - medicare
+          - original medicare
+          - value-based care
+          - coordinated care
+          - financials
+          - payment models
+          - accountable care organizations
+        description: |
+          The Advance Investment Payment Spend Plan data provides payment use, spending category, projected and actual
+          spending of advanced investments payments by Accountable Care Organizations (ACOs).
+        meta:
+          cms_category: Shared Savings Program - CM
+          data_source_url: https://data.cms.gov/medicare-shared-savings-program/advance-investment-payment-spend-plan
+          data_dictionary_url: https://data.cms.gov/resources/advance-investment-payment-spend-plan-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/advance-investment-payment-spend-plan-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/a3d35ba1-3ff4-48dd-91b4-8e1f9e7a19b7/data-viewer
+          contact: SharedSavingsProgram@cms.hhs.gov
+          dataset_uuid: a3d35ba1-3ff4-48dd-91b4-8e1f9e7a19b7
+        columns:
+          - name: "aco_id"
+            type: string
+          - name: "aco_name"
+            type: string
+          - name: "payment_use"
+            type: string
+          - name: "general_spend_category"
+            type: string
+          - name: "general_spend_subcategory"
+            type: string
+          - name: "total_aip_funding_received_through_december_2024"
+            type: number
+          - name: "projected_spending_2024"
+            type: number
+          - name: "actual_spending_2024"
+            type: number
+          - name: "projected_spending_2025"
+            type: number
+          - name: "actual_spending_2025"
+            type: number

@@ -1,0 +1,68 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: federally_qualified_health_center_enrollments
+        tags:
+          - medicare
+          - hospitals & facilities
+          - outpatient facilities
+          - federally qualified health centers
+          - provider enrollment
+        description: |
+          The Federally Qualified Health Center (FQHC) Enrollments dataset provides enrollment information on all FQHCs
+          currently enrolled in Medicare. This data includes information on the FQHC's legal business name, doing
+          business as name, organization type, and address.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/federally-qualified-health-center-enrollments
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2025-10/6231c406-4523-4cc5-bed3-29cbe1c20d1e/FQHC_Enrollments_Data_Dictionary.pdf
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-10/87ec4688-3e5d-4c39-aa6c-c387801534ed/FQHC_Data_Guidance.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/4bcae866-3411-439a-b762-90a6187c194b/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: 4bcae866-3411-439a-b762-90a6187c194b
+        columns:
+          - name: "enrollment id"
+            type: string
+          - name: "enrollment state"
+            type: string
+          - name: "provider type code"
+            type: string
+          - name: "provider type text"
+            type: string
+          - name: "npi"
+            type: string
+          - name: "multiple npi flag"
+            type: string
+          - name: "ccn"
+            type: string
+          - name: "associate id"
+            type: string
+          - name: "organization name"
+            type: string
+          - name: "doing business as name"
+            type: string
+          - name: "incorporation date"
+            type: date
+          - name: "incorporation state"
+            type: string
+          - name: "organization type structure"
+            type: string
+          - name: "organization other type text"
+            type: string
+          - name: "proprietary_nonprofit"
+            type: string
+          - name: "address line 1"
+            type: string
+          - name: "address line 2"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "zip code"
+            type: string
+          - name: "telephone number"
+            type: string

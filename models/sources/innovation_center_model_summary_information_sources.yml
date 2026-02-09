@@ -1,0 +1,59 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: innovation_center_model_summary_information
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - medicare prescription drug
+          - children's health insurance program
+          - value-based care
+          - payment models
+        description: |
+          The Innovation Center Model Summary Information dataset contains various data points related to CMS
+          Innovation Center models, demonstrations, programs, and initiatives. This can includes name, start and end
+          date, statutory or regulatory authority, keywords, stage of implementation, participants, beneficiaries and
+          physicians impacted, and categories related to health care quality, cost, payment, and delivery.
+        meta:
+          cms_category: CMS Innovation Center - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/cms-innovation-models-overview/innovation-center-model-summary-information
+          data_dictionary_url: https://data.cms.gov/resources/model-summary-information-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/model-summary-information-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/0d753f51-c3de-43cd-95d2-550a23b8606a/data-viewer
+          contact: cmmi-dataset-support@cms.hhs.gov
+          dataset_uuid: 0d753f51-c3de-43cd-95d2-550a23b8606a
+        columns:
+          - name: "model name"
+            type: string
+          - name: "stage"
+            type: string
+          - name: "number of participants"
+            type: number
+          - name: "category"
+            type: string
+          - name: "authority"
+            type: string
+          - name: "description"
+            type: string
+          - name: "number of beneficiaries impacted"
+            type: string
+          - name: "number of physicians impacted"
+            type: string
+          - name: "date began"
+            type: string
+          - name: "date ended"
+            type: string
+          - name: "states"
+            type: string
+          - name: "keywords"
+            type: string
+          - name: "url"
+            type: string
+          - name: "display model summary"
+            type: string
+          - name: "unique id"
+            type: number

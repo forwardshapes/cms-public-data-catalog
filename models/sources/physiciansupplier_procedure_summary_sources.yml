@@ -1,0 +1,63 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: physiciansupplier_procedure_summary
+        tags:
+          - medicare
+          - original medicare
+          - health care use & payments
+        description: |
+          The Physician/Supplier Procedure Summary (PSPS) data provides a summary of calendar year Medicare Part B
+          carrier and durable medical equipment fee-for-service (FFS) claims. The file is organized by carrier, pricing
+          locality, Healthcare Common Procedure Coding System (HCPCS) code, HCPCS modifier, provider specialty, type of
+          service, and place of service. The summarized fields are total submitted services and charges, total allowed
+          services and charges, total denied services and charges, and total payment amounts. This dataset is produced
+          annually and is typically available in July (i.e., data for CY2015 is usually available in July 2016).
+        meta:
+          cms_category: CMS EDG Data Questions - OIT
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/physiciansupplier-procedure-summary
+          data_dictionary_url: https://data.cms.gov/resources/physician-supplier-procedure-summary-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/physician-supplier-procedure-summary-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/164fc736-4179-4100-9f79-592b69e41975/data-viewer
+          contact: CMSEDG_DataRequests_Intake@cms.hhs.gov
+          dataset_uuid: 164fc736-4179-4100-9f79-592b69e41975
+        columns:
+          - name: "hcpcs_cd"
+            type: string
+          - name: "hcpcs_initial_modifier_cd"
+            type: string
+          - name: "provider_spec_cd"
+            type: string
+          - name: "carrier_num"
+            type: string
+          - name: "pricing_locality_cd"
+            type: string
+          - name: "type_of_service_cd"
+            type: number
+          - name: "place_of_service_cd"
+            type: string
+          - name: "hcpcs_second_modifier_cd"
+            type: string
+          - name: "psps_submitted_service_cnt"
+            type: number
+          - name: "psps_submitted_charge_amt"
+            type: number
+          - name: "psps_allowed_charge_amt"
+            type: number
+          - name: "psps_denied_services_cnt"
+            type: number
+          - name: "psps_denied_charge_amt"
+            type: number
+          - name: "psps_assigned_services_cnt"
+            type: number
+          - name: "psps_nch_payment_amt"
+            type: number
+          - name: "psps_hcpcs_asc_ind_cd"
+            type: string
+          - name: "psps_error_ind_cd"
+            type: number
+          - name: "hcpcs_betos_cd"
+            type: string

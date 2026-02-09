@@ -1,0 +1,40 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: strong_start_awardees
+        tags:
+          - medicaid
+          - children's health insurance program
+          - health care use & payments
+          - value-based care
+          - payment models
+          - service delivery models
+        description: |
+          The Strong Start Awardees dataset provides information on the financial awards made to participants in the
+          Strong Start for Mothers and Newborns Initiative. This initiative tested three evidence-based maternity care
+          service approaches with the goal of improving health outcomes of pregnant women and newborns. The data can
+          include the participant name, participant location, locations of practices participating under the
+          participants’ umbrella practice, descriptive text for the type(s) of enhanced prenatal care provided, and the
+          amount of funding awarded to the participant as a result of their participation in year 1 of the initiative.
+        meta:
+          cms_category: CMS Innovation Center - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/healthcare-support-models/strong-start-awardees
+          data_dictionary_url: https://data.cms.gov/resources/strong-start-awardees-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/strong-start-awardees-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/9d4218d7-bb48-4278-964b-01755f0d8a85/data-viewer
+          contact: cmmi-dataset-support@cms.hhs.gov
+          dataset_uuid: 9d4218d7-bb48-4278-964b-01755f0d8a85
+        columns:
+          - name: "awardee"
+            type: string
+          - name: "awardee state"
+            type: string
+          - name: "enhanced prenatal care approaches"
+            type: string
+          - name: "location of the enhanced prenatal care services"
+            type: string
+          - name: "award amount (year 1)"
+            type: number

@@ -1,0 +1,434 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: quality_payment_program_experience
+        tags:
+          - medicare
+          - original medicare
+          - health care use & payments
+        description: |
+          The Quality Payment Program (QPP) Experience dataset provides participation and performance information in
+          the Merit-based Incentive Payment System (MIPS) during each performance year. They cover eligibility and
+          participation, performance categories, and final score and payment adjustments. The dataset provides
+          additional details at the TIN/NPI level on what was published in the previous performance year. You can sort
+          the data by variables like clinician type, practice size, scores, and payment adjustments.
+        meta:
+          cms_category: Quality Payment Program - CCSQ
+          data_source_url: https://data.cms.gov/quality-of-care/quality-payment-program-experience
+          data_dictionary_url: https://data.cms.gov/resources/quality-payment-program-experience-data-dictionary
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-06/2023-QPP-PUF-Methodology.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/7adb8b1b-b85c-4ed3-b314-064776e50180/data-viewer
+          contact: qpp@cms.hhs.gov
+          dataset_uuid: 7adb8b1b-b85c-4ed3-b314-064776e50180
+        columns:
+          - name: "provider key"
+            type: string
+          - name: "practice state or us territory"
+            type: string
+          - name: "practice size"
+            type: number
+          - name: "clinician type"
+            type: string
+          - name: "clinician specialty"
+            type: string
+          - name: "years in medicare"
+            type: number
+          - name: "npi"
+            type: string
+          - name: "non-reporting"
+            type: string
+          - name: "reporting option"
+            type: string
+          - name: "participation option"
+            type: string
+          - name: "mips value pathway id"
+            type: string
+          - name: "mips value pathway title"
+            type: string
+          - name: "medicare patients"
+            type: number
+          - name: "allowed charges"
+            type: number
+          - name: "services"
+            type: number
+          - name: "opted into mips"
+            type: string
+          - name: "small practice status"
+            type: string
+          - name: "rural status"
+            type: string
+          - name: "health professional shortage area status"
+            type: string
+          - name: "ambulatory surgical center-based status"
+            type: string
+          - name: "hospital-based status"
+            type: string
+          - name: "non-patient facing status"
+            type: string
+          - name: "facility-based status"
+            type: string
+          - name: "dual eligibility ratio"
+            type: string
+          - name: "safety-net status"
+            type: string
+          - name: "extreme uncontrollable circumstance (euc)"
+            type: string
+          - name: "received facility score"
+            type: string
+          - name: "final score"
+            type: number
+          - name: "payment adjustment percentage"
+            type: number
+          - name: "complex patient bonus"
+            type: number
+          - name: "quality reweighting (euc)"
+            type: string
+          - name: "quality category score"
+            type: number
+          - name: "quality category weight"
+            type: number
+          - name: "quality improvement score"
+            type: number
+          - name: "small practice bonus"
+            type: number
+          - name: "quality measure id 1"
+            type: string
+          - name: "quality measure collection type 1"
+            type: string
+          - name: "quality measure score 1"
+            type: number
+          - name: "quality measure id 2"
+            type: string
+          - name: "quality measure collection type 2"
+            type: string
+          - name: "quality measure score 2"
+            type: number
+          - name: "quality measure id 3"
+            type: string
+          - name: "quality measure collection type 3"
+            type: string
+          - name: "quality measure score 3"
+            type: number
+          - name: "quality measure id 4"
+            type: string
+          - name: "quality measure collection type 4"
+            type: string
+          - name: "quality measure score 4"
+            type: number
+          - name: "quality measure id 5"
+            type: string
+          - name: "quality measure collection type 5"
+            type: string
+          - name: "quality measure score 5"
+            type: number
+          - name: "quality measure id 6"
+            type: string
+          - name: "quality measure collection type 6"
+            type: string
+          - name: "quality measure score 6"
+            type: number
+          - name: "quality measure id 7"
+            type: string
+          - name: "quality measure collection type 7"
+            type: string
+          - name: "quality measure score 7"
+            type: number
+          - name: "quality measure id 8"
+            type: string
+          - name: "quality measure collection type 8"
+            type: string
+          - name: "quality measure score 8"
+            type: number
+          - name: "quality measure id 9"
+            type: string
+          - name: "quality measure collection type 9"
+            type: string
+          - name: "quality measure score 9"
+            type: number
+          - name: "quality measure id 10"
+            type: string
+          - name: "quality measure collection type 10"
+            type: string
+          - name: "quality measure score 10"
+            type: number
+          - name: "quality measure id 11"
+            type: string
+          - name: "quality measure collection type 11"
+            type: string
+          - name: "quality measure score 11"
+            type: number
+          - name: "quality measure id 12"
+            type: string
+          - name: "quality measure collection type 12"
+            type: string
+          - name: "quality measure score 12"
+            type: number
+          - name: "promoting interoperability (pi) category score"
+            type: number
+          - name: "promoting interoperability (pi) category weight"
+            type: number
+          - name: "pi reweighting (euc)"
+            type: string
+          - name: "pi reweighting (hardship exception)"
+            type: string
+          - name: "pi reweighting (special status or clinician type)"
+            type: string
+          - name: "cehrt id"
+            type: string
+          - name: "pi measure id 1"
+            type: string
+          - name: "pi measure type 1"
+            type: string
+          - name: "pi measure score 1"
+            type: number
+          - name: "pi measure id 2"
+            type: string
+          - name: "pi measure type 2"
+            type: string
+          - name: "pi measure score 2"
+            type: number
+          - name: "pi measure id 3"
+            type: string
+          - name: "pi measure type 3"
+            type: string
+          - name: "pi measure score 3"
+            type: number
+          - name: "pi measure id 4"
+            type: string
+          - name: "pi measure type 4"
+            type: string
+          - name: "pi measure score 4"
+            type: number
+          - name: "pi measure id 5"
+            type: string
+          - name: "pi measure type 5"
+            type: string
+          - name: "pi measure score 5"
+            type: number
+          - name: "pi measure id 6"
+            type: string
+          - name: "pi measure type 6"
+            type: string
+          - name: "pi measure score 6"
+            type: number
+          - name: "pi measure id 7"
+            type: string
+          - name: "pi measure type 7"
+            type: string
+          - name: "pi measure score 7"
+            type: number
+          - name: "pi measure id 8"
+            type: string
+          - name: "pi measure type 8"
+            type: string
+          - name: "pi measure score 8"
+            type: number
+          - name: "pi measure id 9"
+            type: string
+          - name: "pi measure type 9"
+            type: string
+          - name: "pi measure score 9"
+            type: number
+          - name: "pi measure id 10"
+            type: string
+          - name: "pi measure type 10"
+            type: string
+          - name: "pi measure score 10"
+            type: number
+          - name: "pi measure id 11"
+            type: string
+          - name: "pi measure type 11"
+            type: string
+          - name: "pi measure score 11"
+            type: number
+          - name: "pi measure id 12"
+            type: string
+          - name: "pi measure type 12"
+            type: string
+          - name: "pi measure score 12"
+            type: number
+          - name: "pi measure id 13"
+            type: string
+          - name: "pi measure type 13"
+            type: string
+          - name: "pi measure score 13"
+            type: number
+          - name: "pi measure id 14"
+            type: string
+          - name: "pi measure type 14"
+            type: string
+          - name: "pi measure score 14"
+            type: number
+          - name: "pi measure id 15"
+            type: string
+          - name: "pi measure type 15"
+            type: string
+          - name: "pi measure score 15"
+            type: number
+          - name: "pi measure id 16"
+            type: string
+          - name: "pi measure type 16"
+            type: string
+          - name: "pi measure score 16"
+            type: number
+          - name: "pi measure id 17"
+            type: string
+          - name: "pi measure type 17"
+            type: string
+          - name: "pi measure score 17"
+            type: number
+          - name: "pi measure id 18"
+            type: string
+          - name: "pi measure type 18"
+            type: string
+          - name: "pi measure score 18"
+            type: number
+          - name: "pi measure id 19"
+            type: string
+          - name: "pi measure type 19"
+            type: string
+          - name: "pi measure score 19"
+            type: number
+          - name: "pi measure id 20"
+            type: string
+          - name: "pi measure type 20"
+            type: string
+          - name: "pi measure score 20"
+            type: number
+          - name: "pi measure id 21"
+            type: string
+          - name: "pi measure type 21"
+            type: string
+          - name: "pi measure score 21"
+            type: number
+          - name: "improvement activities (ia) category score"
+            type: number
+          - name: "improvement activities (ia) category weight"
+            type: number
+          - name: "ia reweighting (euc)"
+            type: string
+          - name: "ia credit"
+            type: string
+          - name: "ia measure id 1"
+            type: string
+          - name: "ia measure score 1"
+            type: number
+          - name: "ia measure id 2"
+            type: string
+          - name: "ia measure score 2"
+            type: number
+          - name: "ia measure id 3"
+            type: string
+          - name: "ia measure score 3"
+            type: number
+          - name: "ia measure id 4"
+            type: string
+          - name: "ia measure score 4"
+            type: number
+          - name: "cost category score"
+            type: number
+          - name: "cost improvement score"
+            type: number
+          - name: "cost category weight"
+            type: number
+          - name: "cost reweighting (euc)"
+            type: string
+          - name: "cost measure id 1"
+            type: string
+          - name: "cost measure achievement points 1"
+            type: number
+          - name: "cost measure id 2"
+            type: string
+          - name: "cost measure achievement points 2"
+            type: number
+          - name: "cost measure id 3"
+            type: string
+          - name: "cost measure achievement points 3"
+            type: number
+          - name: "cost measure id 4"
+            type: string
+          - name: "cost measure achievement points 4"
+            type: number
+          - name: "cost measure id 5"
+            type: string
+          - name: "cost measure achievement points 5"
+            type: number
+          - name: "cost measure id 6"
+            type: string
+          - name: "cost measure achievement points 6"
+            type: number
+          - name: "cost measure id 7"
+            type: string
+          - name: "cost measure achievement points 7"
+            type: number
+          - name: "cost measure id 8"
+            type: string
+          - name: "cost measure achievement points 8"
+            type: number
+          - name: "cost measure id 9"
+            type: string
+          - name: "cost measure achievement points 9"
+            type: number
+          - name: "cost measure id 10"
+            type: string
+          - name: "cost measure achievement points 10"
+            type: number
+          - name: "cost measure id 11"
+            type: string
+          - name: "cost measure achievement points 11"
+            type: number
+          - name: "cost measure id 12"
+            type: string
+          - name: "cost measure achievement points 12"
+            type: number
+          - name: "cost measure id 13"
+            type: string
+          - name: "cost measure achievement points 13"
+            type: number
+          - name: "cost measure id 14"
+            type: string
+          - name: "cost measure achievement points 14"
+            type: number
+          - name: "cost measure id 15"
+            type: string
+          - name: "cost measure achievement points 15"
+            type: number
+          - name: "cost measure id 16"
+            type: string
+          - name: "cost measure achievement points 16"
+            type: number
+          - name: "cost measure id 17"
+            type: string
+          - name: "cost measure achievement points 17"
+            type: number
+          - name: "cost measure id 18"
+            type: string
+          - name: "cost measure achievement points 18"
+            type: number
+          - name: "cost measure id 19"
+            type: string
+          - name: "cost measure achievement points 19"
+            type: number
+          - name: "cost measure id 20"
+            type: string
+          - name: "cost measure achievement points 20"
+            type: number
+          - name: "cost measure id 21"
+            type: string
+          - name: "cost measure achievement points 21"
+            type: number
+          - name: "cost measure id 22"
+            type: string
+          - name: "cost measure achievement points 22"
+            type: number
+          - name: "cost measure id 23"
+            type: string
+          - name: "cost measure achievement points 23"
+            type: number
+          - name: "cost measure id 24"
+            type: string
+          - name: "cost measure achievement points 24"
+            type: number

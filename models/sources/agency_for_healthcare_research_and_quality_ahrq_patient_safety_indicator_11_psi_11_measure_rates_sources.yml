@@ -1,0 +1,47 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: agency_for_healthcare_research_and_quality_ahrq_patient_safety_indicator_11_psi_11_measure_rates
+        tags:
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - inpatient
+          - health care use & payments
+          - safety of care
+        description: |
+          The Agency for Healthcare Research and Quality (AHRQ) Patient Safety Indicator 11 (PSI-11) Measure Rates
+          dataset provides information on provider-level measure rates regarding one preventable complication
+          (postoperative respiratory failure) for Medicare fee-for-service discharges. The PSI-11 measure data is solely
+          reported for providers’ information and quality improvement purposes and are not a part of the Deficit
+          Reduction Act (DRA) Hospital-Acquired Condition (HAC) Payment Provision or HAC Reduction Program.
+        meta:
+          cms_category: Deficit Reduction Act Hospital Acquired Conditions - CCSQ
+          data_source_url: https://data.cms.gov/quality-of-care/agency-for-healthcare-research-and-quality-ahrq-patient-safety-indicator-11-psi-11-measure-rates
+          data_dictionary_url: https://data.cms.gov/resources/agency-for-healthcare-research-and-quality-ahrq-patient-safety-indicator-11-psi-11-measure-rates-data-dictionary
+          data_methodology_url: https://data.cms.gov/sites/default/files/2020-09/Agency%20for%20Healthcare%20Research%20and%20Quality%20%28AHRQ%29%20Patient%20Safety%20Indicator%2011%20%28PSI-11%29%20Measure%20Rates%20Methodology_0.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/7cf9662e-7c5c-4fe0-a8c6-828edf81a23c/data-viewer
+          contact: drahac@mathematica-mpr.com
+          dataset_uuid: 7cf9662e-7c5c-4fe0-a8c6-828edf81a23c
+        columns:
+          - name: "hosp_id"
+            type: string
+          - name: "adm_disc"
+            type: number
+          - name: "rate"
+            type: number
+          - name: "interval_lower_limit"
+            type: number
+          - name: "interval_higher_limit"
+            type: number
+          - name: "start_quarter"
+            type: string
+          - name: "start_date"
+            type: string
+          - name: "end_quarter"
+            type: string
+          - name: "end_date"
+            type: string

@@ -1,0 +1,88 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: accountable_care_organization_skilled_nursing_facility_affiliates
+        tags:
+          - medicare
+          - value-based care
+          - coordinated care
+          - payment models
+          - accountable care organizations
+        description: |
+          The Accountable Care Organization (ACO) Skilled Nursing Facility (SNF) Affiliates data presents overview
+          information on ACO SNF affiliates in the Medicare Shared Savings Program (Shared Savings Program), including
+          their name, track status, number of years in the program, and contact information of key personnel.
+        meta:
+          cms_category: Shared Savings Program - CM
+          data_source_url: https://data.cms.gov/medicare-shared-savings-program/accountable-care-organization-skilled-nursing-facility-affiliates
+          data_dictionary_url: https://data.cms.gov/resources/aco-snf-affiliates-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/acos-aco-participants-and-snf-affiliates-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/5b227bd9-82d4-4145-86fd-809e02ca7f18/data-viewer
+          contact: SharedSavingsProgram@cms.hhs.gov
+          dataset_uuid: 5b227bd9-82d4-4145-86fd-809e02ca7f18
+        columns:
+          - name: "aco_id"
+            type: string
+          - name: "aff_lbn"
+            type: string
+          - name: "aco_name"
+            type: string
+          - name: "aco_service_area"
+            type: string
+          - name: "agreement_period_num"
+            type: number
+          - name: "initial_start_date"
+            type: date
+          - name: "current_start_date"
+            type: date
+          - name: "re-entering_aco"
+            type: number
+          - name: "basic_track"
+            type: number
+          - name: "basic_track_level"
+            type: string
+          - name: "enhanced_track"
+            type: number
+          - name: "high_revenue_aco"
+            type: number
+          - name: "low_revenue_aco"
+            type: number
+          - name: "adv_pay"
+            type: number
+          - name: "aim"
+            type: number
+          - name: "aip"
+            type: number
+          - name: "pss"
+            type: number
+          - name: "snf_3-day_rule_waiver"
+            type: number
+          - name: "prospective_assignment"
+            type: number
+          - name: "retrospective_assignment"
+            type: number
+          - name: "aco_address"
+            type: string
+          - name: "aco_public_reporting_website"
+            type: string
+          - name: "aco_exec_name"
+            type: string
+          - name: "aco_exec_email"
+            type: string
+          - name: "aco_exec_phone"
+            type: number
+          - name: "aco_public_name"
+            type: string
+          - name: "aco_public_email"
+            type: string
+          - name: "aco_public_phone"
+            type: number
+          - name: "aco_compliance_contact_name"
+            type: string
+          - name: "aco_medical_director_name"
+            type: string
+          - name: "pc_flex_agreement_status"
+            type: number

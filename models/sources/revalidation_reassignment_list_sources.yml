@@ -1,0 +1,58 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: revalidation_reassignment_list
+        tags:
+          - states & territories
+          - zip code
+          - medicare
+          - original medicare
+          - medicare advantage
+          - provider enrollment
+        description: |
+          The Revalidation Reassignment List dataset provides information on reassignments of providers who are due for
+          revalidation.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/medicare-provider-supplier-enrollment/revalidation-reassignment-list
+          data_dictionary_url: https://data.cms.gov/resources/revalidation-reassignments-list-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/additional-information-on-revalidation
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/20f51cff-4137-4f3a-b6b7-bfc9ad57983b/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: 20f51cff-4137-4f3a-b6b7-bfc9ad57983b
+        columns:
+          - name: "group pac id"
+            type: number
+          - name: "group enrollment id"
+            type: string
+          - name: "group legal business name"
+            type: string
+          - name: "group state code"
+            type: string
+          - name: "group due date"
+            type: string
+          - name: "group reassignments and physician assistants"
+            type: number
+          - name: "record type"
+            type: string
+          - name: "individual pac id"
+            type: number
+          - name: "individual enrollment id"
+            type: string
+          - name: "individual npi"
+            type: number
+          - name: "individual first name"
+            type: string
+          - name: "individual last name"
+            type: string
+          - name: "individual state code"
+            type: string
+          - name: "individual specialty description"
+            type: string
+          - name: "individual due date"
+            type: string
+          - name: "individual total employer associations"
+            type: number

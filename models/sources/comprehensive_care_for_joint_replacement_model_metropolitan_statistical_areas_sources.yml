@@ -1,0 +1,35 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: comprehensive_care_for_joint_replacement_model_metropolitan_statistical_areas
+        tags:
+          - rural-urban
+          - medicare
+          - original medicare
+          - value-based care
+          - payment models
+        description: |
+          The Comprehensive Care for Joint Replacement Model: Metropolitan Statistical Areas (MSAs) dataset presents
+          MSAs that are participating in the CMS Innovation Center Comprehensive Care for Joint Replacement Model, a
+          model to support better and more efficient care for beneficiaries undergoing the most common inpatient surgery
+          for Medicare beneficiaries: hip and knee replacements. Participation in this model is designated by geographic
+          area, specifically MSAs. The information contained in the dataset can include MSA identification number, MSA
+          geographic name and associated county or counties.
+        meta:
+          cms_category: CMS Innovation Center - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/disease-episode-based-payment-models/comprehensive-care-for-joint-replacement-model-metropolitan-statistical-areas
+          data_dictionary_url: https://data.cms.gov/resources/comprehensive-care-for-joint-replacement-model-msa-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/comprehensive-care-for-joint-replacement-model-msa-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/62e490c0-9503-4b5f-9518-8e82fe20ccb6/data-viewer
+          contact: cmmi-dataset-support@cms.hhs.gov
+          dataset_uuid: 62e490c0-9503-4b5f-9518-8e82fe20ccb6
+        columns:
+          - name: "msa"
+            type: string
+          - name: "msa title"
+            type: string
+          - name: "counties"
+            type: string

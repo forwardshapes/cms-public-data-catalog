@@ -1,0 +1,77 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_covid_19_hospitalization_trends
+        tags:
+          - states & territories
+          - medicare
+          - original medicare
+          - medicare advantage
+          - hospitals & facilities
+          - inpatient
+          - covid-19
+          - health equity
+        description: |
+          The Medicare COVID-19 Hospitalization Trends dataset contains aggregate information from Medicare
+          Fee-for-Service claims, Medicare Advantage encounter, and Medicare enrollment data. It provides insight around
+          the groups of beneficiaries that were hospitalized at different points during the pandemic.
+
+          CMS publicly released the first Preliminary Medicare COVID-19 Snapshot in June 2020 during the early stages
+          of the Public Health Emergency for COVID-19. That report focused on COVID-19 cases and hospitalizations data
+          for Medicare beneficiaries with a COVID-19 diagnosis. Throughout 2020 and 2021, that report was subsequently
+          updated with refreshed data 13 times. Beginning in October 2021, CMS shifted its public COVID-19 reporting
+          away from cumulative case and hospitalization rates to hospitalization trends over time with the release of
+          this report, the Medicare COVID-19 Hospitalization Trends Report.
+
+          All prior releases of both the Preliminary Medicare COVID-19 Snapshot and the Medicare COVID-19
+          Hospitalization Trends Report are available for download in the Medicare COVID-19 Data - Prior Releases file.
+        meta:
+          cms_category: CMS Program Statistics - OEDA
+          data_source_url: https://data.cms.gov/covid-19/medicare-covid-19-hospitalization-trends
+          data_dictionary_url: https://data.cms.gov/resources/medicare-covid-19-hospitalization-trends-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-covid-19-hospitalization-trends-methodology-2023
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/2684c3e2-3598-4997-a598-0991bad6fbf2/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 2684c3e2-3598-4997-a598-0991bad6fbf2
+        columns:
+          - name: "year"
+            type: string
+          - name: "month"
+            type: string
+          - name: "bene_geo_desc"
+            type: string
+          - name: "bene_mdcd_mdcr_enrl_stus"
+            type: string
+          - name: "bene_race_desc"
+            type: string
+          - name: "bene_sex_desc"
+            type: string
+          - name: "bene_mdcr_entlmt_stus"
+            type: string
+          - name: "bene_age_desc"
+            type: string
+          - name: "bene_ruca_desc"
+            type: string
+          - name: "total_hosp"
+            type: number
+          - name: "total_enrl"
+            type: number
+          - name: "total_hosp_per100k"
+            type: number
+          - name: "avg_los"
+            type: number
+          - name: "pct_dschrg_snf"
+            type: number
+          - name: "pct_dschrg_expired"
+            type: number
+          - name: "pct_dschrg_home"
+            type: number
+          - name: "pct_dschrg_hspc"
+            type: number
+          - name: "pct_dschrg_homehealth"
+            type: number
+          - name: "pct_dschrg_other"
+            type: number

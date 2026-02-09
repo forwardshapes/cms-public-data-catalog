@@ -1,0 +1,97 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: payroll_based_journal_daily_nurse_staffing
+        tags:
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - skilled nursing
+          - health care use & payments
+        description: |
+          The Payroll Based Journal (PBJ) Nurse Staffing and Non-Nurse Staffing datasets provide information submitted
+          by nursing homes including rehabilitation services on a quarterly basis. The View Data link above includes the
+          hours staff are paid to work each day, for each facility, aggregated by staff reporting category. Examples of
+          reporting categories include Director of Nursing, Administrative Registered Nurses, Registered Nursing,
+          Administrative Licensed Practice Nurses, Licensed Practice Nurses, Certified Nurse Aides, Certified Medication
+          Aides, and Nurse Aides in Training. There are also other non-nurse staff categories provided in the data such
+          as Respiratory Therapist, Occupational Therapist, and Social Worker. The datasets also include a facility’s
+          daily census calculated using the Minimum Data Set (MDS) submission.
+        meta:
+          cms_category: Nursing Home Staffing - CCSQ (PBJ Reports)
+          data_source_url: https://data.cms.gov/quality-of-care/payroll-based-journal-daily-nurse-staffing
+          data_dictionary_url: https://data.cms.gov/resources/payroll-based-journal-daily-nurse-staffing-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/payroll-based-journal-methodology-0
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/7e0d53ba-8f02-4c66-98a5-14a1c997c50d/data-viewer
+          contact: nhstaffing@cms.hhs.gov
+          dataset_uuid: 7e0d53ba-8f02-4c66-98a5-14a1c997c50d
+        columns:
+          - name: "provnum"
+            type: string
+          - name: "provname"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "county_name"
+            type: string
+          - name: "county_fips"
+            type: string
+          - name: "cy_qtr"
+            type: string
+          - name: "workdate"
+            type: number
+          - name: "mdscensus"
+            type: number
+          - name: "hrs_rndon"
+            type: number
+          - name: "hrs_rndon_emp"
+            type: number
+          - name: "hrs_rndon_ctr"
+            type: number
+          - name: "hrs_rnadmin"
+            type: number
+          - name: "hrs_rnadmin_emp"
+            type: number
+          - name: "hrs_rnadmin_ctr"
+            type: number
+          - name: "hrs_rn"
+            type: number
+          - name: "hrs_rn_emp"
+            type: number
+          - name: "hrs_rn_ctr"
+            type: number
+          - name: "hrs_lpnadmin"
+            type: number
+          - name: "hrs_lpnadmin_emp"
+            type: number
+          - name: "hrs_lpnadmin_ctr"
+            type: number
+          - name: "hrs_lpn"
+            type: number
+          - name: "hrs_lpn_emp"
+            type: number
+          - name: "hrs_lpn_ctr"
+            type: number
+          - name: "hrs_cna"
+            type: number
+          - name: "hrs_cna_emp"
+            type: number
+          - name: "hrs_cna_ctr"
+            type: number
+          - name: "hrs_natrn"
+            type: number
+          - name: "hrs_natrn_emp"
+            type: number
+          - name: "hrs_natrn_ctr"
+            type: number
+          - name: "hrs_medaide"
+            type: number
+          - name: "hrs_medaide_emp"
+            type: number
+          - name: "hrs_medaide_ctr"
+            type: number

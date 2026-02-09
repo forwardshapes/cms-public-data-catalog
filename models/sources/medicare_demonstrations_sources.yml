@@ -1,0 +1,37 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_demonstrations
+        tags:
+          - medicare
+          - original medicare
+          - value-based care
+          - payment models
+        description: |
+          The Medicare Demonstrations dataset provides information on demonstrations conducted in the CMS Innovation
+          Center. It includes the demonstration project name, type, description, year, and website for the demonstration
+          page.
+        meta:
+          cms_category: CMS Innovation Center - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/cms-innovation-models-overview/medicare-demonstrations
+          data_dictionary_url: https://data.cms.gov/resources/medicare-demonstrations-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-demonstrations-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/0764d86c-d19c-4b73-9e57-eba3cc1f7849/data-viewer
+          contact: cmmi-dataset-support@cms.hhs.gov
+          dataset_uuid: 0764d86c-d19c-4b73-9e57-eba3cc1f7849
+        columns:
+          - name: "demonstration project name"
+            type: string
+          - name: "demonstration type"
+            type: string
+          - name: "year"
+            type: number
+          - name: "description"
+            type: string
+          - name: "url"
+            type: string
+          - name: "unique id"
+            type: number

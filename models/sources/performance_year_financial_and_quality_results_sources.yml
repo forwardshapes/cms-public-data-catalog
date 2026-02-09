@@ -1,0 +1,407 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: performance_year_financial_and_quality_results
+        tags:
+          - medicare
+          - original medicare
+          - value-based care
+          - coordinated care
+          - financials
+          - payment models
+          - accountable care organizations
+        description: |
+          The Shared Savings Program Performance Year Financial and Quality Results data provides Medicare Shared
+          Savings Program (Shared Savings Program) ACO-specific quality, expenditure, benchmark, and shared savings/loss
+          metrics, as well as summarized beneficiary and provider information for each performance year of the Shared
+          Savings Program.
+        meta:
+          cms_category: Shared Savings Program - CM
+          data_source_url: https://data.cms.gov/medicare-shared-savings-program/performance-year-financial-and-quality-results
+          data_dictionary_url: https://data.cms.gov/resources/performance-year-financial-and-quality-results-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/performance-year-financial-and-quality-results-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/73b2ce14-351d-40ac-90ba-ec9e1f5ba80c/data-viewer
+          contact: SharedSavingsProgram@cms.hhs.gov
+          dataset_uuid: 73b2ce14-351d-40ac-90ba-ec9e1f5ba80c
+        columns:
+          - name: "aco_id"
+            type: string
+          - name: "aco_name"
+            type: string
+          - name: "agree_type"
+            type: string
+          - name: "agreement_period_num"
+            type: number
+          - name: "current_start_date"
+            type: date
+          - name: "current_track"
+            type: string
+          - name: "risk_model"
+            type: string
+          - name: "assign_type"
+            type: string
+          - name: "snf_waiver"
+            type: number
+          - name: "n_ab"
+            type: number
+          - name: "sav_rate"
+            type: number
+          - name: "minsavperc"
+            type: number
+          - name: "bnchmkminexp"
+            type: number
+          - name: "gensaveloss"
+            type: number
+          - name: "disadj"
+            type: string
+          - name: "impact_mid_year_termination"
+            type: number
+          - name: "earnsaveloss"
+            type: number
+          - name: "disaffqual"
+            type: number
+          - name: "met_qps"
+            type: number
+          - name: "met_altqps"
+            type: string
+          - name: "met_40pctl"
+            type: number
+          - name: "met_incentive"
+            type: number
+          - name: "met_firstyear"
+            type: number
+          - name: "report_wi"
+            type: number
+          - name: "report_ecqm_cqm_medicarecqm"
+            type: number
+          - name: "met_ssp_quality_reporting_requirements"
+            type: number
+          - name: "qualscore"
+            type: number
+          - name: "recvd40p"
+            type: number
+          - name: "aip"
+            type: number
+          - name: "aipbalance"
+            type: string
+          - name: "aiprecoup"
+            type: string
+          - name: "aipowe"
+            type: string
+          - name: "regadj"
+            type: number
+          - name: "priorsavadj"
+            type: string
+          - name: "finaladjcat"
+            type: string
+          - name: "updatedbnchmk"
+            type: number
+          - name: "guardrail"
+            type: string
+          - name: "histbnchmk"
+            type: number
+          - name: "abtotbnchmk"
+            type: number
+          - name: "abtotexp"
+            type: number
+          - name: "finalsharerate"
+            type: number
+          - name: "reducedss"
+            type: number
+          - name: "finallossrate"
+            type: string
+          - name: "rev_exp_cat"
+            type: string
+          - name: "per_capita_exp_all_esrd_by1"
+            type: string
+          - name: "per_capita_exp_all_dis_by1"
+            type: string
+          - name: "per_capita_exp_all_agdu_by1"
+            type: string
+          - name: "per_capita_exp_all_agnd_by1"
+            type: string
+          - name: "per_capita_exp_all_esrd_by2"
+            type: string
+          - name: "per_capita_exp_all_dis_by2"
+            type: string
+          - name: "per_capita_exp_all_agdu_by2"
+            type: string
+          - name: "per_capita_exp_all_agnd_by2"
+            type: string
+          - name: "per_capita_exp_all_esrd_by3"
+            type: string
+          - name: "per_capita_exp_all_dis_by3"
+            type: string
+          - name: "per_capita_exp_all_agdu_by3"
+            type: string
+          - name: "per_capita_exp_all_agnd_by3"
+            type: string
+          - name: "per_capita_exp_all_esrd_py"
+            type: string
+          - name: "per_capita_exp_all_dis_py"
+            type: string
+          - name: "per_capita_exp_all_agdu_py"
+            type: string
+          - name: "per_capita_exp_all_agnd_py"
+            type: string
+          - name: "per_capita_exp_total_py"
+            type: string
+          - name: "cms_hcc_riskscore_esrd_by1"
+            type: string
+          - name: "cms_hcc_riskscore_dis_by1"
+            type: string
+          - name: "cms_hcc_riskscore_agdu_by1"
+            type: string
+          - name: "cms_hcc_riskscore_agnd_by1"
+            type: string
+          - name: "cms_hcc_riskscore_esrd_by2"
+            type: string
+          - name: "cms_hcc_riskscore_dis_by2"
+            type: string
+          - name: "cms_hcc_riskscore_agdu_by2"
+            type: string
+          - name: "cms_hcc_riskscore_agnd_by2"
+            type: string
+          - name: "cms_hcc_riskscore_esrd_by3"
+            type: string
+          - name: "cms_hcc_riskscore_dis_by3"
+            type: string
+          - name: "cms_hcc_riskscore_agdu_by3"
+            type: string
+          - name: "cms_hcc_riskscore_agnd_by3"
+            type: string
+          - name: "cms_hcc_riskscore_esrd_py"
+            type: string
+          - name: "cms_hcc_riskscore_dis_py"
+            type: string
+          - name: "cms_hcc_riskscore_agdu_py"
+            type: string
+          - name: "cms_hcc_riskscore_agnd_py"
+            type: string
+          - name: "demog_riskscore_esrd_py"
+            type: number
+          - name: "demog_riskscore_dis_py"
+            type: number
+          - name: "demog_riskscore_agdu_py"
+            type: number
+          - name: "demog_riskscore_agnd_py"
+            type: number
+          - name: "demog_riskscore_esrd_by3"
+            type: number
+          - name: "demog_riskscore_dis_by3"
+            type: number
+          - name: "demog_riskscore_agdu_by3"
+            type: number
+          - name: "demog_riskscore_agnd_by3"
+            type: number
+          - name: "rr_weight_esrd_py"
+            type: number
+          - name: "rr_weight_dis_py"
+            type: number
+          - name: "rr_weight_agdu_py"
+            type: number
+          - name: "rr_weight_agnd_py"
+            type: number
+          - name: "n_ab_year_esrd_by3"
+            type: string
+          - name: "n_ab_year_dis_by3"
+            type: string
+          - name: "n_ab_year_aged_dual_by3"
+            type: string
+          - name: "n_ab_year_aged_nondual_by3"
+            type: string
+          - name: "n_ab_year_py"
+            type: number
+          - name: "n_ab_year_esrd_py"
+            type: string
+          - name: "n_ab_year_dis_py"
+            type: string
+          - name: "n_ab_year_aged_dual_py"
+            type: string
+          - name: "n_ab_year_aged_nondual_py"
+            type: string
+          - name: "n_ab_year_dual_py"
+            type: string
+          - name: "n_ab_year_nondual_py"
+            type: string
+          - name: "n_ben_va_only"
+            type: string
+          - name: "n_ben_cba_only"
+            type: string
+          - name: "n_ben_cba_and_va"
+            type: string
+          - name: "n_ben_age_0_64"
+            type: string
+          - name: "n_ben_age_65_74"
+            type: string
+          - name: "n_ben_age_75_84"
+            type: string
+          - name: "n_ben_age_85plus"
+            type: string
+          - name: "n_ben_female"
+            type: string
+          - name: "n_ben_male"
+            type: string
+          - name: "n_ben_race_white"
+            type: string
+          - name: "n_ben_race_black"
+            type: string
+          - name: "n_ben_race_asian"
+            type: string
+          - name: "n_ben_race_hisp"
+            type: string
+          - name: "n_ben_race_native"
+            type: string
+          - name: "n_ben_race_other"
+            type: string
+          - name: "n_ben_race_unknown"
+            type: string
+          - name: "capann_inp_all"
+            type: string
+          - name: "capann_inp_s_trm"
+            type: string
+          - name: "capann_inp_l_trm"
+            type: string
+          - name: "capann_inp_rehab"
+            type: string
+          - name: "capann_inp_psych"
+            type: string
+          - name: "capann_hsp"
+            type: number
+          - name: "capann_snf"
+            type: string
+          - name: "capann_opd"
+            type: number
+          - name: "capann_pb"
+            type: number
+          - name: "capann_ambpay"
+            type: number
+          - name: "capann_hha"
+            type: number
+          - name: "capann_dme"
+            type: number
+          - name: "adm"
+            type: string
+          - name: "adm_s_trm"
+            type: string
+          - name: "adm_l_trm"
+            type: string
+          - name: "adm_rehab"
+            type: string
+          - name: "adm_psych"
+            type: string
+          - name: "p_edv_vis"
+            type: string
+          - name: "p_edv_vis_hosp"
+            type: string
+          - name: "p_ct_vis"
+            type: string
+          - name: "p_mri_vis"
+            type: string
+          - name: "p_em_total"
+            type: string
+          - name: "p_em_pcp_vis"
+            type: string
+          - name: "p_em_sp_vis"
+            type: string
+          - name: "p_nurse_vis"
+            type: string
+          - name: "p_fqhc_rhc_vis"
+            type: string
+          - name: "p_snf_adm"
+            type: number
+          - name: "snf_los"
+            type: string
+          - name: "snf_payperstay"
+            type: string
+          - name: "n_cah"
+            type: number
+          - name: "n_fqhc"
+            type: number
+          - name: "n_rhc"
+            type: number
+          - name: "n_eta"
+            type: number
+          - name: "n_hosp"
+            type: number
+          - name: "n_fac_other"
+            type: number
+          - name: "n_pcp"
+            type: number
+          - name: "n_spec"
+            type: number
+          - name: "n_np"
+            type: number
+          - name: "n_pa"
+            type: number
+          - name: "n_cns"
+            type: number
+          - name: "perc_dual"
+            type: string
+          - name: "perc_lti"
+            type: string
+          - name: "cahps_1"
+            type: string
+          - name: "cahps_2"
+            type: string
+          - name: "cahps_3"
+            type: string
+          - name: "cahps_4"
+            type: string
+          - name: "cahps_5"
+            type: string
+          - name: "cahps_6"
+            type: string
+          - name: "cahps_7"
+            type: string
+          - name: "cahps_11"
+            type: string
+          - name: "cahps_9"
+            type: string
+          - name: "cahps_8"
+            type: string
+          - name: "measure_479"
+            type: string
+          - name: "measure_484"
+            type: string
+          - name: "qualityid_318"
+            type: string
+          - name: "qualityid_110"
+            type: string
+          - name: "qualityid_226"
+            type: string
+          - name: "qualityid_134_wi"
+            type: string
+          - name: "qualityid_134_ecqm"
+            type: string
+          - name: "qualityid_134_mipscqm"
+            type: string
+          - name: "qualityid_134_medicarecqm"
+            type: string
+          - name: "qualityid_113"
+            type: string
+          - name: "qualityid_112"
+            type: string
+          - name: "qualityid_438"
+            type: string
+          - name: "qualityid_370"
+            type: string
+          - name: "qualityid_001_wi"
+            type: string
+          - name: "qualityid_001_ecqm"
+            type: string
+          - name: "qualityid_001_mipscqm"
+            type: string
+          - name: "qualityid_001_medicarecqm"
+            type: string
+          - name: "qualityid_236_wi"
+            type: string
+          - name: "qualityid_236_ecqm"
+            type: string
+          - name: "qualityid_236_mipscqm"
+            type: string
+          - name: "qualityid_236_medicarecqm"
+            type: string

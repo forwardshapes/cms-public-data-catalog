@@ -1,0 +1,32 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: cms_program_statistics_medicare_outpatient_facility
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - outpatient facilities
+          - health care use & payments
+          - health equity
+        description: |
+          The CMS Program Statistics - Medicare Outpatient Facility tables provide use and payment data for all
+          outpatient facilities, including hospitals providing outpatient services, rural health clinics, community
+          mental health centers, federally qualified health centers, outpatient dialysis facilities, comprehensive
+          outpatient rehabilitation facilities, and other outpatient facilities.
+
+          For additional information on enrollment, providers, and Medicare use and payment, visit the CMS Program
+          Statistics page.
+        meta:
+          cms_category: CMS Program Statistics - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-service-type-reports/cms-program-statistics-medicare-outpatient-facility
+          data_dictionary_url: https://data.cms.gov/resources/cms-program-statistics-glossary
+          data_methodology_url: https://data.cms.gov/resources/cms-program-statistics-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/41d96997-415c-42fd-b473-81b7640a7ce2/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 41d96997-415c-42fd-b473-81b7640a7ce2

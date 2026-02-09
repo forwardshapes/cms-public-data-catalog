@@ -1,0 +1,28 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: cms_program_statistics_original_medicare_enrollment
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - original medicare
+          - beneficiary enrollment
+          - health equity
+        description: |
+          The CMS Program Statistics - Original Medicare Enrollment tables provide data on characteristics of the
+          Original Medicare population.
+
+          For additional information on enrollment, providers, and Medicare use and payment, visit the CMS Program
+          Statistics page.
+        meta:
+          cms_category: CMS Program Statistics - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-beneficiary-enrollment/medicare-and-medicaid-reports/cms-program-statistics-original-medicare-enrollment
+          data_dictionary_url: https://data.cms.gov/resources/cms-program-statistics-glossary
+          data_methodology_url: https://data.cms.gov/resources/cms-program-statistics-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/3997fb87-a6d5-41d0-823f-7a62283e8035/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 3997fb87-a6d5-41d0-823f-7a62283e8035

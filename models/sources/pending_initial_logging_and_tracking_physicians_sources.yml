@@ -1,0 +1,30 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: pending_initial_logging_and_tracking_physicians
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - provider enrollment
+        description: |
+          The Pending Initial Logging and Tracking (L & T) Physicians dataset provides a list of pending applications
+          that have not been processed by CMS contractors.
+        meta:
+          cms_category: Provider Enrollment Data Requests - CPI
+          data_source_url: https://data.cms.gov/provider-characteristics/medicare-provider-supplier-enrollment/pending-initial-logging-and-tracking-physicians
+          data_dictionary_url: https://data.cms.gov/resources/pending-initial-logging-and-tracking-physician-and-non-physicians-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/pending-initial-logging-and-tracking-physician-and-non-physicians-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/6bd6b1dd-208c-4f9c-88b8-b15fec6db548/data-viewer
+          contact: ProviderEnrollmentDataRequests@cms.hhs.gov
+          dataset_uuid: 6bd6b1dd-208c-4f9c-88b8-b15fec6db548
+        columns:
+          - name: "npi"
+            type: string
+          - name: "last_name"
+            type: string
+          - name: "first_name"
+            type: string

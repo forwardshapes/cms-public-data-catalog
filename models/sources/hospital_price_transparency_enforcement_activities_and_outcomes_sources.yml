@@ -1,0 +1,41 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: hospital_price_transparency_enforcement_activities_and_outcomes
+        tags:
+          - medicare
+          - hospitals & facilities
+          - health care use & payments
+        description: |
+          The Hospital Price Transparency Enforcement Activities and Outcomes dataset contains information related to
+          enforcement actions taken by CMS following a compliance review of a hospital's obligation to establish, update
+          and make public a list of the hospital’s standard charges for items and services provided by the hospital, in
+          accordance with regulation (45 CFR 180). This data set includes the name of each hospital or hospital
+          location, the hospital or hospital location address, the outcome or action following a CMS compliance review
+          and the date of the outcome or action taken.
+        meta:
+          cms_category: Price Transparency - CM
+          data_source_url: https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/hospital-price-transparency-enforcement-activities-and-outcomes
+          data_dictionary_url: https://data.cms.gov/resources/hospital-price-transparency-enforcement-activities-and-outcomes-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/hospital-price-transparency-enforcement-activities-and-outcomes-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/6a3aa708-3c9d-411a-a1a4-e046d3ade7ef/data-viewer
+          contact: Pricetransparencyhospitalcharges@cms.hhs.gov
+          dataset_uuid: 6a3aa708-3c9d-411a-a1a4-e046d3ade7ef
+        columns:
+          - name: "case_id"
+            type: string
+          - name: "hosp_name"
+            type: string
+          - name: "hosp_address"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "action"
+            type: string
+          - name: "date_of_action"
+            type: date

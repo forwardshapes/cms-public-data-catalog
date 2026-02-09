@@ -1,0 +1,30 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: cms_program_statistics_medicare_skilled_nursing_facility
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - skilled nursing
+          - health care use & payments
+          - health equity
+        description: |
+          The CMS Program Statistics - Medicare Skilled Nursing Facility tables provide use and payment data for
+          skilled nursing facilities.
+
+          For additional information on enrollment, providers, and Medicare use and payment, visit the CMS Program
+          Statistics page.
+        meta:
+          cms_category: CMS Program Statistics - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-service-type-reports/cms-program-statistics-medicare-skilled-nursing-facility
+          data_dictionary_url: https://data.cms.gov/resources/cms-program-statistics-glossary
+          data_methodology_url: https://data.cms.gov/resources/cms-program-statistics-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/c05cf65a-c13b-473c-8994-070f60f245b1/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: c05cf65a-c13b-473c-8994-070f60f245b1

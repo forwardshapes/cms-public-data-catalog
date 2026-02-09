@@ -1,0 +1,46 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_fee_for_service_comprehensive_error_rate_testing
+        tags:
+          - medicare
+          - original medicare
+          - health care use & payments
+        description: |
+          The Medicare Fee-for-Service (FFS) Comprehensive Error Rate Testing (CERT) dataset provides information on a
+          random sample of FFS claims to determine if they were paid properly under Medicare coverage, coding, and
+          payment rules. The dataset contains information on type of FFS claim, Diagnosis Related Group (DRG) and
+          Healthcare Common Procedure Coding System (HCPCS) codes, provider type, type of bill, review decision, and
+          error code.
+
+          Please note, each reporting year (RY) contains claims submitted July 1 two years before the report through
+          June 30 one year before the report. For example, the 2025 data contains claims submitted July 1, 2023 through
+          June 30, 2024.
+        meta:
+          cms_category: Comprehensive Error Rate Testing (CERT) Program - OFM
+          data_source_url: https://data.cms.gov/provider-compliance/fee-for-service-error-rate-improper-payment/medicare-fee-for-service-comprehensive-error-rate-testing
+          data_dictionary_url: https://data.cms.gov/resources/medicare-fee-for-service-comprehensive-error-rate-testing-improper-payment-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-fee-for-service-comprehensive-error-rate-testing-improper-payment-data-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/6395b458-2f89-4828-8c1a-e1e16b723d48/data-viewer
+          contact: CERT@cms.hhs.gov
+          dataset_uuid: 6395b458-2f89-4828-8c1a-e1e16b723d48
+        columns:
+          - name: "claim_control_number"
+            type: number
+          - name: "part"
+            type: string
+          - name: "drg"
+            type: string
+          - name: "hcpcs procedure code"
+            type: string
+          - name: "provider type"
+            type: string
+          - name: "type of bill"
+            type: number
+          - name: "review decision"
+            type: string
+          - name: "error code"
+            type: string

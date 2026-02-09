@@ -1,0 +1,32 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_clinical_laboratory_fee_schedule_private_payer_rates_and_volumes
+        tags:
+          - medicare
+          - hospitals & facilities
+          - outpatient facilities
+          - clinics
+        description: |
+          The Medicare Clinical Laboratory Fee Schedule (CLFS) dataset provides raw data reported by any applicable
+          laboratories that reported a volume greater than 10 tests for the data collection period. As described by the
+          Protecting Access to Medicare Act, Applicable Laboratories must report to CMS private payor rates and
+          associated volumes for laboratory tests on the Clinical Laboratory Fee Schedule.
+        meta:
+          cms_category: CLFS Inquires - CM
+          data_source_url: https://data.cms.gov/provider-characteristics/hospitals-and-other-facilities/medicare-clinical-laboratory-fee-schedule-private-payer-rates-and-volumes
+          data_dictionary_url: https://data.cms.gov/resources/medicare-clinical-laboratory-fee-schedule-private-payer-rates-and-volumes-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-clinical-laboratory-fee-schedule-private-payer-rates-and-volumes-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/0e57f57d-0acc-4c9c-8f8c-973e3f4a3c4b/data-viewer
+          contact: CLFS_Inquiries@cms.hhs.gov
+          dataset_uuid: 0e57f57d-0acc-4c9c-8f8c-973e3f4a3c4b
+        columns:
+          - name: "hcpcs_cd"
+            type: string
+          - name: "price_amt"
+            type: number
+          - name: "vol_txt"
+            type: number

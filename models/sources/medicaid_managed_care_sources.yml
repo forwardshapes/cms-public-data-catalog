@@ -1,0 +1,52 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicaid_managed_care
+        tags:
+          - states & territories
+          - counties
+          - medicaid
+          - health care use & payments
+          - health equity
+        description: |
+          The Medicaid Managed Care dataset uses CMS' state Transformed Medicaid Statistical Information System
+          (T-MSIS) data for Arizona, Michigan, Nevada, and New Mexico to identify various metrics for managed care plans
+          within each state. These metrics are designed to allow users to compare plans in each state across different
+          specialty areas (currently Pediatric Dental, Behavioral Health, and Prenatal OB/GYN). This dataset does not
+          include all available data in T-MSIS but utilized a subset to calculate the individual metrics identified.
+        meta:
+          cms_category: Medicaid Managed Care - CPI
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-service-type-reports/medicaid-managed-care
+          data_dictionary_url: https://data.cms.gov/resources/medicaid-managed-care-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicaid-managed-care-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/a93f5362-2fe6-4b4d-8260-118be0d618e0/data-viewer
+          contact: CPI_MCO_Dashboard@cms.hhs.gov
+          dataset_uuid: a93f5362-2fe6-4b4d-8260-118be0d618e0
+        columns:
+          - name: "state"
+            type: string
+          - name: "county"
+            type: string
+          - name: "mco name"
+            type: string
+          - name: "service category"
+            type: string
+          - name: "number of active patients"
+            type: number
+          - name: "number of eligible mco patients"
+            type: number
+          - name: "number of providers"
+            type: number
+          - name: "percent of eligible patients receving services"
+            type: number
+          - name: "number of services per active patient"
+            type: number
+          - name: "number of active patients per provider"
+            type: string
+          - name: "calendar year"
+            type: string
+          - name: "plan category"
+            type: string

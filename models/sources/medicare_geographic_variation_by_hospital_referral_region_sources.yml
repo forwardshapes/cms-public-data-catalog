@@ -1,0 +1,27 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_geographic_variation_by_hospital_referral_region
+        tags:
+          - national
+          - hospital referral regions
+          - medicare
+          - original medicare
+          - health care use & payments
+          - health equity
+        description: |
+          The Medicare Geographic Variation by Hospital Referral Region dataset provides information for researchers
+          and policymakers to evaluate the geographic differences in the use and quality of health care services for the
+          Original Medicare population. The dataset includes demographic, spending, use, and quality indicators at the
+          hospital referral region (HRR) level.
+        meta:
+          cms_category: PDAG Data Products - OEDA
+          data_source_url: https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-geographic-comparisons/medicare-geographic-variation-by-hospital-referral-region
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2025-03/3623a012-f189-4b2f-80ef-6fdc0ffb2804/2014-2021%20Medicare%20FFS%20Geographic%20Variation%20by%20Hospital%20Referral%20Region%20Data%20Dictionary.pdf
+          data_methodology_url: https://data.cms.gov/sites/default/files/2025-03/db845ad7-ac40-467f-a504-6a7942d06b51/Geographic%20Variation%20Public%20Use%20File%20Methods%20Paper%20HRR.pdf
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/6d7b229d-5bfb-4666-a2d2-38cea44a112c/data-viewer
+          contact: PDAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 6d7b229d-5bfb-4666-a2d2-38cea44a112c

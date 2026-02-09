@@ -1,0 +1,64 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_durable_medical_equipment_devices_supplies_by_geography_and_service
+        tags:
+          - national
+          - states & territories
+          - medicare
+          - original medicare
+          - physicians & practitioners
+          - health care use & payments
+          - health equity
+        description: |
+          The Medicare Durable Medical Equipment, Devices & Supplies by Geography and Service dataset contains
+          information on usage, payments, and submitted charges organized by geography, Healthcare Common Procedure
+          Coding System (HCPCS) code, and supplier rental indicator.
+        meta:
+          cms_category: Medicare Provider Data - OEDA
+          data_source_url: https://data.cms.gov/provider-summary-by-type-of-service/medicare-durable-medical-equipment-devices-supplies/medicare-durable-medical-equipment-devices-supplies-by-geography-and-service
+          data_dictionary_url: https://data.cms.gov/resources/medicare-durable-medical-equipment-devices-supplies-by-geography-and-service-data-dictionary-0
+          data_methodology_url: https://data.cms.gov/resources/medicare-durable-medical-equipment-devices-supplies-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/27c150fd-8578-43b1-bba5-6388987e32af/data-viewer
+          contact: IPAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 27c150fd-8578-43b1-bba5-6388987e32af
+        columns:
+          - name: "rfrg_prvdr_geo_lvl"
+            type: string
+          - name: "rfrg_prvdr_geo_cd"
+            type: string
+          - name: "rfrg_prvdr_geo_desc"
+            type: string
+          - name: "rbcs_lvl"
+            type: string
+          - name: "rbcs_id"
+            type: string
+          - name: "rbcs_desc"
+            type: string
+          - name: "hcpcs_cd"
+            type: string
+          - name: "hcpcs_desc"
+            type: string
+          - name: "suplr_rentl_ind"
+            type: string
+          - name: "tot_rfrg_prvdrs"
+            type: number
+          - name: "tot_suplrs"
+            type: number
+          - name: "tot_suplr_benes"
+            type: number
+          - name: "tot_suplr_clms"
+            type: number
+          - name: "tot_suplr_srvcs"
+            type: number
+          - name: "avg_suplr_sbmtd_chrg"
+            type: number
+          - name: "avg_suplr_mdcr_alowd_amt"
+            type: number
+          - name: "avg_suplr_mdcr_pymt_amt"
+            type: number
+          - name: "avg_suplr_mdcr_stdzd_amt"
+            type: number

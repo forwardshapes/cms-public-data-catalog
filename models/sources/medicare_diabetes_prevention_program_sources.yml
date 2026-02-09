@@ -1,0 +1,53 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: medicare_diabetes_prevention_program
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - value-based care
+          - payment models
+        description: |
+          The Medicare Diabetes Prevention Program dataset contains information about suppliers from which eligible
+          Medicare beneficiaries may be furnished associated services. The information in this dataset can include
+          organization name, location, contact information, National Provider Identifier (NPI) among other data points.
+          Location data populates the "Map of MDPP Suppliers furnishing MDPP Services" map.
+        meta:
+          cms_category: CMS Innovation Center - CMMI
+          data_source_url: https://data.cms.gov/cms-innovation-center-programs/disease-episode-based-payment-models/medicare-diabetes-prevention-program
+          data_dictionary_url: https://data.cms.gov/resources/medicare-diabetes-prevention-program-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/medicare-diabetes-prevention-program-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/a15c198e-4cf3-46ab-a30e-15c69bd13edd/data-viewer
+          contact: cmmi-dataset-support@cms.hhs.gov
+          dataset_uuid: a15c198e-4cf3-46ab-a30e-15c69bd13edd
+        columns:
+          - name: "name of initiative"
+            type: string
+          - name: "organization name"
+            type: string
+          - name: "location name"
+            type: string
+          - name: "location 1"
+            type: string
+          - name: "street address line 1"
+            type: string
+          - name: "street address line 2"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state"
+            type: string
+          - name: "zip code"
+            type: number
+          - name: "telephone number"
+            type: string
+          - name: "npi"
+            type: number
+          - name: "category"
+            type: string
+          - name: "unique id"
+            type: number

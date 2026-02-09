@@ -1,0 +1,71 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: income_and_asset_ownership
+        tags:
+          - medicare
+          - original medicare
+          - medicare advantage
+          - medicaid
+          - patient experience
+          - financial resources
+        description: |
+          The Income and Asset Ownership data, derived from the Medicare Current Beneficiary Survey (MCBS), provide
+          information on income sources, income levels, asset ownership, and asset values among Medicare beneficiaries.
+          The data are further segmented by demographic and health characteristics within the Medicare population.
+        meta:
+          cms_category: Medicare Current Beneficiary Survey - OEDA
+          data_source_url: https://data.cms.gov/medicare-current-beneficiary-survey-mcbs/income-and-asset-ownership
+          data_dictionary_url: https://data.cms.gov/resources/income-and-asset-ownership-data-dictionary
+          data_methodology_url: https://data.cms.gov/resources/mcbs-summary-tables-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/090bac79-c8b2-4e8a-bc3e-6bee002bcd6e/data-viewer
+          contact: MCBS@cms.hhs.gov
+          dataset_uuid: 090bac79-c8b2-4e8a-bc3e-6bee002bcd6e
+        columns:
+          - name: "characteristics"
+            type: string
+          - name: "home_ownership"
+            type: number
+          - name: "own_bank_deposit_accounts"
+            type: number
+          - name: "checking_account"
+            type: number
+          - name: "savings_account"
+            type: number
+          - name: "certificates_of_deposit"
+            type: number
+          - name: "stocks_or_mutual_funds"
+            type: number
+          - name: "retirement_accounts"
+            type: number
+          - name: "receive_social_security"
+            type: number
+          - name: "receive_supplemental_security_income"
+            type: number
+          - name: "receive_pension"
+            type: number
+          - name: "got_paid_to_work_last_month"
+            type: number
+          - name: "median_combined_income"
+            type: number
+          - name: "median_combined_earnings"
+            type: number
+          - name: "median_monthly_earnings"
+            type: number
+          - name: "median_home_equity"
+            type: number
+          - name: "median_comb_val_of_bank_deposit_acc"
+            type: number
+          - name: "median_combined_stocks_mutual_funds"
+            type: number
+          - name: "median_combined_retirement_accounts"
+            type: number
+          - name: "median_combined_amount_received_retirement_accounts"
+            type: number
+          - name: "median_combined_social_security_payments"
+            type: number
+          - name: "median_combined_pension_payments"
+            type: number

@@ -1,0 +1,263 @@
+sources:
+  - name: Data.CMS.gov
+    description: Public data released by the Centers for Medicare & Medicaid Services (CMS)
+    meta:
+      data_source_url: https://data.cms.gov
+    tables:
+      - name: hospital_provider_cost_report
+        tags:
+          - medicare
+          - original medicare
+          - hospitals & facilities
+          - inpatient
+          - health care use & payments
+          - value-based care
+          - financials
+        description: |
+          The Hospital Provider Cost Report dataset provides select measures from the hospital annual cost report. This
+          data includes provider information such as facility characteristics, utilization data, cost and charges by
+          cost center (in total and for Medicare), Medicare settlement data, and financial statement data organized by
+          CMS Certification Number.
+        meta:
+          cms_category: PDAG Data Products - OEDA
+          data_source_url: https://data.cms.gov/provider-compliance/cost-reports/hospital-provider-cost-report
+          data_dictionary_url: https://data.cms.gov/sites/default/files/2024-03/9756088d-5280-4090-80b9-449d31ef25a3/Cost%20Report%20Data%20Dictionary%20Update.pdf
+          data_methodology_url: https://data.cms.gov/resources/hospital-provider-cost-report-methodology
+          sample_data_url: https://data.cms.gov/data-api/v1/dataset/44060663-47d8-4ced-a115-b53b4c270acb/data-viewer
+          contact: PDAG_Data_Products@cms.hhs.gov
+          dataset_uuid: 44060663-47d8-4ced-a115-b53b4c270acb
+        columns:
+          - name: "rpt_rec_num"
+            type: string
+          - name: "provider ccn"
+            type: string
+          - name: "hospital name"
+            type: string
+          - name: "street address"
+            type: string
+          - name: "city"
+            type: string
+          - name: "state code"
+            type: string
+          - name: "zip code"
+            type: string
+          - name: "county"
+            type: string
+          - name: "medicare cbsa number"
+            type: string
+          - name: "rural versus urban"
+            type: string
+          - name: "ccn facility type"
+            type: string
+          - name: "provider type"
+            type: string
+          - name: "type of control"
+            type: string
+          - name: "fiscal year begin date"
+            type: date
+          - name: "fiscal year end date"
+            type: date
+          - name: "fte - employees on payroll"
+            type: number
+          - name: "number of interns and residents (fte)"
+            type: number
+          - name: "total days title v"
+            type: number
+          - name: "total days title xviii"
+            type: number
+          - name: "total days title xix"
+            type: number
+          - name: "total days (v + xviii + xix + unknown)"
+            type: number
+          - name: "number of beds"
+            type: number
+          - name: "total bed days available"
+            type: number
+          - name: "total discharges title v"
+            type: number
+          - name: "total discharges title xviii"
+            type: number
+          - name: "total discharges title xix"
+            type: number
+          - name: "total discharges (v + xviii + xix + unknown)"
+            type: number
+          - name: "number of beds + total for all subproviders"
+            type: number
+          - name: "hospital total days title v for adults & peds"
+            type: number
+          - name: "hospital total days title xviii for adults & peds"
+            type: number
+          - name: "hospital total days title xix for adults & peds"
+            type: number
+          - name: "hospital total days (v + xviii + xix + unknown) for adults & peds"
+            type: number
+          - name: "hospital number of beds for adults & peds"
+            type: number
+          - name: "hospital total bed days available for adults & peds"
+            type: number
+          - name: "hospital total discharges title v for adults & peds"
+            type: number
+          - name: "hospital total discharges title xviii for adults & peds"
+            type: number
+          - name: "hospital total discharges title xix for adults & peds"
+            type: number
+          - name: "hospital total discharges (v + xviii + xix + unknown) for adults & peds"
+            type: number
+          - name: "cost of charity care"
+            type: number
+          - name: "total bad debt expense"
+            type: number
+          - name: "cost of uncompensated care"
+            type: number
+          - name: "total unreimbursed and uncompensated care"
+            type: number
+          - name: "total salaries from worksheet a"
+            type: number
+          - name: "overhead non-salary costs"
+            type: number
+          - name: "depreciation cost"
+            type: number
+          - name: "total costs"
+            type: number
+          - name: "inpatient total charges"
+            type: number
+          - name: "outpatient total charges"
+            type: number
+          - name: "combined outpatient + inpatient total charges"
+            type: number
+          - name: "wage-related costs (core)"
+            type: number
+          - name: "wage-related costs (rhc/fqhc)"
+            type: number
+          - name: "total salaries (adjusted)"
+            type: number
+          - name: "contract labor: direct patient care"
+            type: number
+          - name: "wage related costs for part - a teaching physicians"
+            type: number
+          - name: "wage related costs for interns and residents"
+            type: number
+          - name: "cash on hand and in banks"
+            type: number
+          - name: "temporary investments"
+            type: number
+          - name: "notes receivable"
+            type: number
+          - name: "accounts receivable"
+            type: number
+          - name: "less: allowances for uncollectible notes and accounts receivable"
+            type: number
+          - name: "inventory"
+            type: number
+          - name: "prepaid expenses"
+            type: number
+          - name: "other current assets"
+            type: number
+          - name: "total current assets"
+            type: number
+          - name: "land"
+            type: number
+          - name: "land improvements"
+            type: number
+          - name: "buildings"
+            type: number
+          - name: "leasehold improvements"
+            type: number
+          - name: "fixed equipment"
+            type: number
+          - name: "major movable equipment"
+            type: number
+          - name: "minor equipment depreciable"
+            type: number
+          - name: "health information technology designated assets"
+            type: number
+          - name: "total fixed assets"
+            type: number
+          - name: "investments"
+            type: number
+          - name: "other assets"
+            type: number
+          - name: "total other assets"
+            type: number
+          - name: "total assets"
+            type: number
+          - name: "accounts payable"
+            type: number
+          - name: "salaries, wages, and fees payable"
+            type: number
+          - name: "payroll taxes payable"
+            type: number
+          - name: "notes and loans payable (short term)"
+            type: number
+          - name: "deferred income"
+            type: number
+          - name: "other current liabilities"
+            type: number
+          - name: "total current liabilities"
+            type: number
+          - name: "mortgage payable"
+            type: number
+          - name: "notes payable"
+            type: number
+          - name: "unsecured loans"
+            type: number
+          - name: "other long term liabilities"
+            type: number
+          - name: "total long term liabilities"
+            type: number
+          - name: "total liabilities"
+            type: number
+          - name: "general fund balance"
+            type: number
+          - name: "total fund balances"
+            type: number
+          - name: "total liabilities and fund balances"
+            type: number
+          - name: "drg amounts other than outlier payments"
+            type: number
+          - name: "drg amounts before october 1"
+            type: number
+          - name: "drg amounts after october 1"
+            type: number
+          - name: "outlier payments for discharges"
+            type: number
+          - name: "disproportionate share adjustment"
+            type: number
+          - name: "allowable dsh percentage"
+            type: number
+          - name: "managed care simulated payments"
+            type: number
+          - name: "total ime payment"
+            type: number
+          - name: "inpatient revenue"
+            type: number
+          - name: "outpatient revenue"
+            type: number
+          - name: "total patient revenue"
+            type: number
+          - name: "less contractual allowance and discounts on patients' accounts"
+            type: number
+          - name: "net patient revenue"
+            type: number
+          - name: "less total operating expense"
+            type: number
+          - name: "net income from service to patients"
+            type: number
+          - name: "total other income"
+            type: number
+          - name: "total income"
+            type: number
+          - name: "total other expenses"
+            type: number
+          - name: "net income"
+            type: number
+          - name: "cost to charge ratio"
+            type: number
+          - name: "net revenue from medicaid"
+            type: number
+          - name: "medicaid charges"
+            type: number
+          - name: "net revenue from stand-alone chip"
+            type: number
+          - name: "stand-alone chip charges"
+            type: number
