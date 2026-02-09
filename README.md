@@ -6,10 +6,10 @@ A metadata-only dbt catalog of CMS datasets from data.cms.gov. This repository c
 
 Generate the documentation:
 ```bash
-dbt docs generate --profiles-dir .
+uv run dbt docs generate --profiles-dir .
 ```
 
 Serve the documentation locally:
 ```bash
-dbt docs serve --profiles-dir .
+uv run dbt docs serve --profiles-dir .
 ```
