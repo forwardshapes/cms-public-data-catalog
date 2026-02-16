@@ -38,3 +38,9 @@ target/
 dbt_packages/
 logs/
 .user.yml
+
+# Script-fetched data (generated at runtime, not source code)
+input/
+
+# Claude Code local settings
+.claude/
